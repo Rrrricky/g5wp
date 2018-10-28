@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/** Syntaxe BEM
+
+HTML:
+
+<div class="parent">
+  <p class="parent__child-element">Je suis un élément enfant</p>
+  <p class="parent__child-element-2">Moi aussi</p>
+</div>
+
+
+
+SASS:
+
+.parent {
+  &__child-element {
+    color: red;
+  }
+  &__child-element-2 {
+    color: blue
+  }
+}
+
+
+*/
+* { color: blue; background-color: #ffc600; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0VBdUJFO0FBR0YsQUFBQSxDQUFDLENBQUMsRUFDQSxLQUFLLEVBQUUsSUFBSSxFQUNYLGdCQUFnQixFQUFDLE9BQU8sR0FDekIifQ== */
+
+/*# sourceMappingURL=main.css.map */
