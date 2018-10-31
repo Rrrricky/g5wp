@@ -35,6 +35,7 @@ body {
 	left: 0;
 	right: 0;
 	overflow: hidden;
+	z-index: -1;
 
 	&__ball {
 		width: 60px;
@@ -51,7 +52,7 @@ body {
 	}
 }
 /* Header */
-.header {
+.nav {
 	width:95%;
 	margin:auto;
 	color:white;
