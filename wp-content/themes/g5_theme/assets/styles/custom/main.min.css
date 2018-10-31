@@ -7,8 +7,8 @@
 .nav__links>li{list-style-type:none;padding:0 40px}
 .nav__links>li>a{text-decoration:none;color:white}
 .nav__search{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;text-align:end}
-body{background:#000;color:white;font-family:'Raleway',sans-serif}
+body{background:#000;color:white;font-family:"Didot"}
 body .page-template{max-width:90vw;height:90vh;margin:0 auto;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(3,minmax(100px,auto));grid-gap:10px;-ms-flex-line-pack:center;align-content:center}
 body .page-template h1{font-size:45px;grid-column-start:1;grid-column-end:6}
-body .page-template h3{grid-column-start:1;grid-column-end:5}
+body .page-template h3{font-size:18px;grid-column-start:1;grid-column-end:5}
 body .page-template button{grid-column-start:1;width:100px;height:30px}
