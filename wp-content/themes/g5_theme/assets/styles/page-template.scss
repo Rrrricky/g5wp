@@ -24,7 +24,9 @@
 		height: 30px;
 	}
 	&__catch {
-		grid-column: end;
-		place-self: end;
+		grid-column-start: -1;
+		grid-column-end: -4;
+		justify-self: end;
+		align-self: end;
 	}
 }

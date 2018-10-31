@@ -11,5 +11,5 @@
 .page-template__title{font-size:45px;grid-column-start:1;grid-column-end:6}
 .page-template__subtitle{font-size:18px;grid-column-start:1;grid-column-end:5}
 .page-template__button{grid-column-start:1;width:100px;height:30px}
-.page-template__catch{grid-column:end;place-self:end}
+.page-template__catch{grid-column-start:-1;grid-column-end:-4;justify-self:end;-ms-flex-item-align:end;align-self:end}
 body{background:#010101;color:white;font-family:"Didot"}
