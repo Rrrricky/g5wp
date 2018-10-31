@@ -1,1 +1,3 @@
-*{color:blue;background-color:#ffc600}
+body{background:#000}
+.wrap{position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden}
+.wrap__ball{width:60px;height:60px;background:0;border:1px solid grey;border-radius:100%;position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;pointer-events:none;-webkit-transition:width .4s ease,height .4s ease;transition:width .4s ease,height .4s ease}

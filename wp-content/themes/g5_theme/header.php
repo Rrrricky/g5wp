@@ -15,5 +15,7 @@
     </head>
     <body <?php body_class(); ?>>
         <header id="header">
-        <!-- Tout le contenu de l entête de mon site -->
+			<div class="wrap">
+				<div class="wrap__ball wrap__ball-js"></div>
+			</div>
         </header>

@@ -1,5 +1,8 @@
 <?php get_header() ?>
 
-<h1>Hello World</h1>
+<body>
+	<div>Hello</div>
+</body>
+
 
 <?php get_footer() ?>

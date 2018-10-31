@@ -9,7 +9,6 @@ HTML:
 </div>
 
 
-
 SASS:
 
 .parent {
@@ -23,8 +22,12 @@ SASS:
 
 
 */
-* { color: blue; background-color: #ffc600; }
+body { background: #000; }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0VBdUJFO0FBR0YsQUFBQSxDQUFDLENBQUMsRUFDQSxLQUFLLEVBQUUsSUFBSSxFQUNYLGdCQUFnQixFQUFDLE9BQU8sR0FDekIifQ== */
+.wrap { position: absolute; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; }
+
+.wrap__ball { width: 60px; height: 60px; background: none; border: 1px solid grey; border-radius: 100%; position: absolute; top: 50%; left: 50%; margin: -10px 0 0 -10px; pointer-events: none; -webkit-transition: width .4s ease, height .4s ease; transition: width .4s ease, height .4s ease; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFzQkU7QUFHRixBQUFBLElBQUksQ0FBQyxFQUNKLFVBQVUsRUFBRSxJQUFJLEdBQ2hCOztBQUdELEFBQUEsS0FBSyxDQUFDLEVBQ0wsUUFBUSxFQUFFLFFBQVEsRUFDbEIsR0FBRyxFQUFFLENBQUMsRUFDTixNQUFNLEVBQUUsQ0FBQyxFQUNULElBQUksRUFBRSxDQUFDLEVBQ1AsS0FBSyxFQUFFLENBQUMsRUFDUixRQUFRLEVBQUUsTUFBTSxHQWVoQjs7QUFiQyxBQUFELFdBQU8sQ0FBQyxFQUNQLEtBQUssRUFBRSxJQUFJLEVBQ1gsTUFBTSxFQUFFLElBQUksRUFDWixVQUFVLEVBQUUsSUFBSSxFQUNoQixNQUFNLEVBQUUsY0FBYyxFQUN0QixhQUFhLEVBQUUsSUFBSSxFQUNuQixRQUFRLEVBQUUsUUFBUSxFQUNsQixHQUFHLEVBQUUsR0FBRyxFQUNSLElBQUksRUFBRSxHQUFHLEVBQ1QsTUFBTSxFQUFFLGVBQWUsRUFDdkIsY0FBYyxFQUFFLElBQUksRUFDcEIsVUFBVSxFQUFFLCtCQUErQixHQUMzQyJ9 */
 
 /*# sourceMappingURL=main.css.map */
