@@ -9,5 +9,7 @@ Template Name: Region template
 ?>
 
 <?php get_header() ?>
-<div>Region</div>
+	<body id="region-page-template" class="page-template">
+		<div>Region</div>
+	</body>
 <?php get_footer() ?>

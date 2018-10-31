@@ -1,0 +1,39 @@
+.nav {
+	width:95%;
+	margin:auto;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	&__links {
+		display:flex;
+	}
+	/* Logo font style and positionement*/
+	&__logo {
+		font-weight:700;
+		font-size:18px;
+		flex-grow:2;
+	}
+	/* Font style for links and search */
+	&__links, &__search {
+		font-weight:400;
+		font-size:14px;
+	}
+	/* Each li elements of the ul */
+	&__links > li {
+		list-style-type:none;
+		padding:0 40px;
+	}
+	/* Each a elements of the ul */
+	&__links > li > a {
+		text-decoration:none;
+		color:white;
+	}
+	/* Search positionement */
+	&__search {
+		flex-grow:2;
+		text-align:end;
+	}
+}
