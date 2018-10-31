@@ -1,6 +1,6 @@
 .wrap{position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;z-index:-1}
 .wrap__ball{width:60px;height:60px;background:0;border:1px solid grey;border-radius:100%;position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;pointer-events:none;-webkit-transition:width .4s ease,height .4s ease;transition:width .4s ease,height .4s ease}
-.nav{width:95%;height:10vh;margin:auto;color:white;font-family:'Raleway',sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.nav{width:95%;margin:auto;height:10vh;color:white;font-family:'Raleway',sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .nav__links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .nav__logo{font-weight:700;font-size:18px;-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}
 .nav__links,.nav__search{font-weight:400;font-size:14px}
@@ -12,4 +12,16 @@
 .custom-home-page__subtitle{font-size:18px;grid-column-start:1;grid-column-end:5}
 .custom-home-page__button{grid-column-start:1;width:100px;height:30px}
 .custom-home-page__catch{grid-column-start:-1;grid-column-end:-4;justify-self:end;-ms-flex-item-align:end;align-self:end}
+.grid-menu{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;grid-gap:30px;margin:0 30px}
+.grid-menu__items>img{width:100%;height:auto}
+.grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s}
+.grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px}
+.grid-menu__name{display:none}
+.grid-menu__items:hover>.grid-menu__name{display:block}
+.grid-menu__name{-ms-flex-item-align:end;align-self:flex-end;margin-bottom:15px;font-size:18px}
+.grid-menu__name,.grid-menu__number{position:absolute;color:white;font-family:Raleway;margin-left:25px;letter-spacing:5px;font-weight:700}
+.grid-menu__number{margin-top:15px;font-size:24px}
 body{background:#010101;color:white;font-family:"Didot"}
+@media screen and (max-width:640px){.grid-menu{grid-template-columns:1fr 1fr}
+}@media screen and (max-width:400px){.grid-menu{grid-template-columns:1fr}
+}

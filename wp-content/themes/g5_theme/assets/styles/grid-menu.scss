@@ -1,0 +1,60 @@
+.grid-menu {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:30px;
+    margin:0px 30px;
+
+    /* Each IMG's size */
+    &__items > img {
+        width:100%;
+        height:auto;
+    }
+    /* Each box */
+    &__items {
+        display:flex;
+        transition: 0.2s;
+    }
+    &__items:hover {
+        outline: 7px solid #E67E37;
+        outline-offset: -7px;
+    }
+    /* Each animal's name */
+    &__name {
+        display:none;
+    }
+    &__items:hover > &__name {
+        display:block;
+    }
+    &__name {
+        align-self:flex-end;
+        margin-bottom:15px;
+        font-size:18px;
+    }
+    &__name, &__number {
+        position:absolute;
+        color:white;
+        font-family:Raleway;
+        margin-left:25px;
+        letter-spacing: 5px;
+        font-weight:700;
+    }
+    /* Each animal's number */
+    &__number {
+        margin-top:15px;
+        font-size:24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-menu {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-menu {
+        grid-template-columns: 1fr;
+    }
+}
