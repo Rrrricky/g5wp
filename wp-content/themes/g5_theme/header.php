@@ -11,9 +11,16 @@
 
         <div class="header">
             <p class="header__logo">Opensave</p>
-            <p class="header__links">Animaux</p>
-            <p class="header__links">Régions</p>
-            <p class="header__links">À la une</p>
+
+                <?php // SYNTAXE : wp_nav_menu( array $args = array() )
+                    $args=array(
+                    'theme_location' => 'header', // nom du slug
+                    'menu' => 'header_fr', // nom à donner cette occurence du menu
+                    'menu_class' => 'header__links', // classe pour la div crée
+                );
+                wp_nav_menu($args);
+                ?>
+
             <p class="header__search"><i class="fas fa-search"></i> Search</p>
         </div>
 
