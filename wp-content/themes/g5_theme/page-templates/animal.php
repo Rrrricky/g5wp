@@ -9,7 +9,7 @@ Template Name: Animal template
 ?>
 
 <?php get_header() ?>
-<body id="animal-page-template" class="page-template">
-
-</body>
+	<main id="animal-page-template" class="page-template">
+		<div>Animal</div>
+	</main>
 <?php get_footer() ?>
