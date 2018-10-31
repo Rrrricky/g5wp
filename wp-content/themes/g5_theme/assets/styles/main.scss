@@ -22,9 +22,6 @@ SASS:
 
 */
 
-@import 'ball-mouse';
-@import 'header';
-
 $h1: 45px;
 $h2: 40px;
 $h3: 35px;
@@ -32,39 +29,19 @@ $h4: 30px;
 $h5: 25px;
 $current-fz: 18px;
 
-$primary-font: 'Didot';
-$primary-color: white;
+$primary-font:'Didot';
+$primary-color:white;
+$primary-back-color:#010101;
+
+@import 'ball-mouse';
+@import 'header';
+@import 'page-template';
 
 
 body {
-	background: #000;
+	background: $primary-back-color;
 	color: $primary-color;
 	font-family: $primary-font;
-	.page-template {
-		max-width: 90vw;
-		height: 90vh;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: repeat(12, 1fr); // 12 columns
-		grid-template-rows: repeat(3, minmax(100px, auto));
-		grid-gap: 10px;
-		align-content:center;
-		h1 {
-			font-size: $h1;
-			grid-column-start: 1;
-			grid-column-end: 6;
-		}
-		h3 {
-			font-size: $current-fz;
-			grid-column-start: 1;
-			grid-column-end: 5;
-		}
-		button {
-			grid-column-start: 1;
-			width: 100px;
-			height: 30px;
-		}
-	}
 }
 
 
