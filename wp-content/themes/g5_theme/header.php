@@ -7,24 +7,10 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-        <!---------------------------------------------------------------->
 
-        <nav class="nav">
-            <p class="nav__logo">Opensave</p>
 
-                <?php // SYNTAXE : wp_nav_menu( array $args = array() )
-                    $args=array(
-                    'theme_location' => 'header', // nom du slug
-                    'menu' => 'header_fr', // nom à donner cette occurence du menu
-                    'menu_class' => 'nav__links', // classe pour la div crée
-                );
-                wp_nav_menu($args);
-                ?>
+		<?php include 'menu.php'; ?>
 
-            <p class="nav__search"><i class="fas fa-search"></i> Search</p>
-        </nav>
-
-        <!---------------------------------------------------------------->
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
     </head>
