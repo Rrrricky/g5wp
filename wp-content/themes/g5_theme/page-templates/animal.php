@@ -19,32 +19,32 @@ Template Name: Animal template
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">2</div>
 			<div class="grid-menu__name">Monkey</div>
-			<img src="https://placeimg.com/418/284/arch">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">3</div>
 			<div class="grid-menu__name">Lion</div>
-			<img src="https://placeimg.com/418/284/nature">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">4</div>
 			<div class="grid-menu__name">Dolphin</div>
-			<img src="https://placeimg.com/418/284/people">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">5</div>
 			<div class="grid-menu__name">Gorilla</div>
-			<img src="https://placeimg.com/418/284/tech">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">6</div>
 			<div class="grid-menu__name">Shark</div>
-			<img src="https://placeimg.com/418/284/tech/grayscale">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 		<div class="grid-menu__items">
 			<div class="grid-menu__number">7</div>
 			<div class="grid-menu__name">Shark</div>
-			<img src="https://placeimg.com/418/284/tech/sepia">
+			<img src="https://placeimg.com/418/284/animals">
 		</div>
 
 

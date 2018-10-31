@@ -12,7 +12,7 @@
 .custom-home-page__subtitle{font-size:18px;grid-column-start:1;grid-column-end:5}
 .custom-home-page__button{grid-column-start:1;width:100px;height:30px}
 .custom-home-page__catch{grid-column-start:-1;grid-column-end:-4;justify-self:end;-ms-flex-item-align:end;align-self:end}
-.grid-menu{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;grid-gap:30px;margin:0 30px}
+.grid-menu{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;grid-gap:30px;margin:0 30px 30px 30px}
 .grid-menu__items>img{width:100%;height:auto}
 .grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s}
 .grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px}
