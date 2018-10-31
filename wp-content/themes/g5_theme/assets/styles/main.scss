@@ -50,3 +50,35 @@ body {
 		transition: width .4s ease, height .4s ease;
 	}
 }
+
+.header {
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+	&__logo {
+		font-weight:700;
+		font-size:18px;
+		flex-grow:2;
+	}
+	&__links, &__search {
+		font-weight:400;
+		font-size:14px;
+	}
+	&__links {
+		padding:0px 35px;
+	}
+	&__search {
+		flex-grow:2;
+		text-align:end;
+	}
+}
+
+.header > p {
+	border:2px solid red;
+}
+.header {
+	border:2px solid blue;
+}
