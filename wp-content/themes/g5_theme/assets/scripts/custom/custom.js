@@ -1,5 +1,13 @@
 "use strict";
 
+/* Display the current animal's number on the grid-based menu (regions and animals) */
+var gridNumbers = document.querySelectorAll('.grid-menu__number');
+
+for (var i = 0; i < gridNumbers.length; i++) {
+  gridNumbers[i].innerHTML = i + 1;
+}
+"use strict";
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -103,3 +111,21 @@ function () {
 }();
 
 var newMouse = new NewMouse();
+"use strict";
+
+/* Get navbar's items */
+var navItems = document.querySelectorAll('.menu-item');
+/* Get Current page link */
+
+var currentPage = window.location.href;
+/* Loop inside the navbar's items */
+
+for (var i = 0; i < navItems.length; i++) {
+  /* Define the current item stringified */
+  var currentItem = navItems[i].firstChild.toString();
+  /* If the current item's link is the same as the current page's link, than add class active */
+
+  if (currentItem == currentPage) {
+    navItems[i].appendChild(document.createElement('div')).classList.add('nav__active');
+  }
+}

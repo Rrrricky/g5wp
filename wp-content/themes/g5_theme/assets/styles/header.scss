@@ -37,4 +37,14 @@
 		flex-grow:2;
 		text-align:end;
 	}
+	&__active {
+		width:50px;
+		height:10px;
+		background-color:#E67E37;
+		margin: -5px 0 0 10px;
+		opacity:0.5;
+		position:absolute;
+	}
 }
+
+
