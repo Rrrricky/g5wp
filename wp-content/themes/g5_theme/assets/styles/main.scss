@@ -27,8 +27,8 @@ $h2: 40px;
 $h3: 35px;
 $h4: 30px;
 $h5: 25px;
-$current-fz: 18px;
 
+$current-fz: 18px;
 $primary-font:'Didot';
 $primary-color:white;
 $primary-back-color:#010101;
@@ -37,6 +37,8 @@ $primary-back-color:#010101;
 @import 'header';
 @import 'page-template';
 @import 'grid-menu';
+@import 'home-slider';
+
 
 
 body {
@@ -44,9 +46,3 @@ body {
 	color: $primary-color;
 	font-family: $primary-font;
 }
-
-
-
-
-
-
