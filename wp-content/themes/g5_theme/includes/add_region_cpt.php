@@ -1,8 +1,8 @@
 <?php
 
 
-add_action('init', 'add_region_custom_post_it'); // Dès le chargement du site (Rq. 'init' obligatoire)
-function add_region_custom_post_it(){
+add_action('init', 'add_region_cpt'); // Dès le chargement du site (Rq. 'init' obligatoire)
+function add_region_cpt(){
 
     $post_type = "region";
 
