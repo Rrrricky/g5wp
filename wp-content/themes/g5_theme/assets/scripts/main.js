@@ -7,7 +7,7 @@ class NewMouse {
 
 setMouse() {
 
-	document.body.style.cursor = 'none';
+	document.body.style.cursor = 'none'
 	const $body = document.querySelector('body')
 	const $ball = document.querySelector('.wrap__ball-js')
 	let xmouse, ymouse
@@ -51,7 +51,7 @@ setMouse() {
 						}
 				}
 				$ball.style.left = x + 'px'
-				$ball.style.top = y + 'px'
+				$ball.style.top = y + window.pageYOffset + 'px'
 	}
 
 	followMouse()

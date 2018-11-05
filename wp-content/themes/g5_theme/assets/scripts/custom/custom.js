@@ -63,7 +63,7 @@ function () {
         }
 
         $ball.style.left = x + 'px';
-        $ball.style.top = y + 'px';
+        $ball.style.top = y + window.pageYOffset + 'px';
       };
 
       followMouse();
