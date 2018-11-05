@@ -8,8 +8,8 @@ function add_region_custom_post_it(){
 
     $labels = array( // Nommage
             'name'               => 'Region', //
-            'singular_name'      => 'Region',
-            'all_items'          => 'All the region',
+            'singular_name'      => 'region',
+            'all_items'          => 'All the regions',
             'add_new'            => 'Add a region',
             'add_new_item'       => 'Add a region',
             'edit_item'          => "Edit a region",
@@ -19,7 +19,7 @@ function add_region_custom_post_it(){
             'not_found'          => 'No result',
             'not_found_in_trash' => 'No result',
             'parent_item_colon'  => 'Parent model:',
-            'menu_name'          => 'Region',
+            'menu_name'          => 'Regions',
         );
 
         $args = array(
@@ -29,7 +29,7 @@ function add_region_custom_post_it(){
             'public'              => true, // Tout le monde peut l'utiliser
             'show_ui'             => true, // Accessible depuis le front
             'show_in_menu'        => true, // Apparaît dans le back-office
-            'menu_position'       => 3, // Position dans menu
+            'menu_position'       => 2, // Position dans menu
             'menu_icon'           => 'dashicons-admin-site', // Icône (Cf. https://developer.wordpress.org/resource/dashicons/)
             'show_in_nav_menus'   => true, // Accessible depuis le menu de navigation
             'publicly_queryable'  => true, // Accessible depuis une recherche sur le site
@@ -43,11 +43,11 @@ function add_region_custom_post_it(){
         register_post_type($post_type, $args);
 
 
-        $taxonomy = 'Region'; // Nom
-        $object_type = array('animals'); // Contenus concernés
+        $taxonomy = 'region'; // Nom
+        $object_type = array('regions'); // Contenus concernés
         $tax_args = array(
             'label' => 'Subject', // Nom affiché
-            'rewrite' => array( 'slug' => 'subject-region' ),
+            'rewrite' => array( 'slug' => 'region' ),
             'hierarchical' => false, // Si hiérarchie possible
         );
 
