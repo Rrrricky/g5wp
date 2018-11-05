@@ -13,13 +13,13 @@
 .custom-home-page__subtitle{font-size:18px;grid-column-start:1;grid-column-end:5}
 .custom-home-page__button{grid-column-start:1;width:100px;height:30px}
 .custom-home-page__catch{grid-column-start:-1;grid-column-end:-4;justify-self:end;-ms-flex-item-align:end;align-self:end}
-.grid-menu{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;grid-gap:30px;margin:0 30px 30px 30px}
-.grid-menu__items>img{width:100%;height:auto;z-index:-2}
+.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(4,1fr);grid-gap:30px;margin:0 30px 30px 30px}
+.grid-menu__items>img{height:auto;width:100%;z-index:-2;-o-object-fit:cover;object-fit:cover}
 .grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s}
 .grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px}
 .grid-menu__name{display:none}
 .grid-menu__items:hover>.grid-menu__name{display:block}
-.grid-menu__name{-ms-flex-item-align:end;align-self:flex-end;margin-bottom:15px;font-size:18px}
+.grid-menu__name{-ms-flex-item-align:end;align-self:flex-end;padding-bottom:15px;font-size:18px}
 .grid-menu__name,.grid-menu__number{position:absolute;color:white;font-family:Raleway;margin-left:25px;letter-spacing:5px;font-weight:700}
 .grid-menu__number{margin-top:15px;font-size:24px}
 .custom-home-page__slides-container{position:fixed;width:100%;height:100%;top:0;left:0;z-index:-2}
