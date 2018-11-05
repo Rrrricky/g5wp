@@ -22,16 +22,19 @@ SASS:
 
 */
 
-$h1: 45px;
+$h1: 55px;
 $h2: 40px;
 $h3: 35px;
 $h4: 30px;
 $h5: 25px;
 
-$current-fz: 18px;
+$h1-lh: 70px;
+$current-fz: 20px;
+$current-lh: 32px;
 $primary-font:'Didot';
 $primary-color:white;
 $primary-back-color:#010101;
+$button-color: #e67e37;
 
 @import 'ball-mouse';
 @import 'header';
