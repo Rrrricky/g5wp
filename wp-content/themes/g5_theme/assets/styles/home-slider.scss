@@ -14,10 +14,10 @@
 			left: 0px;
 			z-index: -2;
 			content: '';
-			background: transparent url(../../../pattern.png) repeat top left;
+			// background: transparent url(../../../pattern.png) repeat top left;
 		}
 		li {
-			opacity: 0.6;
+			opacity: 0.4;
 			&:nth-child(2) {
 				span {
 					animation-delay: 6s;
