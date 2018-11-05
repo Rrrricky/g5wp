@@ -18,38 +18,32 @@
 		}
 		li {
 			opacity: 0.6;
-			&:nth-child(1) {
-				span {
-					background-image: url(../../../ele.jpg);
-				}
-			}
 			&:nth-child(2) {
 				span {
-					background-image: url(../../../puppy.jpg);
 					animation-delay: 6s;
 				}
 			}
 			&:nth-child(3) {
 				span {
-					background-image: url(../../../macron.jpg);
+
 					animation-delay: 12s;
 				}
 			}
 			&:nth-child(4) {
 				span {
-					background-image: url(../../../tigre.jpg);
+
 					animation-delay: 18s;
 				}
 			}
 			&:nth-child(5) {
 				span {
-					background-image: url(../../../cat.jpg);
+
 					animation-delay: 24s;
 				}
 			}
 			&:nth-child(6) {
 				span {
-					background-image: url(../../../bebe.jpg);
+
 					animation-delay: 30s;
 				}
 			}
