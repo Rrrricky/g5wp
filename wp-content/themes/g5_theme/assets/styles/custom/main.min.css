@@ -16,7 +16,7 @@
 .custom-home-page__button:active{-webkit-transform:translate(0,2px);transform:translate(0,2px)}
 .custom-home-page__button__line{display:inline-block;background:white;width:50px;height:1px;margin-left:15px;-webkit-box-shadow:0 -1px #333;box-shadow:0 -1px #333}
 .custom-home-page__catch{font-size:20px;grid-column-start:-1;grid-column-end:-4;grid-row-start:5;justify-self:end;-ms-flex-item-align:end;align-self:end}
-.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(4,1fr);grid-gap:30px;margin:0 30px 30px 30px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:30px;margin:0 30px 30px 30px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .grid-menu__items>img{height:auto;width:100%;z-index:-2;-o-object-fit:cover;object-fit:cover}
 .grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s}
 .grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px}
