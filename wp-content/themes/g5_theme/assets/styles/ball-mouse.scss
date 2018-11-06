@@ -21,3 +21,11 @@
 		transition: width .4s ease, height .4s ease;
 	}
 }
+
+@media (max-width: 750px) {
+	.wrap{
+		&__ball {
+			display: none;
+		}
+	}
+}

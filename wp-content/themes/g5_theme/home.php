@@ -33,7 +33,6 @@ Template Name: Home
 		</button>
 		<span class="custom-home-page__catch"><?php the_field('slogan'); ?></span>
 	</main>
-
 <?php get_footer() ?>
 
 

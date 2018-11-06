@@ -15,3 +15,18 @@ for ( let i = 0 ; i < navItems.length ; i++ ) {
 		navItems[i].appendChild( document.createElement( 'div' ) ).classList.add( 'nav__active' );
 	}
 }
+
+
+
+let $hamburgerIcon = document.querySelector(".hamburger")
+let $links = document.querySelector(".nav__links")
+
+$hamburgerIcon.addEventListener(
+	"click",
+	()=> {
+		$links.classList.toggle("is-active")
+		$hamburgerIcon.classList.toggle("is-active")
+	}
+)
+
+

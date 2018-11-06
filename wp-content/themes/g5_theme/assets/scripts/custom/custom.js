@@ -129,3 +129,10 @@ for (var i = 0; i < navItems.length; i++) {
     navItems[i].appendChild(document.createElement('div')).classList.add('nav__active');
   }
 }
+
+var $hamburgerIcon = document.querySelector(".hamburger");
+var $links = document.querySelector(".nav__links");
+$hamburgerIcon.addEventListener("click", function () {
+  $links.classList.toggle("is-active");
+  $hamburgerIcon.classList.toggle("is-active");
+});

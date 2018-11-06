@@ -23,7 +23,7 @@ SASS:
 */
 
 $h1: 55px;
-$h2: 40px;
+$h2: 45px;
 $h3: 35px;
 $h4: 30px;
 $h5: 25px;
@@ -41,6 +41,10 @@ $button-color: #e67e37;
 @import 'page-template';
 @import 'grid-menu';
 @import 'home-slider';
+@import 'hamburgers/hamburgers.scss';
+@import 'hamburgers/_base.scss';
+@import 'hamburgers/types/_slider.scss';
+@import 'hamburgers/types/_slider-r.scss';
 
 
 
