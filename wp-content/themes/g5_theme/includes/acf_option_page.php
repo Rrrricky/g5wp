@@ -1,7 +1,7 @@
 <?php
 
 
-add_action('init', 'add_acf_option_page_support'); 
+add_action('init', 'add_acf_option_page_support');
 
 function add_acf_option_page_support(){
   if( function_exists('acf_add_options_page') ) {
@@ -25,23 +25,12 @@ function add_acf_option_page_support(){
       'page_title'    => 'Configuration des réseaux sociaux',
       'menu_title'    => 'Réseaux sociaux',
       'parent_slug'   => 'options',
-    ));
-
-    acf_add_options_sub_page(array(
-      'page_title'    => 'Options du header',
-      'menu_title'    => 'Header',
-      'parent_slug'   => 'options',
-    ));
-
-    acf_add_options_sub_page(array(
-      'page_title'    => 'Options du footer',
-      'menu_title'    => 'Footer',
-      'parent_slug'   => 'options',
-    ));
+		));
 
     acf_add_options_sub_page(array(
       'page_title'    => 'Options de la Page 404',
       'menu_title'    => 'Page 404',
-      'parent_slug'   => 'options',
+			'parent_slug'   => 'options',
+			'menu_slug' => 'qq'
     ));
 }}

@@ -1,0 +1,14 @@
+.error-page {
+	width: 400px;
+	margin: 20vh auto;
+	text-align: center;
+
+	&__title {
+		font-size: $h1;
+		margin-bottom: 30px;
+	}
+	&__link {
+		text-decoration: underline;
+	}
+}
+
