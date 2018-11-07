@@ -17,15 +17,15 @@
 .custom-home-page__button:active{-webkit-transform:translate(0,2px);transform:translate(0,2px)}
 .custom-home-page__button__line{display:inline-block;background:white;width:50px;height:1px;margin-left:15px;-webkit-box-shadow:0 -1px #333;box-shadow:0 -1px #333}
 .custom-home-page__catch{font-size:20px;grid-column:6 / 1;grid-row-start:8;justify-self:end;-ms-flex-item-align:end;align-self:end;margin-bottom:50px}
-.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:30px;margin:0 30px 30px 30px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:30px;margin:30px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .grid-menu__items>img{height:auto;width:100%;z-index:-2;-o-object-fit:cover;object-fit:cover}
-.grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s}
-.grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px}
+.grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s;-webkit-filter:opacity(50%);filter:opacity(50%)}
+.grid-menu__items:hover{outline:7px solid #e67e37;outline-offset:-7px;-webkit-filter:none;filter:none}
 .grid-menu__name{display:none}
 .grid-menu__items:hover>.grid-menu__name{display:block}
-.grid-menu__name{-ms-flex-item-align:end;align-self:flex-end;padding-bottom:15px;font-size:18px}
-.grid-menu__name,.grid-menu__number{position:absolute;color:white;font-family:Raleway;margin-left:25px;letter-spacing:5px;font-weight:700}
-.grid-menu__number{margin-top:15px;font-size:24px}
+.grid-menu__name{-ms-flex-item-align:end;align-self:flex-end;padding-bottom:15px;font-size:18px;font-weight:400}
+.grid-menu__name,.grid-menu__number{position:absolute;color:white;font-family:Raleway;margin-left:25px;letter-spacing:5px}
+.grid-menu__number{margin-top:15px;font-size:24px;font-weight:700}
 .custom-home-page__slides-container{position:fixed;width:100%;height:100%;top:0;left:0;z-index:-2}
 .custom-home-page__slides-container:after{position:fixed;width:100%;height:100%;top:0;left:0;z-index:-2;content:''}
 .custom-home-page__slides-container li{opacity:.4}

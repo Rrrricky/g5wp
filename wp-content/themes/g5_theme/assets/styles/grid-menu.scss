@@ -4,7 +4,7 @@
 	//grid-template-rows: repeat(2, 1fr);
 	//grid-auto-rows: min-content;
 	grid-gap: 30px;
-	margin: 0px 30px 30px 30px;
+	margin: 30px;
 	user-select: none;
 
 	/* Each IMG's size */
@@ -20,10 +20,12 @@
 	&__items {
 		display: flex;
 		transition: 0.2s;
+		filter: opacity(50%);
 	}
 	&__items:hover {
 		outline: 7px solid #e67e37;
 		outline-offset: -7px;
+		filter: none;
 	}
 	/* Each animal's name */
 	&__name {
@@ -36,6 +38,7 @@
 		align-self: flex-end;
 		padding-bottom: 15px;
 		font-size: 18px;
+		font-weight: 400;
 	}
 	&__name,
 	&__number {
@@ -44,12 +47,12 @@
 		font-family: Raleway;
 		margin-left: 25px;
 		letter-spacing: 5px;
-		font-weight: 700;
 	}
 	/* Each animal's number */
 	&__number {
 		margin-top: 15px;
 		font-size: 24px;
+		font-weight: 700;
 	}
 }
 
