@@ -2,6 +2,53 @@
 	// Why 90 ? Navbar is 10 vh
 	height: 90vh;
 	display: flex;
+	&__header {
+		height: 50px;
+		width: 300px;
+		position: absolute;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			font-family: "Raleway", sans-serif;
+			font-size: 12px;
+			margin-left: 40px;
+			color: #777777;
+			&:nth-child(2) {
+				color: white;
+			}
+			// The orange box
+			div {
+				width: 48px;
+				height: 10px;
+				background-color: #e67e37;
+				opacity: 0.5;
+				position: absolute;
+			}
+		}
+	}
+
+	&__video {
+		margin-left: 40px;
+		margin-bottom: 20px;
+		position: absolute;
+		bottom: 0;
+		a {
+			font-family: "Raleway", sans-serif;
+			font-size: 18px;
+			color: #ffffff;
+			opacity: 0.5;
+			display: flex;
+			flex-direction: column;
+			transition: ease 1s;
+			&:hover {
+				opacity: 1;
+			}
+			i {
+				margin: 10px auto auto auto;
+				font-size: 30px;
+			}
+		}
+	}
 
 	&__text {
 		width: 40%;
