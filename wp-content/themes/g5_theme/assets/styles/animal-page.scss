@@ -11,6 +11,7 @@
 	}
 	&__img {
 		width: 60%;
+		z-index: -3;
 		&__img > img {
 			height: 100%;
 			width: 100%;

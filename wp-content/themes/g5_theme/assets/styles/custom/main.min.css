@@ -40,7 +40,7 @@
 .error-page__link{text-decoration:underline}
 .animal-wrapper{height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex}
 .animal-wrapper__text{width:40%;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:5px}
-.animal-wrapper__img{width:60%}
+.animal-wrapper__img{width:60%;z-index:-3}
 .animal-wrapper__img__img>img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
 .animal-wrapper__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:15px 0;text-transform:uppercase}
 .animal-wrapper__title{font-size:65px;text-transform:uppercase}

@@ -21,7 +21,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
       <span class="line"></span>
     </p>
     <p class="animal-wrapper__title">
-      <?php the_field('espece'); ?>
+    <?php the_title(); ?>
     </p>
     <p class="animal-wrapper__statut">
       Status
