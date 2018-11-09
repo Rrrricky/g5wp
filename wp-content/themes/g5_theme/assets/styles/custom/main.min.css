@@ -1,7 +1,7 @@
 .wrap{position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1}
 .wrap__ball{width:60px;height:60px;background:0;border:1px solid grey;border-radius:100%;position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;pointer-events:none;-webkit-transition:width .4s ease,height .4s ease;transition:width .4s ease,height .4s ease}
 .hamburger{display:none !important;background-color:white !important;position:fixed;top:0;right:0}
-.nav{margin:0 40px;height:10vh;color:white;font-family:'Raleway',sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.nav{margin:0 40px;height:10vh;color:white;font-family:"Raleway",sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .nav__links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .nav__logo{font-weight:700;font-size:18px;-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}
 .nav__links,.nav__search{font-weight:400;font-size:14px}
@@ -39,13 +39,13 @@
 .error-page__title{font-size:55px;margin-bottom:30px}
 .error-page__link{text-decoration:underline}
 .animal-wrapper{height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex}
-.animal-wrapper__text{width:40%;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.animal-wrapper__text{width:40%;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:5px}
 .animal-wrapper__img{width:60%}
-.animal-wrapper__img>img{height:100%;width:100%;-o-object-fit:scale-down;object-fit:scale-down}
-.animal-wrapper__status{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:15px 0}
+.animal-wrapper__img>img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover;z-index:-999}
+.animal-wrapper__status{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:15px 0;text-transform:uppercase}
 .animal-wrapper__title{font-size:65px;text-transform:uppercase}
 .animal-wrapper__title__smaller{font-size:45px}
-.line{-webkit-box-flex:.1;-ms-flex-positive:.1;flex-grow:.1;border-bottom:1px solid white;z-index:2;margin:20px}
+.line{-ms-flex-preferred-size:86px;flex-basis:86px;border-bottom:2px solid #2a2e32;z-index:2;margin:20px}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:.7}
 .hamburger.is-active:hover{opacity:.7}

@@ -8,53 +8,51 @@
 .nav {
 	margin: 0 40px;
 	height: 10vh;
-	color:white;
-	font-family: 'Raleway', sans-serif;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	&__links {
-		display:flex;
+		display: flex;
 	}
 	/* Logo font style and positionement*/
 	&__logo {
-		font-weight:700;
-		font-size:18px;
-		flex-grow:2;
+		font-weight: 700;
+		font-size: 18px;
+		flex-grow: 2;
 	}
 	/* Font style for links and search */
-	&__links, &__search {
-		font-weight:400;
-		font-size:14px;
+	&__links,
+	&__search {
+		font-weight: 400;
+		font-size: 14px;
 	}
 	/* Each li elements of the ul */
 	&__links > li {
-		list-style-type:none;
-		padding:0 40px;
+		list-style-type: none;
+		padding: 0 40px;
 	}
 	/* Each a elements of the ul */
 	&__links > li > a {
-		text-decoration:none;
-		color:white;
+		text-decoration: none;
+		color: white;
 	}
 	/* Search positionement */
 	&__search {
-		flex-grow:2;
-		text-align:end;
+		flex-grow: 2;
+		text-align: end;
 	}
 	&__active {
-		width:50px;
-		height:10px;
-		background-color:#E67E37;
+		width: 50px;
+		height: 10px;
+		background-color: #e67e37;
 		margin: -5px 0 0 10px;
-		opacity:0.5;
-		position:absolute;
+		opacity: 0.5;
+		position: absolute;
 	}
 }
-
-
-
 
 @media (max-width: 750px) {
 	.hamburger {
@@ -64,14 +62,14 @@
 		margin: 0;
 		display: block;
 		&__links {
-			 display: block;
+			display: block;
 		}
 		&__logo {
-			 text-align: center;
-			 margin: 10px;
+			text-align: center;
+			margin: 10px;
 		}
 		&__search {
-			 display: none;
+			display: none;
 		}
 		&__links {
 			position: absolute;
@@ -82,10 +80,10 @@
 			will-change: transform;
 		}
 		&__links.is-active {
-			transform:translate(0vw);
+			transform: translate(0vw);
 		}
 		&__links > li {
-			list-style-type:none;
+			list-style-type: none;
 			background: grey;
 			border-top: 1px solid black;
 			border-bottom: 1px solid black;
@@ -96,7 +94,7 @@
 		&__links > li > a {
 			display: block;
 			width: 100vw;
-			z-index:100;
+			z-index: 100;
 			padding: 20px;
 		}
 		&__active {
@@ -104,8 +102,3 @@
 		}
 	}
 }
-
-
-
-
-

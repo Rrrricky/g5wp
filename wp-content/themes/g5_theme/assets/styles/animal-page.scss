@@ -7,15 +7,16 @@
 		width: 40%;
 		align-self: center;
 		justify-content: center;
+		margin-left: 5px;
 	}
 	&__img {
 		width: 60%;
-	}
+
 	&__img > img {
 		height: 100%;
 		width: 100%;
-		object-fit: scale-down;
-		// border: 2px solid blue;
+		object-fit: cover;
+
 	}
 	&__status {
 		display: flex;
@@ -24,6 +25,7 @@
 		font-size: 20px;
 		color: #7f8082;
 		margin: 15px 0px;
+		text-transform: uppercase;
 	}
 	&__title {
 		font-size: 65px;
@@ -34,8 +36,9 @@
 	}
 }
 .line {
-	flex-grow: 0.1;
-	border-bottom: 1px solid white;
+	flex-basis: 86px;
+
+	border-bottom: 2px solid #2a2e32;
 	z-index: 2;
 	margin: 20px;
 }
