@@ -1,0 +1,41 @@
+.animal-wrapper {
+	// Why 90 ? Navbar is 10 vh
+	height: 90vh;
+	display: flex;
+
+	&__text {
+		width: 40%;
+		align-self: center;
+		justify-content: center;
+	}
+	&__img {
+		width: 60%;
+	}
+	&__img > img {
+		height: 100%;
+		width: 100%;
+		object-fit: scale-down;
+		// border: 2px solid blue;
+	}
+	&__status {
+		display: flex;
+		align-items: center;
+		font-family: "Raleway", sans-serif;
+		font-size: 20px;
+		color: #7f8082;
+		margin: 15px 0px;
+	}
+	&__title {
+		font-size: 65px;
+		text-transform: uppercase;
+		&__smaller {
+			font-size: 45px;
+		}
+	}
+}
+.line {
+	flex-grow: 0.1;
+	border-bottom: 1px solid white;
+	z-index: 2;
+	margin: 20px;
+}

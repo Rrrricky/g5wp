@@ -33,7 +33,7 @@ $current-fz: 20px;
 $current-lh: 32px;
 $primary-font: "Didot";
 $primary-color: white;
-$primary-back-color: #232529;
+$primary-back-color: #000000;
 $button-color: #e67e37;
 
 @import "ball-mouse";
@@ -42,6 +42,7 @@ $button-color: #e67e37;
 @import "grid-menu";
 @import "home-slider";
 @import "404";
+@import "animal-page";
 @import "hamburgers/hamburgers.scss";
 @import "hamburgers/_base.scss";
 @import "hamburgers/types/_slider.scss";

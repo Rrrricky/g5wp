@@ -38,6 +38,14 @@
 .error-page{width:400px;margin:20vh auto;text-align:center}
 .error-page__title{font-size:55px;margin-bottom:30px}
 .error-page__link{text-decoration:underline}
+.animal-wrapper{height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex}
+.animal-wrapper__text{width:40%;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.animal-wrapper__img{width:60%}
+.animal-wrapper__img>img{height:100%;width:100%;-o-object-fit:scale-down;object-fit:scale-down}
+.animal-wrapper__status{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:15px 0}
+.animal-wrapper__title{font-size:65px;text-transform:uppercase}
+.animal-wrapper__title__smaller{font-size:45px}
+.line{-webkit-box-flex:.1;-ms-flex-positive:.1;flex-grow:.1;border-bottom:1px solid white;z-index:2;margin:20px}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:.7}
 .hamburger.is-active:hover{opacity:.7}
@@ -182,7 +190,7 @@
 .hamburger--slider-r.is-active .hamburger-inner{-webkit-transform:translate3d(0,10px,0) rotate(-45deg);transform:translate3d(0,10px,0) rotate(-45deg)}
 .hamburger--slider-r.is-active .hamburger-inner::before{-webkit-transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);opacity:0}
 .hamburger--slider-r.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-20px,0) rotate(90deg);transform:translate3d(0,-20px,0) rotate(90deg)}
-body{background:#232529;color:white;font-family:"Didot"}
+body{background:#000;color:white;font-family:"Didot"}
 @media(max-width:1200px){.custom-home-page__title{grid-column:1 / 5}
 .custom-home-page__subtitle{grid-column:1 / 4}
 .custom-home-page__button{grid-column:1 / 3}
