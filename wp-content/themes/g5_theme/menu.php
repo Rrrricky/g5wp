@@ -13,5 +13,5 @@
                 );
                 wp_nav_menu($args);
                 ?>
-	<p class="nav__search"><i class="fas fa-search"></i> Search</p>
+	<p class="nav__search"><i class="fas fa-search"></i> Recherche</p>
 </nav>

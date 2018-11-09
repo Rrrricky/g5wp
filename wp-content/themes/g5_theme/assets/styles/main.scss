@@ -31,23 +31,21 @@ $h5: 25px;
 $h1-lh: 70px;
 $current-fz: 20px;
 $current-lh: 32px;
-$primary-font:'Didot';
-$primary-color:white;
-$primary-back-color:#010101;
+$primary-font: "Didot";
+$primary-color: white;
+$primary-back-color: #232529;
 $button-color: #e67e37;
 
-@import 'ball-mouse';
-@import 'header';
-@import 'page-template';
-@import 'grid-menu';
-@import 'home-slider';
-@import '404';
-@import 'hamburgers/hamburgers.scss';
-@import 'hamburgers/_base.scss';
-@import 'hamburgers/types/_slider.scss';
-@import 'hamburgers/types/_slider-r.scss';
-
-
+@import "ball-mouse";
+@import "header";
+@import "page-template";
+@import "grid-menu";
+@import "home-slider";
+@import "404";
+@import "hamburgers/hamburgers.scss";
+@import "hamburgers/_base.scss";
+@import "hamburgers/types/_slider.scss";
+@import "hamburgers/types/_slider-r.scss";
 
 body {
 	background: $primary-back-color;

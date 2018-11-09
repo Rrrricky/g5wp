@@ -13,7 +13,7 @@
 			top: 0px;
 			left: 0px;
 			z-index: -2;
-			content: '';
+			content: "";
 			// background: transparent url(../../../pattern.png) repeat top left;
 		}
 		li {
@@ -25,25 +25,21 @@
 			}
 			&:nth-child(3) {
 				span {
-
 					animation-delay: 12s;
 				}
 			}
 			&:nth-child(4) {
 				span {
-
 					animation-delay: 18s;
 				}
 			}
 			&:nth-child(5) {
 				span {
-
 					animation-delay: 24s;
 				}
 			}
 			&:nth-child(6) {
 				span {
-
 					animation-delay: 30s;
 				}
 			}
@@ -70,13 +66,13 @@
 						animation-timing-function: ease-out;
 					}
 					17% {
-						opacity: 1
+						opacity: 1;
 					}
 					25% {
-						opacity: 0
+						opacity: 0;
 					}
 					100% {
-						opacity: 0
+						opacity: 0;
 					}
 				}
 			}
