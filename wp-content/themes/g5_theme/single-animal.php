@@ -12,11 +12,11 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
   <div class="animal-wrapper__header">
     <ul>
       <li>
-        <a href="http://localhost:3000/g5_wordpress/">Accueil</a>
+        <a href="../..">Accueil</a>
       </li>
       <i class="fas fa-arrow-right"></i>
       <li>
-        <a href="http://localhost:3000/g5_wordpress/animaux/">Animaux</a>
+        <a href="../../animaux">Animaux</a>
       </li>
       <i class="fas fa-arrow-right"></i>
       <li>
