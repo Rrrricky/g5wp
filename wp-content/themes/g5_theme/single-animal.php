@@ -32,7 +32,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
   <!-- Texte -->
   <div class="animal-wrapper__text" style="font-size:40px">
     <p class="animal-wrapper__statut">
-      Espece
+      Espèce
       <span class="line"></span>
     </p>
     <p class="animal-wrapper__title">
@@ -52,6 +52,11 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
       <i class="far fa-play-circle"></i>
     </a>
   </div>
+	<div class="animal-wrapper__mouse">
+  	<div class="animal-wrapper__mouse__mouse-icon">
+    	<span class="animal-wrapper__mouse__mouse-icon__mouse-wheel"></span>
+  	</div>
+	</div>
 </div>
 
 <?php get_footer() ?>

@@ -1,7 +1,10 @@
+$navbarHeight: 10vh;
+
 .animal-wrapper {
 	// Why 90 ? Navbar is 10 vh
 	height: 90vh;
 	display: flex;
+	position: relative;
 	&__header {
 		height: 50px;
 		width: 300px;
@@ -34,7 +37,7 @@
 		bottom: 0;
 		a {
 			font-family: "Raleway", sans-serif;
-			font-size: 18px;
+			font-size: 15px;
 			color: #ffffff;
 			opacity: 0.5;
 			display: flex;
@@ -45,7 +48,7 @@
 			}
 			i {
 				margin: 10px auto auto auto;
-				font-size: 30px;
+				font-size: 25px;
 			}
 		}
 	}
@@ -86,7 +89,73 @@
 		border-bottom: 2px solid #2a2e32;
 		margin: 20px;
 	}
+	&__mouse {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		&__mouse-icon {
+			width: 16px;
+			height: 30px;
+			border: 2px solid white;
+			border-radius: 15px;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			&__mouse-wheel {
+				height: 6px;
+				margin: 2px auto 0;
+				display: block;
+				width: 3px;
+				background-color: white;
+				border-radius: 50%;
+				-webkit-animation: 1.6s ease infinite wheel-up-down;
+				-moz-animation: 1.6s ease infinite wheel-up-down;
+				animation: 1.6s ease infinite wheel-up-down;
+			}
+		}
+	}
 }
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1000px) {
 	.animal-wrapper {
 		&__text {
