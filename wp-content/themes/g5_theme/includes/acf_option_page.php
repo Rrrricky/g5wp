@@ -31,6 +31,13 @@ function add_acf_option_page_support(){
       'page_title'    => 'Options de la Page 404',
       'menu_title'    => 'Page 404',
 			'parent_slug'   => 'options',
-			'menu_slug' => 'qq'
+			'menu_slug' => '404-parameter'
+    ));
+
+		acf_add_options_sub_page(array(
+      'page_title'    => 'Options de la souris',
+      'menu_title'    => 'Souris',
+			'parent_slug'   => 'options',
+			'menu_slug' => 'mouse-parameter'
     ));
 }}

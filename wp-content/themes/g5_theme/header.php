@@ -14,9 +14,16 @@
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+	<body <?php body_class(); ?>>
         <header id="header">
+		<?php
+			$mouse = get_field('type_of_mouse', 'options');
+			if($mouse == 'experimental'):
+		?>
 			<div class="wrap">
-				<div class="wrap__ball wrap__ball-js"></div>
+				<div class="wrap__ball wrap__ball-js" style="background-color: <?php the_field('mouse_color', 'options') ?>;"></div>
 			</div>
+		<?php
+			endif;
+		?>
         </header>

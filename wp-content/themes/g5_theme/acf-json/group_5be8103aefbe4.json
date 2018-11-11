@@ -1,0 +1,73 @@
+{
+    "key": "group_5be8103aefbe4",
+    "title": "Souris",
+    "fields": [
+        {
+            "key": "field_5be8104d2008e",
+            "label": "Type de souris",
+            "name": "type_of_mouse",
+            "type": "radio",
+            "instructions": "Choisir le type de souris du site.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "basic": "Basique",
+                "experimental": "Expérimentale"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5be811062008f",
+            "label": "Couleur de souris",
+            "name": "mouse_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5be8104d2008e",
+                        "operator": "==",
+                        "value": "experimental"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "mouse-parameter"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1541938403
+}

@@ -93,12 +93,12 @@ setInterval(()=>{
 		let ball = document.querySelector('.wrap__ball-js')
 
     if(acceleration>0){
-			ball.style.width = speed/100+60 + 'px'
-			ball.style.height = speed/100+60 + 'px'
+			ball.style.width = speed/100+10 + 'px'
+			ball.style.height = speed/100+10 + 'px'
 		}
     else{
-      ball.style.height = '60px'
-      ball.style.width = '60px'
+      ball.style.height = '20px'
+      ball.style.width = '20px'
     }
   }
 
@@ -112,5 +112,6 @@ setInterval(()=>{
 
 
 
-
-const newMouse = new NewMouse()
+if(document.querySelector(".wrap")){
+	const newMouse = new NewMouse()
+}

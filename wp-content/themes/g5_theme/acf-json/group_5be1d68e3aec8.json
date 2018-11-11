@@ -46,7 +46,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "qq"
+                "value": "404-parameter"
             }
         ]
     ],

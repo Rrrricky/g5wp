@@ -1,5 +1,5 @@
 .wrap{position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1}
-.wrap__ball{width:60px;height:60px;background:0;border:1px solid grey;border-radius:100%;position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;pointer-events:none;-webkit-transition:width .4s ease,height .4s ease;transition:width .4s ease,height .4s ease}
+.wrap__ball{width:20px;height:20px;border:1px solid grey;border-radius:100%;position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;pointer-events:none;-webkit-transition:width .4s ease,height .4s ease;transition:width .4s ease,height .4s ease}
 .hamburger{display:none !important;background-color:white !important;position:fixed;top:0;right:0}
 .nav{margin:0 40px;height:10vh;color:white;font-family:"Raleway",sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .nav__links{display:-webkit-box;display:-ms-flexbox;display:flex}

@@ -1,0 +1,74 @@
+{
+    "key": "group_5be5cc5e11760",
+    "title": "Animaux",
+    "fields": [
+        {
+            "key": "field_5be5cc6127f0f",
+            "label": "Image background",
+            "name": "first_image",
+            "type": "image",
+            "instructions": "La première image qui s'affiche sur la page de l'animal. Il faut qu'elle ait un fond complètement noir ou qu'elle soit détourée.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "page-thumb",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5be5ccb927f11",
+            "label": "Statut",
+            "name": "statut",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Stable": "Stable",
+                "En danger": "En danger",
+                "Éteinte": "Éteinte"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1541935147
+}

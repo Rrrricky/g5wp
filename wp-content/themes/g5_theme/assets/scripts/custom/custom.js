@@ -93,11 +93,11 @@ function () {
           var ball = document.querySelector('.wrap__ball-js');
 
           if (acceleration > 0) {
-            ball.style.width = _speed / 100 + 60 + 'px';
-            ball.style.height = _speed / 100 + 60 + 'px';
+            ball.style.width = _speed / 100 + 10 + 'px';
+            ball.style.height = _speed / 100 + 10 + 'px';
           } else {
-            ball.style.height = '60px';
-            ball.style.width = '60px';
+            ball.style.height = '20px';
+            ball.style.width = '20px';
           }
         }
 
@@ -110,7 +110,9 @@ function () {
   return NewMouse;
 }();
 
-var newMouse = new NewMouse();
+if (document.querySelector(".wrap")) {
+  var newMouse = new NewMouse();
+}
 "use strict";
 
 /* Get navbar's items */
