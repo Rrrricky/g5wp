@@ -20,33 +20,41 @@
 		line-height: $current-lh;
 		font-family: "Raleway", sans-serif;
 	}
-	&__button {
-		font-size: $current-fz;
+	&__link {
+		display: inline-block;
+		width: 100%;
 		grid-column-start: 1;
 		grid-row-start: 5;
-		height: 50px;
 		background: $button-color;
-		cursor: pointer;
-		text-shadow: 0px -1px #333;
 		border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 		border-radius: 5px;
+		height: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		transition: background-color 0.2s;
+		cursor: pointer;
 		&:hover {
 			background-color: darken($button-color, 5%);
 		}
 		&:active {
 			transform: translate(0px, 2px);
 		}
-		&__line {
-			display: inline-block;
-			background: white;
-			width: 50px;
-			height: 1px;
-			margin-left: 15px;
-			box-shadow: 0px -1px #333;
+		&__button {
+			font-size: $current-fz;
+			text-shadow: 0px -1px #333;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			&__line {
+				display: inline-block;
+				background: white;
+				width: 50px;
+				height: 1px;
+				margin-left: 15px;
+				box-shadow: 0px -1px #333;
+				cursor: pointer;
+			}
 		}
 	}
 	&__catch {
