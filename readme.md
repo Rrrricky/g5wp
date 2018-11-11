@@ -13,7 +13,7 @@ ___
 - Wordpress + Gulp + ACF
 - SASS (BEM)
 - ES6
-- Co-working structure (dploy + WP_Sync_DB)
+- Co-working structure (dploy + WP_Sync_DB + Git flow)
 
 ## Features
 - Custom back-office (pictures, menu, texts, mouse)
