@@ -8,7 +8,16 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
-
+		<title>
+			<?php
+				bloginfo('name');
+				if (wp_title('', false)) {
+					echo '|';
+				} else {
+					echo bloginfo('description');
+				} wp_title('');
+			?>
+		</title>
 
 
         <!-- Execution de la fonction wp_head() obligatoire ! -->
