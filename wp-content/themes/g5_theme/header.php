@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 
-		<?php include 'menu.php'; ?>
+
 
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
@@ -26,4 +26,5 @@
 		<?php
 			endif;
 		?>
+		<?php include 'menu.php'; ?>
         </header>
