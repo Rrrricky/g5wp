@@ -28,12 +28,12 @@ Template Name: Home
 
 		<h1 class="custom-home-page__title"><?php the_field('title'); ?></h1>
 		<div class="custom-home-page__subtitle"><?php the_field('subtitle'); ?></div>
-		<a class="custom-home-page__link" href="<?php echo esc_url(get_permalink(get_page_by_title('Animaux'))); ?>">
-			<button class="custom-home-page__link__button">
+		<button class="custom-home-page__button">
+			<a class="custom-home-page__button__link" href="<?php echo esc_url(get_permalink(get_page_by_title('Animaux'))); ?>">
 				<?php the_field('button_text'); ?>
-				<div class="custom-home-page__link__button__line"></div>
-			</button>
-		</a>
+				<div class="custom-home-page__button__link__line"></div>
+			</a>
+		</button>
 		<span class="custom-home-page__catch"><?php the_field('slogan'); ?></span>
 	</main>
 <?php get_footer() ?>
