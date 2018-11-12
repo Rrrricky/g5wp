@@ -1,137 +1,127 @@
 $navbarHeight: 10vh;
-
-.animal-wrapper {
-	border: 2px solid red;
-	// Why 90 ? Navbar is 10 vh
-	height: 90vh;
-	display: flex;
-	position: relative;
-	&__header {
-		height: 50px;
-		width: 300px;
-		position: absolute;
-		ul {
+.wrapperAnimal {
+	&__home {
+		height: 80vh;
+		position: relative;
+		/* Header */
+		&__header {
+			height: 50px;
+			width: 340px;
+			position: absolute;
+			ul {
+				display: flex;
+				justify-content: space-between;
+				font-family: "Raleway", sans-serif;
+				font-size: 12px;
+				margin-left: 40px;
+				color: #777777;
+				&:nth-child(2) {
+					color: white;
+				}
+				// The orange box
+				div {
+					width: 48px;
+					height: 10px;
+					background-color: #e67e37;
+					opacity: 0.5;
+					position: absolute;
+				}
+			}
+		}
+		/* Content */
+		&__content {
+			height: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1.2fr;
+			&__text {
+				align-self: center;
+				&__statut {
+					display: flex;
+					align-items: center;
+					font-family: "Raleway", sans-serif;
+					font-size: 20px;
+					color: #7f8082;
+					margin: 30px 0px;
+					text-transform: uppercase;
+				}
+				&__title {
+					font-size: 65px;
+					text-transform: uppercase;
+					&__smaller {
+						font-size: 45px;
+					}
+				}
+			}
+			&__img {
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+			.line {
+				flex-basis: 86px;
+				border-bottom: 2px solid #2a2e32;
+				margin: 20px;
+			}
+		}
+		/* Footer */
+		&__footer {
 			display: flex;
 			justify-content: space-between;
-			font-family: "Raleway", sans-serif;
-			font-size: 12px;
-			margin-left: 40px;
-			color: #777777;
-			&:nth-child(2) {
-				color: white;
+			align-items: center;
+			// Margin on the footer childs
+			* {
+				margin: 0 10px;
 			}
-			// The orange box
-			div {
-				width: 48px;
-				height: 10px;
-				background-color: #e67e37;
-				opacity: 0.5;
-				position: absolute;
+			&__video {
+				a {
+					font-family: "Raleway", sans-serif;
+					font-size: 15px;
+					color: #ffffff;
+					opacity: 0.5;
+					display: flex;
+					flex-direction: column;
+					transition: ease 1s;
+					&:hover {
+						opacity: 1;
+					}
+					i {
+						margin: 10px auto auto auto;
+						font-size: 25px;
+					}
+				}
 			}
-		}
-	}
-
-	&__video {
-		margin-left: 40px;
-		margin-bottom: 20px;
-		position: absolute;
-		bottom: 0;
-		a {
-			font-family: "Raleway", sans-serif;
-			font-size: 15px;
-			color: #ffffff;
-			opacity: 0.5;
-			display: flex;
-			flex-direction: column;
-			transition: ease 1s;
-			&:hover {
-				opacity: 1;
+			&__mouse {
+				border: 5px solid yellow;
+				transform: translateX(-50%);
+				&__mouse-icon {
+					width: 16px;
+					height: 30px;
+					border: 2px solid white;
+					border-radius: 15px;
+					margin: 0 auto;
+					position: relative;
+					text-align: center;
+					&__mouse-wheel {
+						height: 6px;
+						margin: 2px auto 0;
+						display: block;
+						width: 3px;
+						background-color: white;
+						border-radius: 50%;
+						-webkit-animation: 1.6s ease infinite wheel-up-down;
+						-moz-animation: 1.6s ease infinite wheel-up-down;
+						animation: 1.6s ease infinite wheel-up-down;
+					}
+				}
 			}
-			i {
-				margin: 10px auto auto auto;
-				font-size: 25px;
-			}
-		}
-	}
-
-	&__text {
-		width: 40%;
-		align-self: center;
-		justify-content: center;
-		margin-left: 5px;
-	}
-	&__img {
-		width: 60%;
-		z-index: -3;
-		img {
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-		}
-	}
-	&__statut {
-		display: flex;
-		align-items: center;
-		font-family: "Raleway", sans-serif;
-		font-size: 20px;
-		color: #7f8082;
-		margin: 15px 0px;
-		text-transform: uppercase;
-	}
-	&__title {
-		font-size: 65px;
-		text-transform: uppercase;
-		&__smaller {
-			font-size: 45px;
-		}
-	}
-	.line {
-		flex-basis: 86px;
-		border-bottom: 2px solid #2a2e32;
-		margin: 20px;
-	}
-	&__mouse {
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		&__mouse-icon {
-			width: 16px;
-			height: 30px;
-			border: 2px solid white;
-			border-radius: 15px;
-			margin: 0 auto;
-			position: relative;
-			text-align: center;
-			&__mouse-wheel {
-				height: 6px;
-				margin: 2px auto 0;
-				display: block;
-				width: 3px;
-				background-color: white;
-				border-radius: 50%;
-				-webkit-animation: 1.6s ease infinite wheel-up-down;
-				-moz-animation: 1.6s ease infinite wheel-up-down;
-				animation: 1.6s ease infinite wheel-up-down;
+			&__list {
+				border: 5px solid yellow;
 			}
 		}
 	}
 }
-
-@media (max-width: 1000px) {
-	.animal-wrapper {
-		&__text {
-			position: absolute; /* postulat de départ */
-			top: 50%;
-			left: 30%; /* à 50%/50% du parent référent */
-			transform: translate(
-				-50%,
-				-50%
-			); /* décalage de 50% de sa propre taille */
-		}
-	}
-}
-
 /* MOUSE */
 @-webkit-keyframes wheel-up-down {
 	0% {

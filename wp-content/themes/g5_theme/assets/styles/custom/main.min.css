@@ -39,25 +39,27 @@
 .error-page{width:400px;margin:20vh auto;text-align:center}
 .error-page__title{font-size:55px;margin-bottom:30px}
 .error-page__link{text-decoration:underline}
-.animal-wrapper{border:2px solid red;height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}
-.animal-wrapper__header{height:50px;width:300px;position:absolute}
-.animal-wrapper__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
-.animal-wrapper__header ul:nth-child(2){color:white}
-.animal-wrapper__header ul div{width:48px;height:10px;background-color:#e67e37;opacity:.5;position:absolute}
-.animal-wrapper__video{margin-left:40px;margin-bottom:20px;position:absolute;bottom:0}
-.animal-wrapper__video a{font-family:"Raleway",sans-serif;font-size:15px;color:#fff;opacity:.5;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:ease 1s;transition:ease 1s}
-.animal-wrapper__video a:hover{opacity:1}
-.animal-wrapper__video a i{margin:10px auto auto auto;font-size:25px}
-.animal-wrapper__text{width:40%;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:5px}
-.animal-wrapper__img{width:60%;z-index:-3}
-.animal-wrapper__img img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
-.animal-wrapper__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:15px 0;text-transform:uppercase}
-.animal-wrapper__title{font-size:65px;text-transform:uppercase}
-.animal-wrapper__title__smaller{font-size:45px}
-.animal-wrapper .line{-ms-flex-preferred-size:86px;flex-basis:86px;border-bottom:2px solid #2a2e32;margin:20px}
-.animal-wrapper__mouse{position:absolute;bottom:20px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
-.animal-wrapper__mouse__mouse-icon{width:16px;height:30px;border:2px solid white;border-radius:15px;margin:0 auto;position:relative;text-align:center}
-.animal-wrapper__mouse__mouse-icon__mouse-wheel{height:6px;margin:2px auto 0;display:block;width:3px;background-color:white;border-radius:50%;-webkit-animation:1.6s ease infinite wheel-up-down;animation:1.6s ease infinite wheel-up-down}
+.wrapperAnimal__home{height:80vh;position:relative}
+.wrapperAnimal__home__header{height:50px;width:340px;position:absolute}
+.wrapperAnimal__home__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
+.wrapperAnimal__home__header ul:nth-child(2){color:white}
+.wrapperAnimal__home__header ul div{width:48px;height:10px;background-color:#e67e37;opacity:.5;position:absolute}
+.wrapperAnimal__home__content{height:100%;display:grid;grid-template-columns:1fr 1.2fr}
+.wrapperAnimal__home__content__text{-ms-flex-item-align:center;align-self:center}
+.wrapperAnimal__home__content__text__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:30px 0;text-transform:uppercase}
+.wrapperAnimal__home__content__text__title{font-size:65px;text-transform:uppercase}
+.wrapperAnimal__home__content__text__title__smaller{font-size:45px}
+.wrapperAnimal__home__content__img img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
+.wrapperAnimal__home__content .line{-ms-flex-preferred-size:86px;flex-basis:86px;border-bottom:2px solid #2a2e32;margin:20px}
+.wrapperAnimal__home__footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.wrapperAnimal__home__footer *{margin:0 10px}
+.wrapperAnimal__home__footer__video a{font-family:"Raleway",sans-serif;font-size:15px;color:#fff;opacity:.5;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:ease 1s;transition:ease 1s}
+.wrapperAnimal__home__footer__video a:hover{opacity:1}
+.wrapperAnimal__home__footer__video a i{margin:10px auto auto auto;font-size:25px}
+.wrapperAnimal__home__footer__mouse{border:5px solid yellow;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.wrapperAnimal__home__footer__mouse__mouse-icon{width:16px;height:30px;border:2px solid white;border-radius:15px;margin:0 auto;position:relative;text-align:center}
+.wrapperAnimal__home__footer__mouse__mouse-icon__mouse-wheel{height:6px;margin:2px auto 0;display:block;width:3px;background-color:white;border-radius:50%;-webkit-animation:1.6s ease infinite wheel-up-down;animation:1.6s ease infinite wheel-up-down}
+.wrapperAnimal__home__footer__list{border:5px solid yellow}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:.7}
 .hamburger.is-active:hover{opacity:.7}
@@ -207,7 +209,6 @@ body{background:#000;color:white;font-family:"Didot"}
 .custom-home-page__subtitle{grid-column:1 / 4}
 .custom-home-page__button{grid-column:1 / 3}
 .custom-home-page__catch{grid-column:6 / 3}
-}@media(max-width:1000px){.animal-wrapper__text{position:absolute;top:50%;left:30%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 }@media(max-width:750px){.wrap__ball{display:none}
 .hamburger{display:block !important}
 .nav{margin:0;display:block}
