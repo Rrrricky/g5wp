@@ -93,7 +93,6 @@ $navbarHeight: 10vh;
 				}
 			}
 			&__mouse {
-				border: 5px solid yellow;
 				transform: translateX(-50%);
 				&__mouse-icon {
 					width: 16px;
@@ -115,9 +114,6 @@ $navbarHeight: 10vh;
 						animation: 1.6s ease infinite wheel-up-down;
 					}
 				}
-			}
-			&__list {
-				border: 5px solid yellow;
 			}
 		}
 	}

@@ -7,7 +7,7 @@
 
 function thumbnails_theme_support(){
   add_theme_support('post-thumbnails');
-  add_image_size('page-thumb', 702, 824, false);
+  add_image_size('animal-home-thumb', 702, 702, false);
   add_image_size('home-thumb', 600, 9999, false);
   add_image_size('menu-thumb', 418, 284, true);
 }

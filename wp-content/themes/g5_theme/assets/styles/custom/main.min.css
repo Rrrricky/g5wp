@@ -56,10 +56,9 @@
 .wrapperAnimal__home__footer__video a{font-family:"Raleway",sans-serif;font-size:15px;color:#fff;opacity:.5;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:ease 1s;transition:ease 1s}
 .wrapperAnimal__home__footer__video a:hover{opacity:1}
 .wrapperAnimal__home__footer__video a i{margin:10px auto auto auto;font-size:25px}
-.wrapperAnimal__home__footer__mouse{border:5px solid yellow;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.wrapperAnimal__home__footer__mouse{-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 .wrapperAnimal__home__footer__mouse__mouse-icon{width:16px;height:30px;border:2px solid white;border-radius:15px;margin:0 auto;position:relative;text-align:center}
 .wrapperAnimal__home__footer__mouse__mouse-icon__mouse-wheel{height:6px;margin:2px auto 0;display:block;width:3px;background-color:white;border-radius:50%;-webkit-animation:1.6s ease infinite wheel-up-down;animation:1.6s ease infinite wheel-up-down}
-.wrapperAnimal__home__footer__list{border:5px solid yellow}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:.7}
 .hamburger.is-active:hover{opacity:.7}

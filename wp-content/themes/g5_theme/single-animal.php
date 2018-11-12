@@ -26,7 +26,7 @@
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <?php echo wp_get_attachment_image( get_field('first_image'), 'full' ); ?>
+        <?php echo wp_get_attachment_image( get_field('first_image'), 'animal-home-thumb' ); ?>
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
