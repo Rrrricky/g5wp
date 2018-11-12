@@ -39,7 +39,7 @@
 .error-page{width:400px;margin:20vh auto;text-align:center}
 .error-page__title{font-size:55px;margin-bottom:30px}
 .error-page__link{text-decoration:underline}
-.animal-wrapper{height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}
+.animal-wrapper{border:2px solid red;height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}
 .animal-wrapper__header{height:50px;width:300px;position:absolute}
 .animal-wrapper__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
 .animal-wrapper__header ul:nth-child(2){color:white}
