@@ -31,7 +31,7 @@ Template Name: Home
 		<button class="custom-home-page__button">
 			<a class="custom-home-page__button__link" href="<?php echo esc_url(get_permalink(get_page_by_title('Animaux'))); ?>">
 				<?php the_field('button_text'); ?>
-				<div class="custom-home-page__button__link__line"></div>
+				<span class="custom-home-page__button__link__line"></span>
 			</a>
 		</button>
 		<span class="custom-home-page__catch"><?php the_field('slogan'); ?></span>
