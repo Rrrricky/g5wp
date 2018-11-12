@@ -117,6 +117,56 @@ $navbarHeight: 10vh;
 			}
 		}
 	}
+	&__habitat {
+		.dotColored {
+			color: #e67e37;
+		}
+		height: 800px;
+		display: block;
+		margin-top: 60px;
+		&__header {
+			font-weight: bold;
+			font-size: 197px;
+			text-align: center;
+		}
+		&__content {
+			height: 530px;
+			display: flex;
+
+			&__map {
+				width: 818px;
+				height: 530px;
+				position: absolute;
+				right: 0;
+				margin-right: 150px;
+
+				z-index: -1;
+			}
+			&__text {
+				align-self: center;
+				margin-top: 120px;
+				display: flex;
+
+				&__main {
+					width: 466px;
+					font-family: "Raleway";
+					font-size: 18px;
+					align-self: center;
+				}
+				&__side {
+					align-self: center;
+					transform: rotate(-90deg);
+					font-weight: bold;
+					font-size: 23px;
+					width: 174px;
+					margin-right: -20px;
+					border-bottom: 5px solid #888e94;
+					padding-bottom: 25px;
+					text-align: justify;
+				}
+			}
+		}
+	}
 }
 /* MOUSE */
 @-webkit-keyframes wheel-up-down {

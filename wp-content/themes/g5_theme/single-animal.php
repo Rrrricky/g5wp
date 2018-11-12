@@ -88,6 +88,25 @@
       </div>
     </div>
   </section>
+  <!-- Section Habitat -->
+  <section class="wrapperAnimal__habitat">
+    <!-- Header interne -->
+    <div class="wrapperAnimal__habitat__header">
+      L'habitat<span class="dotColored">.</span>
+    </div>
+    <!-- Content -->
+    <div class="wrapperAnimal__habitat__content">
+      <div class="wrapperAnimal__habitat__content__map">
+        <img src="https://placeimg.com/818/530/any">
+      </div>
+      <div class="wrapperAnimal__habitat__content__text">
+        <div class="wrapperAnimal__habitat__content__text__side">Iles Bornéo et Sumatra</div>
+        <div class="wrapperAnimal__habitat__content__text__main">        l'Orang-outan, est un genre de primates appartenant à la famille des hominidés.
+        Son aire de répartition, en voie de rétrécissement, se trouve en Insulinde, plus précisément dans les îles de Bornéo et Sumatra.
+        Les orangs-outans vivent dans les forêts primaires et secondaires. Bien qu’on les retrouve à plus de 1 500 mètres au-dessus du niveau de la mer, ils vivent pour la plupart dans les zones de basses terres et préfèrent les forêts de vallées fluviales ou les plaines inondées.</div>
+      </div>
+    </div>
+  </section>
 </div>
 <!-- Main Footer -->
 <?php get_footer() ?>
