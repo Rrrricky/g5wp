@@ -12,7 +12,7 @@
 .custom-home-page{margin:0 40px;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(4,minmax(50px,auto));grid-gap:30px;-ms-flex-line-pack:center;align-content:center;overflow-y:hidden}
 .custom-home-page__title{font-size:55px;line-height:70px;grid-column:1 / 4;grid-row-start:3}
 .custom-home-page__subtitle{font-size:20px;grid-column:1 / 3;grid-row-start:4;line-height:32px;font-family:"Raleway",sans-serif}
-.custom-home-page__link{display:inline-block;width:100%;grid-column-start:1;grid-row-start:5;background:#e67e37;border-bottom:2px solid rgba(0,0,0,0.5);border-radius:5px;height:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:background-color .2s;transition:background-color .2s;cursor:pointer}
+.custom-home-page__link{display:block;width:100%;grid-column-start:1;grid-row-start:5;background:#e67e37;border-bottom:2px solid rgba(0,0,0,0.5);border-radius:5px;height:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:background-color .2s;transition:background-color .2s;cursor:pointer}
 .custom-home-page__link:hover{background-color:#e36f20}
 .custom-home-page__link:active{-webkit-transform:translate(0,2px);transform:translate(0,2px)}
 .custom-home-page__link__button{font-size:20px;text-shadow:0 -1px #333;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer}
