@@ -38,6 +38,7 @@ $navbarHeight: 10vh;
 			display: grid;
 			grid-template-columns: 1fr 1.2fr;
 			&__text {
+				padding-left: 20px;
 				align-self: center;
 				&__statut {
 					display: flex;
@@ -53,6 +54,11 @@ $navbarHeight: 10vh;
 					text-transform: uppercase;
 					&__smaller {
 						font-size: 45px;
+					}
+					&__desc {
+						font-weight: regular;
+						font-size: 16px;
+						max-width: 50%;
 					}
 				}
 			}

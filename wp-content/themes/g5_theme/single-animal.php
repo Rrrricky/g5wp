@@ -38,6 +38,13 @@
           <?php the_title(); ?>
         </p>
         <p class="wrapperAnimal__home__content__text__statut">
+          Description
+          <span class="line"></span>
+        </p>
+        <p class="wrapperAnimal__home__content__text__title__desc">
+          <?php the_field('desc'); ?>
+        </p>
+        <p class="wrapperAnimal__home__content__text__statut">
           Statut
         <span class="line"></span>
         </p>
