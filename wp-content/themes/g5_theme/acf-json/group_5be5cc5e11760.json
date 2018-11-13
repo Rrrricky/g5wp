@@ -5,7 +5,7 @@
         {
             "key": "field_5be5cc6127f0f",
             "label": "Image de home",
-            "name": "animal_home",
+            "name": "animalhome",
             "type": "image",
             "instructions": "La première image qui s'affiche sur la page de l'animal. Il faut qu'elle ait un fond complètement noir ou qu'elle soit détourée.",
             "required": 1,
@@ -29,7 +29,7 @@
         {
             "key": "field_5be5ccb927f11",
             "label": "Statut",
-            "name": "animal_statut",
+            "name": "animalstatut",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -55,10 +55,10 @@
         {
             "key": "field_5beaac4013ae8",
             "label": "Description",
-            "name": "animal_desc",
+            "name": "animaldesc",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -73,8 +73,8 @@
         },
         {
             "key": "field_5beaac5f6170c",
-            "label": "Img Habitat",
-            "name": "animal_habitat_img",
+            "label": "Habitat",
+            "name": "animalhabitatimg",
             "type": "image",
             "instructions": "une iamge pour l'habitat",
             "required": 0,
@@ -98,7 +98,7 @@
         {
             "key": "field_5beab1495e4dc",
             "label": "Lieu de vie Habitat",
-            "name": "animal_habitat_location",
+            "name": "animalhabitatlocation",
             "type": "text",
             "instructions": "Champs utilisé sur le côté du texte HABITAT",
             "required": 0,
@@ -117,7 +117,7 @@
         {
             "key": "field_5beab17f5e4dd",
             "label": "Texte Habitat",
-            "name": "animal_habitat_text",
+            "name": "animalhabitattext",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -136,7 +136,7 @@
         {
             "key": "field_5beaaeeac75f4",
             "label": "Img Alimentation",
-            "name": "animal_food_img",
+            "name": "animalfoodimg",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -160,7 +160,7 @@
         {
             "key": "field_5beab264cace0",
             "label": "Texte alimentation",
-            "name": "animal_food_text",
+            "name": "animalfoodtext",
             "type": "text",
             "instructions": "Le texte de la partie alimentation",
             "required": 0,
@@ -179,7 +179,7 @@
         {
             "key": "field_5beaaff4592a4",
             "label": "Img Disparition",
-            "name": "animal_disappear",
+            "name": "animaldisappearimg",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -203,7 +203,7 @@
         {
             "key": "field_5beab2c0cace1",
             "label": "Texte Disparition",
-            "name": "animal_disappear_text",
+            "name": "animaldisappeartext",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -222,7 +222,7 @@
         {
             "key": "field_5beab07f7893d",
             "label": "Img Donation",
-            "name": "animal_donation",
+            "name": "animaldonationimg",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -261,5 +261,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1542108125
+    "modified": 1542112898
 }

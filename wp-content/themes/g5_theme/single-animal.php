@@ -26,7 +26,7 @@
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <?php echo wp_get_attachment_image( get_field('animal_home'), 'animal-home-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animalhome'), 'animal-home-thumb' ); ?>
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -42,14 +42,14 @@
           <span class="line"></span>
         </p>
         <p class="wrapperAnimal__home__content__text__title__desc">
-          <?php the_field('animal_desc'); ?>
+          <?php the_field('animaldesc'); ?>
         </p>
         <p class="wrapperAnimal__home__content__text__statut">
           Statut
         <span class="line"></span>
         </p>
         <p class="wrapperAnimal__home__content__text__title__smaller">
-          <?php the_field('statut'); ?>
+          <?php the_field('animalstatut'); ?>
         </p>
       </div>
     </div>
@@ -105,11 +105,11 @@
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
         <!-- <img src="http://placehold.jp/818x530.png"> -->
-        <?php echo wp_get_attachment_image( get_field('animal_habitat_img'), 'animal-habitat-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animalhabitatimg'), 'animal-habitat-thumb' ); ?>
       </div>
       <div class="wrapperAnimal__habitat__content__text">
-        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animal_habitat_location'); ?></div>
-        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animal_habitat_text'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animalhabitatlocation'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animalhabitattext'); ?></div>
       </div>
     </div>
   </section>
@@ -123,11 +123,11 @@
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <?php echo wp_get_attachment_image( get_field('animal_food_img'), 'animal-food-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animalfoodimg'), 'animal-food-thumb' ); ?>
         <!-- <img src="http://placehold.jp/1014x941.png"> -->
       </div>
       <div class="wrapperAnimal__food__content__text">
-        <?php the_field('animal_food_text'); ?>
+        <?php the_field('animalfoodtext'); ?>
       </div>
     </div>
   </section>
@@ -140,10 +140,10 @@
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
       <div class="wrapperAnimal__disappearance__content__text">
-        <?php the_field('animal_disappear_text'); ?>
+        <?php the_field('animaldisappeartext'); ?>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
-        <?php echo wp_get_attachment_image( get_field('animal_disappear'), 'animal-disappear-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animaldisappearimg'), 'animal-disappear-thumb' ); ?>
         <!-- <img src="http://placehold.jp/802x603.png"> -->
       </div>
     </div>
@@ -153,7 +153,7 @@
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <?php echo wp_get_attachment_image( get_field('animal_donation'), 'animal-donation-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animaldonationimg'), 'animal-donation-thumb' ); ?>
         <!-- <img src="http://placehold.jp/1440x720.png"> -->
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
