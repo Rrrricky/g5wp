@@ -76,7 +76,7 @@
 .wrapperAnimal__disappearance{margin-top:90px}
 .wrapperAnimal__disappearance__header{font-size:142px;font-weight:Bold;margin-left:40px}
 .wrapperAnimal__disappearance__content{margin-top:40px;display:-webkit-box;display:-ms-flexbox;display:flex;height:603px}
-.wrapperAnimal__disappearance__content__text{font-size:18px;font-family:"Raleway";color:#888e94;-ms-flex-item-align:center;align-self:center;z-index:1;text-align:justify;width:60%}
+.wrapperAnimal__disappearance__content__text{font-size:18px;font-family:"Raleway";color:#888e94;-ms-flex-item-align:center;align-self:center;z-index:1;text-align:justify;width:60%;margin-left:25px}
 .wrapperAnimal__disappearance__content__image{position:absolute;right:0}
 .wrapperAnimal__donations__content{margin-top:150px;height:720px;width:100%;position:relative}
 .wrapperAnimal__donations__content__image img{width:100%;height:720px;-o-object-fit:cover;object-fit:cover}
