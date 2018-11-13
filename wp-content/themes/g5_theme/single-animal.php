@@ -97,7 +97,7 @@
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="https://placeimg.com/818/530/animals">
+        <img src="http://placehold.jp/818x530.png">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
         <div class="wrapperAnimal__habitat__content__text__side">Iles Bornéo et Sumatra</div>
@@ -117,11 +117,54 @@
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <img src="https://placeimg.com/1014/941/animals">
+        <img src="http://placehold.jp/1014x941.png">
       </div>
       <div class="wrapperAnimal__food__content__text">
         Les orangs-outans sont parmi les plus arboricoles des grands singes. Ils passent la majeure partie de leur temps dans les arbres, à la recherche de nourriture. L'animal se nourrit la plupart du temps de fruits, de jeunes pousses, d'écorce, de petits vertébrés, d'œufs d'oiseaux et d'insectes.
         Principalement frugivore (durians, fruits du jaquier, mangues, litchis, mangoustans, figues) mais se nourrit aussi de feuilles, lianes, jeunes pousses et petites proies animales (termites, fourmis, contenu des nids d’oiseaux)
+      </div>
+    </div>
+  </section>
+  <!-- Section Disparition -->
+  <section class="wrapperAnimal__disappearance">
+    <!-- Header interne -->
+    <div class="wrapperAnimal__disappearance__header">
+      Disparition<span class="dotColored">.</span>
+    </div>
+    <!-- Content -->
+    <div class="wrapperAnimal__disappearance__content">
+      <div class="wrapperAnimal__disappearance__content__text">
+        Le changement climatique exerce une pression supplémentaire sur les forêts d’Indonésie et met donc un peu plus en péril la survie des orangs-outans. Les précipitations plus violentes liées au changement climatique que l’on attend sur la majorité des îles de l’archipel, devraient accentuer le risque d’inondations et de glissements de terrain. Les modèles climatiques suggèrent que, d’ici 2025, les précipitations annuelles devraient s’accroître de manière significative.
+        <br><br>
+        Outre l’impact direct et négatif sur les forêts, ce renforcement des précipitations influencerait aussi le rythme de croissance et les cycles de reproduction des plantes préférées des orangs-outans. La quantité de nourriture disponible risque ainsi de diminuer, en affectant les capacités de reproduction des femelles.
+        <br><br>
+        Le dérèglement climatique pourrait provoquer des sécheresses plus intenses et augmenter le risque de feux de forêts impactant d’ores et déjà l’habitat des grands singes.
+      </div>
+      <div class="wrapperAnimal__disappearance__content__image">
+        <img src="http://placehold.jp/802x603.png">
+      </div>
+    </div>
+  </section>
+  <!-- Section Disparition -->
+  <section class="wrapperAnimal__donations">
+    <!-- Content -->
+    <div class="wrapperAnimal__donations__content">
+      <div class="wrapperAnimal__donations__content__image">
+        <img src="http://placehold.jp/1440x720.png">
+      </div>
+      <div class="wrapperAnimal__donations__content__textBloc">
+        <div class="wrapperAnimal__donations__content__textBloc__header">
+          Agissons
+        </div>
+        <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
+          WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
+        </div>
+        <div class="wrapperAnimal__donations__content__textBloc__btn">
+          Faire un don
+        </div>
+        <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
+          Ce n’est qu’avec votre aide que nous arriverons à les sauver.
+</div>
       </div>
     </div>
   </section>
