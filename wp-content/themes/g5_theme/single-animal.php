@@ -97,13 +97,31 @@
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="https://placeimg.com/818/530/any">
+        <img src="https://placeimg.com/818/530/animals">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
         <div class="wrapperAnimal__habitat__content__text__side">Iles Bornéo et Sumatra</div>
         <div class="wrapperAnimal__habitat__content__text__main">        l'Orang-outan, est un genre de primates appartenant à la famille des hominidés.
         Son aire de répartition, en voie de rétrécissement, se trouve en Insulinde, plus précisément dans les îles de Bornéo et Sumatra.
         Les orangs-outans vivent dans les forêts primaires et secondaires. Bien qu’on les retrouve à plus de 1 500 mètres au-dessus du niveau de la mer, ils vivent pour la plupart dans les zones de basses terres et préfèrent les forêts de vallées fluviales ou les plaines inondées.</div>
+      </div>
+    </div>
+  </section>
+  <!-- Section Habitudes alimentaires -->
+  <section class="wrapperAnimal__food">
+    <!-- Header interne -->
+    <div class="wrapperAnimal__food__header">
+      Habitudes<br>
+      <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
+    </div>
+    <!-- Content -->
+    <div class="wrapperAnimal__food__content">
+      <div class="wrapperAnimal__food__content__img">
+        <img src="https://placeimg.com/1014/941/animals">
+      </div>
+      <div class="wrapperAnimal__food__content__text">
+        Les orangs-outans sont parmi les plus arboricoles des grands singes. Ils passent la majeure partie de leur temps dans les arbres, à la recherche de nourriture. L'animal se nourrit la plupart du temps de fruits, de jeunes pousses, d'écorce, de petits vertébrés, d'œufs d'oiseaux et d'insectes.
+        Principalement frugivore (durians, fruits du jaquier, mangues, litchis, mangoustans, figues) mais se nourrit aussi de feuilles, lianes, jeunes pousses et petites proies animales (termites, fourmis, contenu des nids d’oiseaux)
       </div>
     </div>
   </section>

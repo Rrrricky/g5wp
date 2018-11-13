@@ -1,4 +1,8 @@
 $navbarHeight: 10vh;
+.dotColored {
+	color: #e67e37;
+}
+
 .wrapperAnimal {
 	&__home {
 		height: 80vh;
@@ -118,9 +122,6 @@ $navbarHeight: 10vh;
 		}
 	}
 	&__habitat {
-		.dotColored {
-			color: #e67e37;
-		}
 		height: 800px;
 		display: block;
 		margin-top: 60px;
@@ -163,7 +164,49 @@ $navbarHeight: 10vh;
 					border-bottom: 5px solid #888e94;
 					padding-bottom: 25px;
 					text-align: justify;
+					opacity: 0.6;
 				}
+			}
+		}
+	}
+	&__food {
+		&__header {
+			font-size: 110px;
+			font-weight: bold;
+			text-align: center;
+			z-index: 1;
+			.rightSidedHeader {
+				position: absolute;
+				right: 50px;
+			}
+		}
+		&__content {
+			display: flex;
+			height: 941px;
+			width: 100%;
+			justify-content: flex-end;
+			align-items: center;
+			&__img {
+				height: 941px;
+				width: 1014px;
+				position: absolute;
+				left: 0;
+				z-index: -1;
+			}
+			&__text {
+				font-size: 24px;
+				font-family: "Raleway";
+				width: 1003px;
+				//height: 300px;
+				background-color: #e67e37;
+				margin-top: 300px;
+				z-index: 1;
+				// Center the text in the box
+				display: flex;
+				text-align: center;
+				align-items: center;
+				text-align: justify;
+				padding: 50px;
 			}
 		}
 	}
