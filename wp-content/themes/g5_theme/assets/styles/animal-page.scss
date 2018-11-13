@@ -160,11 +160,13 @@ $navbarHeight: 10vh;
 				}
 				&__side {
 					align-self: center;
+					border: 2px SOLID RED;
 					transform: rotate(-90deg);
 					font-weight: bold;
 					font-size: 23px;
-					width: 174px;
-					margin-right: -20px;
+					width: auto;
+					min-width: 130px;
+					margin-right: -10px;
 					border-bottom: 5px solid #888e94;
 					padding-bottom: 25px;
 					text-align: justify;
@@ -232,12 +234,33 @@ $navbarHeight: 10vh;
 				align-self: center;
 				z-index: 1;
 				text-align: justify;
-				width: 60%;
+				width: 40%;
 				margin-left: 25px;
+			}
+			&__box {
+				background-color: #e67e37;
+				width: 288px;
+
+				position: absolute;
+				right: 40px;
+				margin-top: -90px;
+				z-index: 1;
+				&__title {
+					font-size: 41px;
+					text-align: center;
+					padding: 20px 0 0 0;
+				}
+				&__text {
+					font-family: "Raleway";
+					font-size: 20px;
+
+					text-align: justify;
+					padding: 15px;
+				}
 			}
 			&__image {
 				position: absolute;
-				right: 0;
+				right: 40px;
 			}
 		}
 	}
@@ -288,7 +311,13 @@ $navbarHeight: 10vh;
 					font-weight: Bold;
 					color: white;
 					padding: 15px 20px;
+					&:hover {
+						background-color: white;
+						color: black;
+						box-shadow: inset 0 0 10px #000000;
+					}
 				}
+
 				&__secondParagraph {
 					font-family: "Raleway";
 					font-size: 20px;

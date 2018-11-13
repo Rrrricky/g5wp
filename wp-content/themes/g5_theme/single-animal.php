@@ -142,6 +142,14 @@
       <div class="wrapperAnimal__disappearance__content__text">
         <?php the_field('animaldisappeartext'); ?>
       </div>
+      <div class="wrapperAnimal__disappearance__content__box">
+        <div class="wrapperAnimal__disappearance__content__box__title">
+          A savoir
+        </div>
+        <div class="wrapperAnimal__disappearance__content__box__text">
+          <?php the_field('animaldisappearboxtext'); ?>
+        </div>
+      </div>
       <div class="wrapperAnimal__disappearance__content__image">
         <?php echo wp_get_attachment_image( get_field('animaldisappearimg'), 'animal-disappear-thumb' ); ?>
         <!-- <img src="http://placehold.jp/802x603.png"> -->
