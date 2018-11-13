@@ -168,6 +168,9 @@
       </div>
     </div>
   </section>
+  <!-- Section Footer -->
+  <section class="wrapperAnimal__footer">
+  </section>
 </div>
 <!-- Main Footer -->
 <?php get_footer() ?>
