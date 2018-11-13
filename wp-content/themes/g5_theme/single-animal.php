@@ -26,7 +26,7 @@
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <?php echo wp_get_attachment_image( get_field('first_image'), 'animal-home-thumb' ); ?>
+        <?php echo wp_get_attachment_image( get_field('animal_home'), 'animal-home-thumb' ); ?>
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -42,7 +42,7 @@
           <span class="line"></span>
         </p>
         <p class="wrapperAnimal__home__content__text__title__desc">
-          <?php the_field('desc'); ?>
+          <?php the_field('animal_desc'); ?>
         </p>
         <p class="wrapperAnimal__home__content__text__statut">
           Statut
@@ -104,13 +104,12 @@
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="http://placehold.jp/818x530.png">
+        <!-- <img src="http://placehold.jp/818x530.png"> -->
+        <?php echo wp_get_attachment_image( get_field('animal_habitat_img'), 'animal-habitat-thumb' ); ?>
       </div>
       <div class="wrapperAnimal__habitat__content__text">
-        <div class="wrapperAnimal__habitat__content__text__side">Iles Bornéo et Sumatra</div>
-        <div class="wrapperAnimal__habitat__content__text__main">        l'Orang-outan, est un genre de primates appartenant à la famille des hominidés.
-        Son aire de répartition, en voie de rétrécissement, se trouve en Insulinde, plus précisément dans les îles de Bornéo et Sumatra.
-        Les orangs-outans vivent dans les forêts primaires et secondaires. Bien qu’on les retrouve à plus de 1 500 mètres au-dessus du niveau de la mer, ils vivent pour la plupart dans les zones de basses terres et préfèrent les forêts de vallées fluviales ou les plaines inondées.</div>
+        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animal_habitat_location'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animal_habitat_text'); ?></div>
       </div>
     </div>
   </section>
@@ -124,11 +123,11 @@
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <img src="http://placehold.jp/1014x941.png">
+        <?php echo wp_get_attachment_image( get_field('animal_food_img'), 'animal-food-thumb' ); ?>
+        <!-- <img src="http://placehold.jp/1014x941.png"> -->
       </div>
       <div class="wrapperAnimal__food__content__text">
-        Les orangs-outans sont parmi les plus arboricoles des grands singes. Ils passent la majeure partie de leur temps dans les arbres, à la recherche de nourriture. L'animal se nourrit la plupart du temps de fruits, de jeunes pousses, d'écorce, de petits vertébrés, d'œufs d'oiseaux et d'insectes.
-        Principalement frugivore (durians, fruits du jaquier, mangues, litchis, mangoustans, figues) mais se nourrit aussi de feuilles, lianes, jeunes pousses et petites proies animales (termites, fourmis, contenu des nids d’oiseaux)
+        <?php the_field('animal_food_text'); ?>
       </div>
     </div>
   </section>
@@ -141,14 +140,11 @@
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
       <div class="wrapperAnimal__disappearance__content__text">
-        Le changement climatique exerce une pression supplémentaire sur les forêts d’Indonésie et met donc un peu plus en péril la survie des orangs-outans. Les précipitations plus violentes liées au changement climatique que l’on attend sur la majorité des îles de l’archipel, devraient accentuer le risque d’inondations et de glissements de terrain. Les modèles climatiques suggèrent que, d’ici 2025, les précipitations annuelles devraient s’accroître de manière significative.
-        <br><br>
-        Outre l’impact direct et négatif sur les forêts, ce renforcement des précipitations influencerait aussi le rythme de croissance et les cycles de reproduction des plantes préférées des orangs-outans. La quantité de nourriture disponible risque ainsi de diminuer, en affectant les capacités de reproduction des femelles.
-        <br><br>
-        Le dérèglement climatique pourrait provoquer des sécheresses plus intenses et augmenter le risque de feux de forêts impactant d’ores et déjà l’habitat des grands singes.
+        <?php the_field('animal_disappear_text'); ?>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
-        <img src="http://placehold.jp/802x603.png">
+        <?php echo wp_get_attachment_image( get_field('animal_disappear'), 'animal-disappear-thumb' ); ?>
+        <!-- <img src="http://placehold.jp/802x603.png"> -->
       </div>
     </div>
   </section>
@@ -157,7 +153,8 @@
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <img src="http://placehold.jp/1440x720.png">
+        <?php echo wp_get_attachment_image( get_field('animal_donation'), 'animal-donation-thumb' ); ?>
+        <!-- <img src="http://placehold.jp/1440x720.png"> -->
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
         <div class="wrapperAnimal__donations__content__textBloc__header">
