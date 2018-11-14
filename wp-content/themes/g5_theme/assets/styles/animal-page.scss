@@ -32,29 +32,6 @@ $navbarHeight: 10vh;
 				}
 			}
 		}
-		@media screen and (max-width: 900px) {
-			.wrapperAnimal {
-				&__home {
-					&__header {
-						width: 300px;
-						ul {
-							margin-left: 10px;
-						}
-					}
-				}
-			}
-		}
-		@media screen and (max-width: 750px) {
-			.wrapperAnimal {
-				&__home {
-					&__header {
-						div {
-							margin-top: -5px;
-						}
-					}
-				}
-			}
-		}
 		/* Content */
 		&__content {
 			height: 100%;
@@ -96,25 +73,6 @@ $navbarHeight: 10vh;
 				flex-basis: 86px;
 				border-bottom: 2px solid #2a2e32;
 				margin: 20px;
-			}
-		}
-		@media screen and (max-width: 900px) {
-			&__content {
-				&__text {
-					grid-column: 1/-1;
-					&__title {
-						&__desc {
-							max-width: 90%;
-						}
-					}
-				}
-				&__img {
-					img {
-						position: absolute;
-						//filter: grayscale(100%);
-						z-index: -1;
-					}
-				}
 			}
 		}
 		/* Footer */
@@ -177,7 +135,7 @@ $navbarHeight: 10vh;
 		margin-top: 100px;
 		&__header {
 			font-weight: bold;
-			font-size: 197px;
+			font-size: 125px;
 			text-align: center;
 		}
 		&__content {
@@ -218,36 +176,10 @@ $navbarHeight: 10vh;
 			}
 		}
 	}
-	@media screen and (max-width: 900px) {
-		&__habitat {
-			margin-bottom: -150px;
-			&__header {
-				font-size: 73px;
-			}
-			&__content {
-				&__map {
-					margin: auto;
-					width: 100%;
-					img {
-						object-fit: cover;
-						max-width: 100%;
-						height: auto;
-					}
-				}
-				&__text {
-					max-width: 100%;
-					padding: 5px;
-					position: absolute;
-					margin-top: 230px;
-					position: static;
-				}
-			}
-		}
-	}
 	/* Food section */
 	&__food {
 		&__header {
-			font-size: 110px;
+			font-size: 120px;
 			font-weight: bold;
 			text-align: center;
 			z-index: 1;
@@ -286,48 +218,11 @@ $navbarHeight: 10vh;
 			}
 		}
 	}
-	@media screen and (max-width: 900px) {
-		&__food {
-			&__header {
-				font-size: 50px;
-				margin-bottom: 10px;
-				.rightSidedHeader {
-					text-align: center;
-					position: static;
-				}
-			}
-			&__content {
-				height: auto;
-				display: block;
-
-				&__img {
-					margin: auto;
-					width: 100%;
-					height: auto;
-					display: block;
-					position: static;
-					img {
-						object-fit: cover;
-						width: auto;
-						height: auto;
-					}
-				}
-				&__text {
-					font-size: 15px;
-					margin-top: 0;
-					padding: 20px;
-					width: auto;
-					display: block;
-					position: static;
-				}
-			}
-		}
-	}
 	/* Disappearance */
 	&__disappearance {
 		margin-top: 90px;
 		&__header {
-			font-size: 142px;
+			font-size: 125px;
 			font-weight: Bold;
 			margin-left: 40px;
 		}
@@ -369,50 +264,6 @@ $navbarHeight: 10vh;
 			&__image {
 				position: absolute;
 				right: 40px;
-			}
-		}
-	}
-	@media screen and (max-width: 900px) {
-		&__disappearance {
-			&__header {
-				font-size: 50px;
-				margin-bottom: -10px;
-			}
-			&__content {
-				display: block;
-				height: auto;
-				&__image {
-					margin: auto;
-					width: 100%;
-					right: 0;
-					position: static;
-					top: 0;
-					img {
-						object-fit: cover;
-						max-width: 100%;
-						height: auto;
-					}
-				}
-				&__box {
-					width: 45%;
-					margin-top: 0;
-					left: 0;
-					display: block;
-					position: absolute;
-					&__title {
-						font-size: 30px;
-					}
-					&__text {
-						font-size: 17px;
-						width: 100%;
-						padding: 20px;
-					}
-				}
-				&__text {
-					width: 100%;
-					margin-left: 0px;
-					padding: 20px;
-				}
 			}
 		}
 	}
@@ -479,18 +330,6 @@ $navbarHeight: 10vh;
 			}
 		}
 	}
-	@media screen and (max-width: 900px) {
-		&__donations {
-			&__content {
-				&__textBloc {
-					width: 100%;
-					position: absolute;
-					left: 0;
-					right: 0;
-				}
-			}
-		}
-	}
 	&__footer {
 		width: 100%;
 		height: 450px;
@@ -534,5 +373,163 @@ $navbarHeight: 10vh;
 	100% {
 		margin-top: 20px;
 		opacity: 0;
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 750px) {
+	.wrapperAnimal {
+		&__home {
+			&__header {
+				div {
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.wrapperAnimal {
+		&__home {
+			&__header {
+				width: 300px;
+				ul {
+					margin-left: 10px;
+				}
+			}
+
+			&__content {
+				&__text {
+					grid-column: 1/-1;
+					&__title {
+						&__desc {
+							max-width: 90%;
+						}
+					}
+				}
+				&__img {
+					img {
+						position: absolute;
+						//filter: grayscale(100%);
+						z-index: -1;
+					}
+				}
+			}
+		}
+		&__habitat {
+			margin-bottom: -150px;
+			&__header {
+				font-size: 73px;
+			}
+			&__content {
+				&__map {
+					margin: auto;
+					width: 100%;
+					img {
+						object-fit: cover;
+						max-width: 100%;
+						height: auto;
+					}
+				}
+				&__text {
+					max-width: 100%;
+					padding: 5px;
+					position: absolute;
+					margin-top: 230px;
+					position: static;
+				}
+			}
+		}
+		&__food {
+			&__header {
+				font-size: 50px;
+				margin-bottom: 10px;
+				.rightSidedHeader {
+					text-align: center;
+					position: static;
+				}
+			}
+			&__content {
+				height: auto;
+				display: block;
+
+				&__img {
+					margin: auto;
+					width: 100%;
+					height: auto;
+					display: block;
+					position: static;
+					img {
+						object-fit: cover;
+						width: auto;
+						height: auto;
+					}
+				}
+				&__text {
+					font-size: 15px;
+					margin-top: 0;
+					padding: 20px;
+					width: auto;
+					display: block;
+					position: static;
+				}
+			}
+		}
+
+		&__disappearance {
+			&__header {
+				font-size: 50px;
+				margin-bottom: -10px;
+			}
+			&__content {
+				display: block;
+				height: auto;
+				&__image {
+					margin: auto;
+					width: 100%;
+					right: 0;
+					position: static;
+					top: 0;
+					img {
+						object-fit: cover;
+						max-width: 100%;
+						height: auto;
+					}
+				}
+				&__box {
+					width: 45%;
+					margin-top: 0;
+					left: 0;
+					display: block;
+					position: absolute;
+					height: 260px;
+
+					&__title {
+						font-size: 30px;
+					}
+					&__text {
+						font-size: 17px;
+						width: 100%;
+						padding: 5px;
+					}
+				}
+				&__text {
+					width: 100%;
+					margin-left: 0px;
+					padding: 5px;
+				}
+			}
+		}
+		&__donations {
+			&__content {
+				&__textBloc {
+					width: 100%;
+					position: absolute;
+					left: 0;
+					right: 0;
+				}
+			}
+		}
 	}
 }
