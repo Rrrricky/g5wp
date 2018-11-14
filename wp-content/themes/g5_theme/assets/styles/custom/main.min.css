@@ -58,7 +58,7 @@
 .wrapperAnimal__home__footer__video a{font-family:"Raleway",sans-serif;font-size:15px;color:#fff;opacity:.5;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:ease 1s;transition:ease 1s}
 .wrapperAnimal__home__footer__video a:hover{opacity:1}
 .wrapperAnimal__home__footer__video a i{margin:10px auto auto auto;font-size:25px}
-.wrapperAnimal__home__footer__mouse{-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.wrapperAnimal__home__footer__mouse{-webkit-transform:translateX(-50%);transform:translateX(-50%);opacity:1}
 .wrapperAnimal__home__footer__mouse__mouse-icon{width:16px;height:30px;border:2px solid white;border-radius:15px;margin:0 auto;position:relative;text-align:center}
 .wrapperAnimal__home__footer__mouse__mouse-icon__mouse-wheel{height:6px;margin:2px auto 0;display:block;width:3px;background-color:white;border-radius:50%;-webkit-animation:1.6s ease infinite wheel-up-down;animation:1.6s ease infinite wheel-up-down}
 .wrapperAnimal__habitat{height:800px;display:block;margin-top:100px}

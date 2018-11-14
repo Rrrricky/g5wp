@@ -171,7 +171,7 @@
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
-        <a href="#" class="wrapperAnimal__donations__content__textBloc__btn">
+        <a href="<?php the_field('animaldonationlink'); ?>" class="wrapperAnimal__donations__content__textBloc__btn">
           Faire un don
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
