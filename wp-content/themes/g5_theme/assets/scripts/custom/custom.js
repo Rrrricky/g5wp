@@ -113,12 +113,8 @@ function () {
 
 if (document.querySelector('.wrap')) {
   var newMouse = new NewMouse();
-} // Hide the mouse icon
+} // display video
 
-
-$(window).scroll(function () {
-  $('.wrapperAnimal__home__footer__mouse').css('opacity', 1 - $(window).scrollTop() / 250);
-}); // display video
 
 if (document.querySelector('.wrapperAnimal__home__footer__video')) {
   var videoBtn = document.querySelector('.wrapperAnimal__home__footer__video');
