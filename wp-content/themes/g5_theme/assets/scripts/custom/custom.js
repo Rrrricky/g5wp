@@ -1,5 +1,68 @@
 "use strict";
 
+var ajaxRequest = function ajaxRequest() {
+  var $pagination = document.querySelector(".readMore").dataset.pagination; // Get the current pagination
+
+  var $readMore = document.querySelector(".readMore");
+  $readMore.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log('pagination:' + $pagination);
+    var $ajax_section = document.querySelector(".added-ajax"); // Where the content of Ajax will be sent
+
+    var request = new XMLHttpRequest();
+    request.open('POST', ajaxurl, true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+
+    request.onload = function () {
+      if (this.status >= 200 && this.status < 400) {
+        // If successful
+        $ajax_section.insertAdjacentHTML('beforeend', this.response);
+        $pagination++;
+
+        if (max_paged < $pagination) {
+          document.querySelector(".readMore").style.display = "none";
+        }
+      } else {
+        // If fail
+        console.log(this.reponse);
+      }
+    };
+
+    request.send('action=ajax-morePhotos&pagination=' + $pagination);
+  });
+};
+
+if (document.querySelector(".readMore")) {
+  ajaxRequest();
+} // const ajaxRequest = () => {
+// 	var $search = document.querySelector(".input-search")
+// 	$search.addEventListener(
+// 		"keypress",
+// 		function (e) {
+// 			console.log("clicked")
+// 			e.preventDefault()
+// 			var $ajax_section = document.querySelector(".added-ajax") // Where the content of Ajax will be sent
+// 			var request = new XMLHttpRequest()
+// 			request.open('POST', ajaxurl, true)
+// 			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+// 			request.onload = function () {
+// 				if (this.status >= 200 && this.status < 400) {
+// 					// If successful
+// 					$ajax_section.insertAdjacentHTML('beforeend', this.response)
+// 				} else {
+// 					// If fail
+// 					console.log(this.reponse)
+// 				}
+// 			}
+// 			request.send('action=ajax-morePhotos&pagination=' + $pagination)
+// 		}
+// 	)
+// }
+// if (document.querySelector(".input-search")) {
+// 	ajaxRequest()
+// }
+"use strict";
+
 /* Display the current animal's number on the grid-based menu (regions and animals) */
 var gridNumbers = document.querySelectorAll('.grid-menu__number');
 var $animalWrapper = document.querySelector('.animal-wrapper');
