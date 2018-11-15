@@ -1,6 +1,18 @@
 <?php
-$size = 'animal-home-thumb';
-$picture = get_field('animalhabitatimg');
+$homePic = get_field('animal_home');
+
+
+$habitatPic = get_field('animal_habitat_img');
+
+
+$foodPic = get_field('animal_food_img');
+
+
+$disappearPic = get_field('animal_disappear_img');
+
+
+$donationPic = get_field('animal_donation_img');
+
 ?>
 <!-- ------------------------ -->
 <!-- Main Header -->
@@ -30,7 +42,7 @@ $picture = get_field('animalhabitatimg');
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <?php echo wp_get_attachment_image( get_field('animalhome'), 'animal-home-thumb' ); ?>
+        <img src="<?php echo $homePic; ?>" alt="">
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -46,14 +58,14 @@ $picture = get_field('animalhabitatimg');
           <span class="line"></span>
         </p>
         <p class="wrapperAnimal__home__content__text__title__desc">
-          <?php the_field('animaldesc'); ?>
+          <?php the_field('animal_desc'); ?>
         </p>
         <p class="wrapperAnimal__home__content__text__statut">
           Statut
         <span class="line"></span>
         </p>
         <p class="wrapperAnimal__home__content__text__title__smaller">
-          <?php the_field('animalstatut'); ?>
+          <?php the_field('animal_statut'); ?>
         </p>
       </div>
     </div>
@@ -108,13 +120,11 @@ $picture = get_field('animalhabitatimg');
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <!-- <img src="http://placehold.jp/818x530.png"> -->
-
-        <img src="<?php echo $picture ?>">
+        <img src="<?php echo $habitatPic; ?>" alt="">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
-        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animalhabitatlocation'); ?></div>
-        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animalhabitattext'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animal_habitat_location'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animal_habitat_text'); ?></div>
       </div>
     </div>
   </section>
@@ -128,11 +138,10 @@ $picture = get_field('animalhabitatimg');
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <?php echo wp_get_attachment_image( get_field('animalfoodimg'), 'animal-food-thumb' ); ?>
-        <!-- <img src="http://placehold.jp/1014x941.png"> -->
+        <img src="<?php echo $foodPic; ?>" alt="">
       </div>
       <div class="wrapperAnimal__food__content__text">
-        <?php the_field('animalfoodtext'); ?>
+        <?php the_field('animal_food_text'); ?>
       </div>
     </div>
   </section>
@@ -145,29 +154,27 @@ $picture = get_field('animalhabitatimg');
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
       <div class="wrapperAnimal__disappearance__content__text">
-        <?php the_field('animaldisappeartext'); ?>
+        <?php the_field('animal_disappear_text'); ?>
       </div>
       <div class="wrapperAnimal__disappearance__content__box">
         <div class="wrapperAnimal__disappearance__content__box__title">
           A savoir
         </div>
         <div class="wrapperAnimal__disappearance__content__box__text">
-          <?php the_field('animaldisappearboxtext'); ?>
+          <?php the_field('animal_disappear_box_text'); ?>
         </div>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
-        <?php echo wp_get_attachment_image( get_field('animaldisappearimg'), 'animal-disappear-thumb' ); ?>
-        <!-- <img src="http://placehold.jp/802x603.png"> -->
+        <img src="<?php echo $disappearPic; ?>" alt="">
       </div>
     </div>
   </section>
-  <!-- Section Disparition -->
+  <!-- Section Donation -->
   <section class="wrapperAnimal__donations">
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <?php echo wp_get_attachment_image( get_field('animaldonationimg'), 'animal-donation-thumb' ); ?>
-        <!-- <img src="http://placehold.jp/1440x720.png"> -->
+        <img src="<?php echo $donationPic; ?>" alt="">
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
         <div class="wrapperAnimal__donations__content__textBloc__header">
@@ -176,7 +183,7 @@ $picture = get_field('animalhabitatimg');
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
-        <a href="<?php the_field('animaldonationlink'); ?>" class="wrapperAnimal__donations__content__textBloc__btn">
+        <a href="<?php the_field('animal_donation_link'); ?>" class="wrapperAnimal__donations__content__textBloc__btn">
           Faire un don
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
