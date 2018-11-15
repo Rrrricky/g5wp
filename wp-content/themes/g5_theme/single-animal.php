@@ -1,3 +1,7 @@
+<?php
+$size = 'animal-home-thumb';
+$picture = get_field('animalhabitatimg');
+?>
 <!-- ------------------------ -->
 <!-- Main Header -->
 <?php get_header() ?>
@@ -105,7 +109,8 @@
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
         <!-- <img src="http://placehold.jp/818x530.png"> -->
-        <?php echo wp_get_attachment_image( get_field('animalhabitatimg'), 'animal-habitat-thumb' ); ?>
+
+        <img src="<?php echo $picture ?>">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
         <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animalhabitatlocation'); ?></div>
