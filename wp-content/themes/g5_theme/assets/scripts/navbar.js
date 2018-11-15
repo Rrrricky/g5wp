@@ -28,5 +28,3 @@ $hamburgerIcon.addEventListener(
 		$hamburgerIcon.classList.toggle("is-active")
 	}
 )
-
-
