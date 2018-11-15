@@ -1,68 +1,5 @@
 "use strict";
 
-var ajaxRequest = function ajaxRequest() {
-  var $pagination = document.querySelector(".readMore").dataset.pagination; // Get the current pagination
-
-  var $readMore = document.querySelector(".readMore");
-  $readMore.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log('pagination:' + $pagination);
-    var $ajax_section = document.querySelector(".added-ajax"); // Where the content of Ajax will be sent
-
-    var request = new XMLHttpRequest();
-    request.open('POST', ajaxurl, true);
-    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
-
-    request.onload = function () {
-      if (this.status >= 200 && this.status < 400) {
-        // If successful
-        $ajax_section.insertAdjacentHTML('beforeend', this.response);
-        $pagination++;
-
-        if (max_paged < $pagination) {
-          document.querySelector(".readMore").style.display = "none";
-        }
-      } else {
-        // If fail
-        console.log(this.reponse);
-      }
-    };
-
-    request.send('action=ajax-morePhotos&pagination=' + $pagination);
-  });
-};
-
-if (document.querySelector(".readMore")) {
-  ajaxRequest();
-} // const ajaxRequest = () => {
-// 	var $search = document.querySelector(".input-search")
-// 	$search.addEventListener(
-// 		"keypress",
-// 		function (e) {
-// 			console.log("clicked")
-// 			e.preventDefault()
-// 			var $ajax_section = document.querySelector(".added-ajax") // Where the content of Ajax will be sent
-// 			var request = new XMLHttpRequest()
-// 			request.open('POST', ajaxurl, true)
-// 			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
-// 			request.onload = function () {
-// 				if (this.status >= 200 && this.status < 400) {
-// 					// If successful
-// 					$ajax_section.insertAdjacentHTML('beforeend', this.response)
-// 				} else {
-// 					// If fail
-// 					console.log(this.reponse)
-// 				}
-// 			}
-// 			request.send('action=ajax-morePhotos&pagination=' + $pagination)
-// 		}
-// 	)
-// }
-// if (document.querySelector(".input-search")) {
-// 	ajaxRequest()
-// }
-"use strict";
-
 /* Display the current animal's number on the grid-based menu (regions and animals) */
 var gridNumbers = document.querySelectorAll('.grid-menu__number');
 var $animalWrapper = document.querySelector('.animal-wrapper');
@@ -117,7 +54,7 @@ function () {
           dx = (xmouse - x) * 0.125;
           dy = (ymouse - y) * 0.125;
 
-          if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+          if (0.1 > Math.abs(dx) + Math.abs(dy)) {
             x = xmouse;
             y = ymouse;
           } else {
@@ -156,7 +93,7 @@ function () {
           var acceleration = 10 * (_speed - prevSpeed);
           var ball = document.querySelector('.wrap__ball-js');
 
-          if (acceleration > 0) {
+          if (0 < acceleration) {
             ball.style.width = _speed / 100 + 10 + 'px';
             ball.style.height = _speed / 100 + 10 + 'px';
           } else {
@@ -174,9 +111,14 @@ function () {
   return NewMouse;
 }();
 
-if (document.querySelector(".wrap")) {
+if (document.querySelector('.wrap')) {
   var newMouse = new NewMouse();
-}
+} // Hide the mouse icon
+
+
+$(window).scroll(function () {
+  $('.wrapperAnimal__home__footer__mouse').css('opacity', 1 - $(window).scrollTop() / 250);
+}); // appear habitat
 "use strict";
 
 /* Get navbar's items */
