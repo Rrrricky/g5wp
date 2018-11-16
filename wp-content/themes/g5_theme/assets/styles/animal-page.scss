@@ -2,11 +2,44 @@ $navbarHeight: 10vh;
 .dotColored {
 	color: #e67e37;
 }
-
+.active {
+	opacity: 1 !important;
+	height: auto !important;
+}
 .wrapperAnimal {
 	&__home {
-		height: 80vh;
+		height: 90%;
+		padding-bottom: 30px;
 		position: relative;
+		&__displayVideo {
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+			top: 30px;
+			margin: auto;
+			position: absolute;
+			// ...
+			transition: opacity 1s ease-out;
+			opacity: 0;
+			height: 0;
+			overflow: hidden;
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__close {
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			font-size: 60px;
+			right: 35px;
+			top: 35px;
+			transition: opacity 1s ease-out;
+			opacity: 0;
+			height: 0;
+			overflow: hidden;
+		}
 		/* Header */
 		&__header {
 			height: 50px;
@@ -36,6 +69,7 @@ $navbarHeight: 10vh;
 		&__content {
 			height: 100%;
 			display: grid;
+			padding-bottom: 90px;
 			grid-template-columns: 1fr 1.2fr;
 			&__text {
 				padding-left: 20px;
@@ -77,6 +111,9 @@ $navbarHeight: 10vh;
 		}
 		/* Footer */
 		&__footer {
+			bottom: 0;
+			position: relative;
+			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
