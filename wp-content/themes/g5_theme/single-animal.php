@@ -6,9 +6,6 @@ $disappearPic = get_field('animal_disappear_img');
 $donationPic = get_field('animal_donation_img');
 ?>
 <!-- ------------------------ -->
-<!-- Donorbox script -->
-<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
-<script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
 <!-- Main Header -->
 <?php get_header() ?>
 
