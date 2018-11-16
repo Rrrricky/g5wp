@@ -1,3 +1,33 @@
+<?php
+	$args = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+	];
+
+	// Get animal list
+	$the_query = new WP_Query($args);
+	if($the_query->have_posts()):
+		while($the_query->have_posts()):
+			$the_query->the_post();
+			$animals[] = get_the_title();
+		endwhile;
+	endif;
+	wp_reset_postdata();
+
+	// If the search corresponds to an animal
+	$result = $_GET;
+	$home = get_home_url();
+	if(!empty($result)):
+		if(in_array($result['name'], $animals)):
+			//Go to the page
+			wp_redirect($home.'/animaux/'.$result['name']);
+			exit;
+		endif;
+	endif;
+?>
+
+
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
@@ -23,6 +53,7 @@
 		</title>
 
 
+
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
     </head>
@@ -39,4 +70,7 @@
 			endif;
 		?>
 		<?php include 'menu.php'; ?>
-        </header>
+
+		</header>
+
+
