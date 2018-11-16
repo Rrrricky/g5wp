@@ -15,8 +15,12 @@ $donationPic = get_field('animal_donation_img');
 
 ?>
 <!-- ------------------------ -->
+<!-- Donorbox script -->
+<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+<script> window.DonorBox = { widgetLinkClassName: 'custom-dbox-popup' } </script>
 <!-- Main Header -->
 <?php get_header() ?>
+
 <!-- Wrapper -->
 <div class="wrapperAnimal">
 
@@ -190,7 +194,7 @@ $donationPic = get_field('animal_donation_img');
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
-        <a href="<?php the_field('animal_donation_link'); ?>" class="wrapperAnimal__donations__content__textBloc__btn">
+        <a href="https://donorbox.org/donnez-pour-les-animaux" class="wrapperAnimal__donations__content__textBloc__btn custom-dbox-popup">
           Faire un don
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
