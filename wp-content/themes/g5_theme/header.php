@@ -18,7 +18,7 @@
 	$result = $_GET;
 	$home = get_home_url();
 	if(!empty($result)):
-		if(in_array($result['name'], $animals.'#')):
+		if(in_array($result['name'], $animals)):
 			//Go to the page
 			wp_redirect($home.'/animaux/'.$result['name']);
 			exit;
