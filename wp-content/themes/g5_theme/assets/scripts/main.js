@@ -90,13 +90,4 @@ if ( document.querySelector( '.wrap' ) ) {
 	const newMouse = new NewMouse();
 }
 
-// Hide the mouse icon
-$( window ).scroll( function() {
-	$( '.wrapperAnimal__home__footer__mouse' ).css(
-		'opacity',
-		1 - $( window ).scrollTop() / 250
-	);
-});
-
-// appear habitat
 
