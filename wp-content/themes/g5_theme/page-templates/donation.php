@@ -1,23 +1,22 @@
 <?php
-
 /*
 
 Template Name: Donation template
 
 */
-
+$donationSideImage = get_field('donation_leftImage');
 ?>
 
 <?php get_header() ?>
 
 <section class="donation">
   <div class="donation__sideImg">
-    <img src="https://placeimg.com/563/823/nature">
+    <img src="<?php echo $donationSideImage; ?>">
   </div>
   <div class="donation__sideWrap">
     <div class="donation__sideWrap__internWrap">
       <div class="donation__sideWrap__internWrap__header">
-        Vous seuls avez le pouvoir changer les choses et sauver notre <strong>planète.</strong>
+        <?php the_field('donation_header'); ?> <strong><?php the_field('donation_header_colored'); ?></strong>
       </div>
       <div class="donation__sideWrap__internWrap__form">
         <!-- <div class="donation__sideWrap__internWrap__form__title">

@@ -1,23 +1,6 @@
 {
     "key": "group_5bead3bbc894e",
     "title": "Animaux",
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "animal"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
     "fields": [
         {
             "key": "field_5bead3bf355c7",
@@ -295,5 +278,22 @@
             "placeholder": ""
         }
     ],
-    "modified": 1542273899
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "animal"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1542376986
 }

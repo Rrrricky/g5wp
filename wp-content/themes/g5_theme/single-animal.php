@@ -1,18 +1,9 @@
 <?php
 $homePic = get_field('animal_home');
-
-
 $habitatPic = get_field('animal_habitat_img');
-
-
 $foodPic = get_field('animal_food_img');
-
-
 $disappearPic = get_field('animal_disappear_img');
-
-
 $donationPic = get_field('animal_donation_img');
-
 ?>
 <!-- ------------------------ -->
 <!-- Donorbox script -->

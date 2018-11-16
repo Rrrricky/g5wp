@@ -47,7 +47,7 @@
             "type": "gallery",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": null,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -56,7 +56,7 @@
             "min": 6,
             "max": 6,
             "insert": "append",
-            "library": "all",
+            "library": "uploadedTo",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -119,9 +119,21 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1541433428
+    "modified": 1542377004
 }
