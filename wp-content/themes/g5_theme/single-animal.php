@@ -194,7 +194,7 @@ $donationPic = get_field('animal_donation_img');
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
-        <a href="https://donorbox.org/donnez-pour-les-animaux" class="wrapperAnimal__donations__content__textBloc__btn custom-dbox-popup">
+        <a href="../../donation" class="wrapperAnimal__donations__content__textBloc__btn">
           Faire un don
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
