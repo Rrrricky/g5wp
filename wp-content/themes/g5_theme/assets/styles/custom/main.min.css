@@ -277,38 +277,19 @@
 .hamburger--slider-r.is-active .hamburger-inner{-webkit-transform:translate3d(0,10px,0) rotate(-45deg);transform:translate3d(0,10px,0) rotate(-45deg)}
 .hamburger--slider-r.is-active .hamburger-inner::before{-webkit-transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);opacity:0}
 .hamburger--slider-r.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-20px,0) rotate(90deg);transform:translate3d(0,-20px,0) rotate(90deg)}
-.donation{display:grid;grid-template-columns:.6fr 1fr;color:black}
-.donation__sideImg img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.donation{display:grid;grid-template-columns:.6fr 1fr;color:black;height:90vh}
+.donation__sideImg img{width:100%;height:90vh;-o-object-fit:cover;object-fit:cover}
 .donation__sideWrap{width:100%;height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
 .donation__sideWrap__internWrap{height:100%;width:100%;-ms-flex-item-align:center;align-self:center}
 .donation__sideWrap__internWrap__header{width:100%;font-weight:bold;font-size:30px}
 .donation__sideWrap__internWrap__header strong{color:#e67e37}
-.donation__sideWrap__internWrap__form{width:100%;margin-top:30px}
-.donation__sideWrap__internWrap__form__content{display:block;width:100%;display:block;font-size:16px;font-family:"Raleway"}
-.donation__sideWrap__internWrap__form__content .give-total-wrap{text-align:center}
-.donation__sideWrap__internWrap__form__content .give-total-wrap{font-size:25px}
-.donation__sideWrap__internWrap__form__content #give-amount{width:50%;text-align:center;padding:10px;border:2px solid #ddd;margin:10px;background-color:rgba(0,0,0,0.02)}
-.donation__sideWrap__internWrap__form__content #give-donation-level-button-wrap{display:grid;grid-template-columns:repeat(3,1fr);justify-items:center;grid-gap:5px;margin:15px 0 -15px 0}
-.donation__sideWrap__internWrap__form__content li{height:50px}
-.donation__sideWrap__internWrap__form__content li .give-donation-level-btn{width:128px;height:35px;border:2px solid #ddd;border-radius:4px;margin-bottom:40px}
-.donation__sideWrap__internWrap__form__content li .give-donation-level-btn:hover{background-color:#e67e37;-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23)}
-.donation__sideWrap__internWrap__form__content #give_purchase_form_wrap{margin-top:30px}
-.donation__sideWrap__internWrap__form__content #give_checkout_user_info{border:2px solid #ddd;padding:5px 20px}
-.donation__sideWrap__internWrap__form__content #give_checkout_user_info p{margin:10px 0}
-.donation__sideWrap__internWrap__form__content #give_checkout_user_info p input,.donation__sideWrap__internWrap__form__content #give_checkout_user_info p textarea{border:2px solid #ddd;width:100%;height:40px}
-.donation__sideWrap__internWrap__form__content #give_checkout_user_info p textarea{height:100px}
-.donation__sideWrap__internWrap__form__content #give_purchase_submit{font-size:25px;text-align:center;margin-top:10px}
-.donation__sideWrap__internWrap__form__content #give-purchase-button{padding:10px 30px;margin-top:15px;border-radius:5px;border:2px solid #ddd}
-.donation__sideWrap__internWrap__form__content .give-hidden,.donation__sideWrap__internWrap__form__content .give-currency-symbol{display:none}
-.donation__sideWrap__internWrap__form__content #give_error_test_mode{display:none}
-.donation__sideWrap__internWrap__form__content #give-form-334-wrap .give-form-title{display:none}
-.donation__sideWrap__internWrap__form__content #give-final-total-wrap{display:none}
+.donation__sideWrap__internWrap__form{margin-top:50px}
 body{background:#000;color:white;font-family:"Didot"}
 @media(max-width:1200px){.custom-home-page__title{grid-column:1 / 5}
 .custom-home-page__subtitle{grid-column:1 / 4}
 .custom-home-page__button{grid-column:1 / 3}
 .custom-home-page__catch{grid-column:6 / 3}
-}@media screen and (max-width:920px){.donation__sideWrap{border:2px solid blue;width:100%;position:absolute;height:auto}
+}@media screen and (max-width:920px){.donation__sideWrap{border:2px solid blue;width:100%;height:90vh;position:absolute}
 .donation #give-donation-level-button-wrap{grid-template-columns:repeat(2,1fr)}
 }@media screen and (max-width:900px){.wrapperAnimal__home__header{width:300px}
 .wrapperAnimal__home__header ul{margin-left:10px}

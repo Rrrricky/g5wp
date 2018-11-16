@@ -25,7 +25,7 @@ Template Name: Donation template
           <strong>ETAPE - 1</strong>  CHOISISSEZ LA FRÉQUENCE
         </div> -->
         <div class="donation__sideWrap__internWrap__form__content">
-        <?php echo do_shortcode('[give_form id="334"]'); ?>
+          <?php echo do_shortcode('[donate]'); ?>
         </div>
         <!-- <div class="donation__sideWrap__internWrap__form__title" id="second">
         <span class="dot"></span>

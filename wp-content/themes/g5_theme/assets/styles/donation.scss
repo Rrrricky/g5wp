@@ -2,10 +2,11 @@
 	display: grid;
 	grid-template-columns: 0.6fr 1fr;
 	color: black;
+	height: 90vh;
 	&__sideImg {
 		img {
 			width: 100%;
-			height: 100%;
+			height: 90vh;
 			object-fit: cover;
 		}
 	}
@@ -28,112 +29,7 @@
 				}
 			}
 			&__form {
-				width: 100%;
-				margin-top: 30px;
-				// Form "GIVE"
-				&__content {
-					display: block;
-					width: 100%;
-					display: block;
-					font-size: 16px;
-					font-family: "Raleway";
-
-					// Le total affiché en haut
-					.give-total-wrap {
-						text-align: center;
-					}
-					.give-total-wrap {
-						font-size: 25px;
-					}
-					#give-amount {
-						width: 50%;
-						text-align: center;
-						padding: 10px;
-						border: 2px solid #dddddd;
-						margin: 10px;
-						background-color: rgba(0, 0, 0, 0.02);
-					}
-					// Choisir un montant
-					#give-donation-level-button-wrap {
-						display: grid;
-						grid-template-columns: repeat(3, 1fr);
-						justify-items: center;
-						grid-gap: 5px;
-						margin: 15px 0 -15px 0;
-					}
-					li {
-						height: 50px;
-						.give-donation-level-btn {
-							width: 128px;
-							height: 35px;
-							border: 2px solid #dddddd;
-							border-radius: 4px;
-							margin-bottom: 40px;
-							&:hover {
-								background-color: #e67e37;
-								box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-									0 6px 6px rgba(0, 0, 0, 0.23);
-							}
-						}
-					}
-					// "Mes informations"
-					/* legend {
-						border: 2px solid red;
-						width: 190px;
-						visibility: hidden;
-					}
-					legend:before {
-						margin-left: 30px;
-						content: "Mes informations";
-						visibility: visible;
-					} */
-					#give_purchase_form_wrap {
-						margin-top: 30px;
-					}
-					#give_checkout_user_info {
-						border: 2px solid #dddddd;
-						padding: 5px 20px;
-						p {
-							margin: 10px 0;
-							input,
-							textarea {
-								border: 2px solid #dddddd;
-								width: 100%;
-								height: 40px;
-							}
-							textarea {
-								height: 100px;
-							}
-						}
-					}
-					#give_purchase_submit {
-						font-size: 25px;
-						text-align: center;
-						margin-top: 10px;
-					}
-					#give-purchase-button {
-						padding: 10px 30px;
-						margin-top: 15px;
-						border-radius: 5px;
-						border: 2px solid #dddddd;
-					}
-					// Display none
-					.give-hidden,
-					.give-currency-symbol {
-						display: none;
-					}
-					#give_error_test_mode {
-						display: none;
-					}
-					#give-form-334-wrap {
-						.give-form-title {
-							display: none;
-						}
-					}
-					#give-final-total-wrap {
-						display: none;
-					}
-				}
+				margin-top: 50px;
 			}
 		}
 	}
@@ -144,8 +40,8 @@
 		&__sideWrap {
 			border: 2px solid blue;
 			width: 100%;
+			height: 90vh;
 			position: absolute;
-			height: auto;
 		}
 		#give-donation-level-button-wrap {
 			grid-template-columns: repeat(2, 1fr);
