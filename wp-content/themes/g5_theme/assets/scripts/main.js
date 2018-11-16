@@ -122,3 +122,5 @@ if ( document.querySelector( '.wrapperAnimal__home__footer__video' ) ) {
 		videoClose.classList.remove( 'active' );
 	});
 }
+
+
