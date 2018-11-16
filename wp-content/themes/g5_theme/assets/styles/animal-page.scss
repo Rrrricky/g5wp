@@ -8,8 +8,8 @@ $navbarHeight: 10vh;
 }
 .wrapperAnimal {
 	&__home {
-		height: 90%;
-		padding-bottom: 30px;
+		height: 82vh;
+		//padding-bottom: 30px;
 		position: relative;
 		&__displayVideo {
 			left: 30px;
@@ -69,11 +69,12 @@ $navbarHeight: 10vh;
 		&__content {
 			height: 100%;
 			display: grid;
-			padding-bottom: 90px;
+			//padding-bottom: 90px;
 			grid-template-columns: 1fr 1.2fr;
 			&__text {
 				padding-left: 20px;
 				align-self: center;
+				margin-top: -80px;
 				&__statut {
 					display: flex;
 					align-items: center;
@@ -111,8 +112,8 @@ $navbarHeight: 10vh;
 		}
 		/* Footer */
 		&__footer {
-			bottom: 0;
-			position: relative;
+			//bottom: 0;
+			//position: relative;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;

@@ -49,6 +49,7 @@ $button-color: #e67e37;
 @import "hamburgers/_base.scss";
 @import "hamburgers/types/_slider.scss";
 @import "hamburgers/types/_slider-r.scss";
+@import "donation.scss";
 
 body {
 	background: $primary-back-color;
