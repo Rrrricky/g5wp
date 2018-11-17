@@ -20,11 +20,20 @@ for ( let i = 0 ; i < navItems.length ; i++ ) {
 
 let $hamburgerIcon = document.querySelector(".hamburger")
 let $links = document.querySelector(".nav__links")
+let $main = document.querySelector("main");
 
 $hamburgerIcon.addEventListener(
 	"click",
 	()=> {
 		$links.classList.toggle("is-active")
 		$hamburgerIcon.classList.toggle("is-active")
+		if($main) {
+			if($links.classList.contains("is-active")) {
+				$main.style.opacity = .2;
+			}else {
+				$main.style.opacity = 1;
+			}
+		}
 	}
 )
+

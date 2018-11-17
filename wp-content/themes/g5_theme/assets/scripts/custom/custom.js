@@ -35,9 +35,9 @@ var templateUrl = object_name.templateUrl; //Auto-complete library
 
 var loadJSON = function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("names/json");
+  xobj.overrideMimeType("animals/json");
   console.log(templateUrl);
-  xobj.open('GET', templateUrl + '/assets/scripts/names.json', true); // Replace 'my_data' with the path to your file
+  xobj.open('GET', templateUrl + '/assets/scripts/animals.json', true); // Replace 'my_data' with the path to your file
 
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
@@ -401,7 +401,16 @@ for (var i = 0; i < navItems.length; i++) {
 
 var $hamburgerIcon = document.querySelector(".hamburger");
 var $links = document.querySelector(".nav__links");
+var $main = document.querySelector("main");
 $hamburgerIcon.addEventListener("click", function () {
   $links.classList.toggle("is-active");
   $hamburgerIcon.classList.toggle("is-active");
+
+  if ($main) {
+    if ($links.classList.contains("is-active")) {
+      $main.style.opacity = .2;
+    } else {
+      $main.style.opacity = 1;
+    }
+  }
 });

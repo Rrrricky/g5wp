@@ -39,9 +39,9 @@ let templateUrl = object_name.templateUrl
 //Auto-complete library
 const loadJSON=(callback)=>{
 	let xobj = new XMLHttpRequest()
-			xobj.overrideMimeType("names/json")
+			xobj.overrideMimeType("animals/json")
 			console.log(templateUrl)
-	xobj.open('GET', templateUrl+'/assets/scripts/names.json', true) // Replace 'my_data' with the path to your file
+	xobj.open('GET', templateUrl+'/assets/scripts/animals.json', true) // Replace 'my_data' with the path to your file
 	xobj.onreadystatechange = function () {
 				if (xobj.readyState == 4 && xobj.status == "200") {
 					// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode

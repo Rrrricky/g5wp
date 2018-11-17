@@ -317,14 +317,14 @@ body{background:#000;color:white;font-family:"Didot"}
 .wrapperAnimal__disappearance__content__text{width:100%;margin-left:0;padding:5px}
 .wrapperAnimal__donations__content__textBloc{width:100%;position:absolute;left:0;right:0}
 }@media(max-width:750px){.wrap__ball{display:none}
-.hamburger{display:block !important}
+.hamburger{display:block !important;z-index:4}
 .nav{margin:0;display:block}
 .nav__links{display:block}
 .nav__logo{text-align:center;margin:10px}
 .nav__search{display:none}
-.nav__links{position:absolute;top:60px;-webkit-transform:translateX(-100vw);transform:translateX(-100vw);z-index:2;-webkit-transition:-webkit-transform 1s;transition:-webkit-transform 1s;transition:transform 1s;transition:transform 1s,-webkit-transform 1s;will-change:transform}
+.nav__links{position:fixed;top:60px;-webkit-transform:translateX(-100vw);transform:translateX(-100vw);z-index:2;-webkit-transition:-webkit-transform .25s;transition:-webkit-transform .25s;transition:transform .25s;transition:transform .25s,-webkit-transform .25s;will-change:transform}
 .nav__links.is-active{-webkit-transform:translate(0);transform:translate(0)}
-.nav__links>li{list-style-type:none;background:grey;border-top:1px solid black;border-bottom:1px solid black;margin:0;padding:0;opacity:1 !important}
+.nav__links>li{list-style-type:none;background:#646464;border-top:1px solid black;border-bottom:1px solid black;margin:0;padding:0;opacity:1 !important}
 .nav__links>li>a{display:block;width:100vw;z-index:100;padding:20px}
 .nav__active{margin:-25px 0 0 10px}
 }@media screen and (max-width:750px){.wrapperAnimal__home__header div{margin-top:-5px}

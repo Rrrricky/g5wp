@@ -57,6 +57,7 @@
 @media (max-width: 750px) {
 	.hamburger {
 		display: block !important;
+		z-index: 4;
 	}
 	.nav {
 		margin: 0;
@@ -72,11 +73,11 @@
 			display: none;
 		}
 		&__links {
-			position: absolute;
+			position: fixed;
 			top: 60px;
 			transform: translateX(-100vw);
 			z-index: 2;
-			transition: transform 1s;
+			transition: transform .25s;
 			will-change: transform;
 		}
 		&__links.is-active {
@@ -84,7 +85,7 @@
 		}
 		&__links > li {
 			list-style-type: none;
-			background: grey;
+			background: rgba(100, 100, 100, 1);
 			border-top: 1px solid black;
 			border-bottom: 1px solid black;
 			margin: 0;
