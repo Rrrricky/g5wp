@@ -212,3 +212,181 @@
 	}
 }
 
+
+/**
+* Responsive
+*/
+
+@media (max-width: 1200px) {
+	.RegionPage {
+		&__title {
+			h1:nth-child(1) {
+				font-size: 110px;
+			}
+		}
+		&__climate-subtitle-1, &__climate-subtitle-2 {
+			font-size: 80px;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.RegionPage {
+		&__species-picture-1 {
+			grid-row: 12;
+		}
+		&__species-text-1 {
+			grid-row: 13;
+		}
+		&__species-picture-1,
+		&__species-text-1 {
+			grid-column: 1 / 7;
+		}
+		&__species-picture-2 {
+			grid-row: 12;
+		}
+		&__species-text-2 {
+			grid-row: 13;
+		}
+		&__species-picture-2,
+		&__species-text-2 {
+			grid-column: 7 / 13;
+		}
+		&__species-picture-3,
+		&__species-text-3 {
+			grid-column: 1 / 7;
+		}
+		&__species-picture-4,
+		&__species-text-4 {
+			grid-column: 7 / 13;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.RegionPage {
+		&__title {
+			h1:nth-child(1) {
+				font-size: 90px;
+				left: -10px;
+			}
+		}
+		&__climate-subtitle-1, &__climate-subtitle-2 {
+			font-size: 60px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.RegionPage {
+		&__title {
+			h1:nth-child(1) {
+				font-size: 70px;
+			}
+		}
+		&__climate-subtitle-1, &__climate-subtitle-2 {
+			font-size: 40px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.RegionPage {
+		&__title {
+			h1:nth-child(1) {
+				font-size: 50px;
+				margin-left: 20px;
+				left: 0px;
+			}
+		}
+		&__climate-subtitle-1, &__climate-subtitle-2 {
+			font-size: 30px;
+		}
+		&__species-picture-1 {
+			grid-row: 12;
+		}
+		&__species-text-1 {
+			grid-row: 13;
+		}
+		&__species-picture-1,
+		&__species-text-1 {
+			grid-column: 1 / 13;
+		}
+		&__species-picture-2 {
+			grid-row: 14;
+		}
+		&__species-text-2 {
+			grid-row: 15;
+		}
+		&__species-picture-2,
+		&__species-text-2 {
+			grid-column: 1 / 13;
+		}
+		&__species-picture-3 {
+			grid-row: 16;
+		}
+		&__species-text-3 {
+			grid-row: 17;
+		}
+		&__species-picture-3,
+		&__species-text-3 {
+			grid-column: 1 / 13;
+		}
+		&__species-picture-4 {
+			grid-row: 18;
+		}
+		&__species-text-4 {
+			grid-row: 19;
+		}
+		&__species-picture-4,
+		&__species-text-4 {
+			grid-column: 1 / 13;
+		}
+		&__temperature-images {
+			&__badfact {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 430px) {
+	.RegionPage {
+		font-size: 10px;
+		grid-column-gap: 0px;
+		grid-row-gap: 30px;
+		&__title {
+			h1:nth-child(1) {
+				font-size: 70px;
+				line-height: 80px;
+			}
+		}
+		&__climate-subtitle-1 {
+			margin-top: 20px;
+		}
+		&__climate-subtitle-1, &__climate-subtitle-2 {
+			font-size: 30px;
+		}
+		&__data-subtitle, &__climate-fact-subtitle {
+			grid-column: 3 / 12;
+			display: flex;
+			align-items: center;
+			margin: 40px 0 40px 10px;
+			font-size: 15px;
+			line-height: 120%;
+		}
+		&__region-subtitle {
+			grid-column: 1 / 13;
+			font-size: 15px;
+			margin: 50px 0;
+		}
+		&__region-text {
+			> span:nth-child(2) {
+				left: -60px;
+			}
+		}
+		&__species-title {
+			margin: 50px 0 20px 0;
+		}
+	}
+}

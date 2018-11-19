@@ -289,6 +289,16 @@ body{background:#000;color:white;font-family:"Didot"}
 .custom-home-page__subtitle{grid-column:1 / 4}
 .custom-home-page__button{grid-column:1 / 3}
 .custom-home-page__catch{grid-column:6 / 3}
+.RegionPage__title h1:nth-child(1){font-size:110px}
+.RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:80px}
+}@media(max-width:950px){.RegionPage__species-picture-1{grid-row:12}
+.RegionPage__species-text-1{grid-row:13}
+.RegionPage__species-picture-1,.RegionPage__species-text-1{grid-column:1 / 7}
+.RegionPage__species-picture-2{grid-row:12}
+.RegionPage__species-text-2{grid-row:13}
+.RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:7 / 13}
+.RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:1 / 7}
+.RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:7 / 13}
 }@media screen and (max-width:920px){.donation__sideWrap{border:2px solid blue;width:100%;height:90vh;position:absolute}
 .donation #give-donation-level-button-wrap{grid-template-columns:repeat(2,1fr)}
 }@media screen and (max-width:900px){.wrapperAnimal__home__header{width:300px}
@@ -316,6 +326,9 @@ body{background:#000;color:white;font-family:"Didot"}
 .wrapperAnimal__disappearance__content__box__text{font-size:17px;width:100%;padding:5px}
 .wrapperAnimal__disappearance__content__text{width:100%;margin-left:0;padding:5px}
 .wrapperAnimal__donations__content__textBloc{width:100%;position:absolute;left:0;right:0}
+}@media(max-width:850px){.RegionPage__title h1:nth-child(1){font-size:90px;left:-10px}
+.RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:60px}
+}@media screen and (max-width:750px){.wrapperAnimal__home__header div{margin-top:-5px}
 }@media(max-width:750px){.wrap__ball{display:none}
 .hamburger{display:block !important;z-index:4}
 .nav{margin:0;display:block}
@@ -327,18 +340,42 @@ body{background:#000;color:white;font-family:"Didot"}
 .nav__links>li{list-style-type:none;background:#646464;border-top:1px solid black;border-bottom:1px solid black;margin:0;padding:0;opacity:1 !important}
 .nav__links>li>a{display:block;width:100vw;z-index:100;padding:20px}
 .nav__active{margin:-25px 0 0 10px}
-}@media screen and (max-width:750px){.wrapperAnimal__home__header div{margin-top:-5px}
 }@media(max-width:700px){.custom-home-page__title{font-size:45px;line-height:50px;grid-column:1 / 5}
 .custom-home-page__subtitle{font-size:16px;grid-column:1 / 4}
 .custom-home-page__button{grid-column:1 / 4}
 .custom-home-page__catch{font-size:16px;grid-column:6 / 3}
+.RegionPage__title h1:nth-child(1){font-size:70px}
+.RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:40px}
 }@media screen and (max-width:640px){.grid-menu{grid-template-columns:1fr 1fr}
 }@media(max-width:500px){.custom-home-page{margin:0 30px;grid-column-gap:3px}
 .custom-home-page__title{font-size:45px;line-height:50px;grid-column:1 / 6;grid-row-start:1}
 .custom-home-page__subtitle{font-size:16px;grid-column:1 / 6;grid-row-start:2}
 .custom-home-page__button{grid-column:1 / 6;grid-row-start:3}
 .custom-home-page__catch{font-size:12px;grid-column:6 / 1;grid-row-start:4}
+.RegionPage__title h1:nth-child(1){font-size:50px;margin-left:20px;left:0}
+.RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:30px}
+.RegionPage__species-picture-1{grid-row:12}
+.RegionPage__species-text-1{grid-row:13}
+.RegionPage__species-picture-1,.RegionPage__species-text-1{grid-column:1 / 13}
+.RegionPage__species-picture-2{grid-row:14}
+.RegionPage__species-text-2{grid-row:15}
+.RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:1 / 13}
+.RegionPage__species-picture-3{grid-row:16}
+.RegionPage__species-text-3{grid-row:17}
+.RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:1 / 13}
+.RegionPage__species-picture-4{grid-row:18}
+.RegionPage__species-text-4{grid-row:19}
+.RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:1 / 13}
+.RegionPage__temperature-images__badfact{display:none}
 }@media screen and (max-width:500px){.donation__sideWrap{padding:50px 30px}
+}@media(max-width:430px){.RegionPage{font-size:10px;grid-column-gap:0;grid-row-gap:30px}
+.RegionPage__title h1:nth-child(1){font-size:70px;line-height:80px}
+.RegionPage__climate-subtitle-1{margin-top:20px}
+.RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:30px}
+.RegionPage__data-subtitle,.RegionPage__climate-fact-subtitle{grid-column:3 / 12;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:40px 0 40px 10px;font-size:15px;line-height:120%}
+.RegionPage__region-subtitle{grid-column:1 / 13;font-size:15px;margin:50px 0}
+.RegionPage__region-text>span:nth-child(2){left:-60px}
+.RegionPage__species-title{margin:50px 0 20px 0}
 }@media screen and (max-width:400px){.grid-menu{grid-template-columns:1fr}
 }@-webkit-keyframes imageAnimation{0%{opacity:0;-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}
 8%{opacity:1;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}

@@ -1,14 +1,40 @@
 <?php
 
+get_header();
+
+	$args_animal = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+		'tax_query' => [
+			[
+				'taxonomy' => 'animal',
+				'field' => "name",
+				'terms' => "Afrique de l'Est",
+			]
+		]
+	];
+
+
+	// Get animal list
+	$the_region = new WP_Query($args_animal);
+	if($the_region->have_posts()):
+		while($the_region->have_posts()):
+			$the_region->the_post();
+				the_title();
+				$img = the_field('animal_home');
+		endwhile;
+	endif;
+	wp_reset_postdata();
+
+
 
 $main_picture = get_field('main_picture');
 $secondary_picture = get_field('region_photo');
 $thumb1 = get_field('thumbnail_1');
 $thumb2 = get_field('thumbnail_2');
 
+?>
 
-
-get_header() ?>
 
 <div class="RegionPage">
 	<?php if(!empty($main_picture)): ?>
@@ -62,14 +88,20 @@ get_header() ?>
 		<img src="<?php echo $thumb2; ?>" />
 	<?php endif; ?>
 	<div class="RegionPage__temperature-images__badfact">
-		<p><?php the_field("fact_number") ?></p>
-		<p><?php the_field("small_fact") ?></p>
+		<?php if(!empty($thumb1) && !empty($thumb2)): ?>
+			<p><?php the_field("fact_number") ?></p>
+			<p><?php the_field("small_fact") ?></p>
+		<?php endif; ?>
 	</div>
 	</div>
 	<p class="RegionPage__temperature-text">
 		<?php the_field("secondary_text"); ?>
 	</p>
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
+	<!-- Wanna display every animal with the category  -->
+
+
+
 	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="https://picsum.photos/200/200"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="https://picsum.photos/200/200"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-3" src="https://picsum.photos/200/200"/>

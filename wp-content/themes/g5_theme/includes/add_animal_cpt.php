@@ -44,11 +44,11 @@ function add_animal_custom_post_it(){
 
 
         $taxonomy = 'animal'; // Nom
-        $object_type = array('animals'); // Contenus concernés
+        $object_type = array('animal'); // Contenus concernés
         $tax_args = array(
-            'label' => 'Subject', // Nom affiché
+            'label' => 'Region', // Nom affiché
             'rewrite' => array( 'slug' => 'animal' ),
-            'hierarchical' => false, // Si hiérarchie possible
+            'hierarchical' => true, // Si hiérarchie possible
         );
 
         register_taxonomy($taxonomy, $object_type, $tax_args);

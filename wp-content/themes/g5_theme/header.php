@@ -9,7 +9,7 @@
 	if($the_query->have_posts()):
 		while($the_query->have_posts()):
 			$the_query->the_post();
-			$animals[] = get_the_title();
+			$animals[] = ["name" => get_the_title()];
 		endwhile;
 	endif;
 	wp_reset_postdata();
@@ -24,6 +24,17 @@
 			exit;
 		endif;
 	endif;
+
+
+
+	$result = file_get_contents('animals.json');
+	$result = json_decode($result);
+	// echo '<pre>';
+	// print_r($result);
+	// echo '</pre>';
+	// $json_data = json_encode($animals);
+	// file_put_contents('animals.json', $json_data);
+
 ?>
 
 
