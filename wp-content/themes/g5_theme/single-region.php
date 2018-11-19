@@ -111,3 +111,5 @@ $thumb2 = get_field('thumbnail_2');
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-3">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-4">Découvrir</a>
 </div>
+
+<?php get_footer() ?>
