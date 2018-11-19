@@ -403,7 +403,7 @@ var $hamburgerIcon = document.querySelector(".hamburger");
 var $links = document.querySelector(".nav__links");
 var $main = document.querySelector("main");
 $hamburgerIcon.addEventListener("click", function () {
-  alert('ok');
+  console.log('ok');
   $links.classList.toggle("is-active");
   $hamburgerIcon.classList.toggle("is-active");
 
