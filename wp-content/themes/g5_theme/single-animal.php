@@ -25,6 +25,7 @@ $args_animal = [
 	endif;
 	wp_reset_postdata();
 */
+$id = get_the_ID();
 
 $home_picture = get_field('animal_home');
 $habitat_picture = get_field('animal_habitat_img');
@@ -109,6 +110,7 @@ $donation_picture = get_field('animal_donation_img');
       </div>
       <!-- List number -->
       <?php
+      /*
         $current_post_id = get_the_ID();
         $count_posts = wp_count_posts('animal')->publish;
         $wp_query = new WP_Query(array('post_type' => 'animal', 'posts_per_page' => -1)); ?>
@@ -125,6 +127,7 @@ $donation_picture = get_field('animal_donation_img');
           wp_reset_postdata();
         endif;
         $published_posts = $count_posts->publish;
+        */
       ?>
       <div class="wrapperAnimal__home__footer__list">
         <div class="wrapperAnimal__home__footer__list__current-number"><?= $index; ?> / <?php echo $count_posts ?></div>
@@ -150,7 +153,7 @@ $donation_picture = get_field('animal_donation_img');
         <div class="wrapperAnimal__habitat__content__text__side">
         <p><?php the_field('animal_habitat_location'); ?></p></div>
         <div class="wrapperAnimal__habitat__content__text__main">
-        <?php the_field('animal_habitat_text'); ?></div>
+        <?php the_field('animal_habitat_text', $id); ?></div>
       </div>
     </div>
   </section>
@@ -167,7 +170,7 @@ $donation_picture = get_field('animal_donation_img');
         <img src="<?php echo $alimentaire_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__food__content__text">
-        <?php the_field('animal_food_text'); ?>
+        <?php the_field('animal_food_text', $id); ?>
       </div>
     </div>
   </section>
@@ -180,14 +183,14 @@ $donation_picture = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
       <div class="wrapperAnimal__disappearance__content__text">
-        <?php the_field('animal_disappear_text'); ?>
+        <?php the_field('animal_disappear_text', $id); ?>
       </div>
       <div class="wrapperAnimal__disappearance__content__box">
         <div class="wrapperAnimal__disappearance__content__box__title">
           A savoir
         </div>
         <div class="wrapperAnimal__disappearance__content__box__text">
-          <?php the_field('animal_disappear_box_text'); ?>
+          <?php the_field('animal_disappear_box_text', $id); ?>
         </div>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
