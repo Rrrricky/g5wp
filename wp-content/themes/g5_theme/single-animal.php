@@ -1,13 +1,38 @@
 <?php
-$homePic = get_field('animal_home');
-$habitatPic = get_field('animal_habitat_img');
-$foodPic = get_field('animal_food_img');
-$disappearPic = get_field('animal_disappear_img');
-$donationPic = get_field('animal_donation_img');
+get_header();
+
+/*
+$args_animal = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+		'tax_query' => [
+			[
+				'taxonomy' => 'animal',
+				'field' => "name",
+				'terms' => "Afrique de l'Est",
+			]
+		]
+	];
+
+	// Get animal list
+	$the_animals = new WP_Query($args_animal);
+	if($the_animals->have_posts()):
+		while($the_animals->have_posts()):
+			$the_animals->the_post();
+				the_title();
+				$img = the_field('animal_home');
+		endwhile;
+	endif;
+	wp_reset_postdata();
+*/
+
+$home_picture = get_field('animal_home');
+$habitat_picture = get_field('animal_habitat_img');
+$alimentaire_picture = get_field('animal_food_img');
+$disparition_picture = get_field('animal_disappear_img');
+$donation_picture = get_field('animal_donation_img');
+
 ?>
-<!-- ------------------------ -->
-<!-- Main Header -->
-<?php get_header() ?>
 
 <!-- Wrapper -->
 <div class="wrapperAnimal">
@@ -41,7 +66,7 @@ $donationPic = get_field('animal_donation_img');
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <img src="<?php echo $homePic; ?>" alt="">
+        <img src="<?php echo $home_picture ?>" alt="">
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -119,11 +144,13 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="<?php echo $habitatPic; ?>" alt="">
+        <img src="<?php echo $habitat_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
-        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animal_habitat_location'); ?></div>
-        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animal_habitat_text'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__side">
+        <p><?php the_field('animal_habitat_location'); ?></p></div>
+        <div class="wrapperAnimal__habitat__content__text__main">
+        <?php the_field('animal_habitat_text'); ?></div>
       </div>
     </div>
   </section>
@@ -137,7 +164,7 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <img src="<?php echo $foodPic; ?>" alt="">
+        <img src="<?php echo $alimentaire_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__food__content__text">
         <?php the_field('animal_food_text'); ?>
@@ -164,7 +191,7 @@ $donationPic = get_field('animal_donation_img');
         </div>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
-        <img src="<?php echo $disappearPic; ?>" alt="">
+        <img src="<?php echo $disparition_picture?>">
       </div>
     </div>
   </section>
@@ -173,7 +200,7 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <img src="<?php echo $donationPic; ?>" alt="">
+        <img src="<?php echo $donation_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
         <div class="wrapperAnimal__donations__content__textBloc__header">
@@ -190,9 +217,6 @@ $donationPic = get_field('animal_donation_img');
 </div>
       </div>
     </div>
-  </section>
-  <!-- Section Footer -->
-  <section class="wrapperAnimal__footer">
   </section>
 </div>
 <!-- Main Footer -->
