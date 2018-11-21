@@ -83,7 +83,7 @@ $navbarHeight: 10vh;
 					text-transform: uppercase;
 				}
 				&__title {
-					font-size: 65px;
+					font-size: 58px;
 					text-transform: uppercase;
 					&__smaller {
 						font-size: 18px;
@@ -217,6 +217,7 @@ $navbarHeight: 10vh;
 			font-weight: bold;
 			text-align: center;
 			z-index: 1;
+			margin-bottom: 10px;
 			.rightSidedHeader {
 				position: relative;
 				right: 50px;
@@ -240,7 +241,7 @@ $navbarHeight: 10vh;
 				.rightSidedHeader {
 					font-size: 80px;
 					font-weight: bold;
-					margin-left: 80px;
+					margin-left: 60px;
 				}
 				img {
 					height: 100%;
@@ -357,7 +358,7 @@ $navbarHeight: 10vh;
 					font-family: "Raleway";
 				}
 				&__firstParagraph {
-					font-size: 12px;
+					font-size: 14px;
 					font-weight: medium;
 					font-family: "Raleway";
 					margin-bottom: 30px;

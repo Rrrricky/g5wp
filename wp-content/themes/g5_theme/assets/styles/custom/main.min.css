@@ -52,7 +52,7 @@
 .wrapperAnimal__home__content{height:100%;display:grid;grid-template-columns:1.5fr 1fr}
 .wrapperAnimal__home__content__text{padding-left:20px;-ms-flex-item-align:center;align-self:center;margin-top:-80px}
 .wrapperAnimal__home__content__text__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:30px 0;text-transform:uppercase}
-.wrapperAnimal__home__content__text__title{font-size:65px;text-transform:uppercase}
+.wrapperAnimal__home__content__text__title{font-size:58px;text-transform:uppercase}
 .wrapperAnimal__home__content__text__title__smaller{font-size:18px}
 .wrapperAnimal__home__content__text__title__desc{font-weight:regular;font-size:16px;max-width:80%;text-align:justify}
 .wrapperAnimal__home__content__img img{height:80vh;width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:50% 50%;object-position:50% 50%}
@@ -72,11 +72,11 @@
 .wrapperAnimal__habitat__content__text{-ms-flex-item-align:center;align-self:center;margin-top:120px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .wrapperAnimal__habitat__content__text__main{width:466px;font-family:"Raleway";font-size:18px;-ms-flex-item-align:center;align-self:center;text-align:justify}
 .wrapperAnimal__habitat__content__text__side{-ms-flex-item-align:center;align-self:center;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);font-weight:bold;font-size:20px;width:auto;min-width:130px;margin-right:-10px;border-bottom:5px solid #888e94;padding-bottom:25px;text-align:center;opacity:.6}
-.wrapperAnimal__food__header{font-size:80px;font-weight:bold;text-align:center;z-index:1}
+.wrapperAnimal__food__header{font-size:80px;font-weight:bold;text-align:center;z-index:1;margin-bottom:10px}
 .wrapperAnimal__food__header .rightSidedHeader{position:relative;right:50px;text-shadow:0 0 2px #000;display:none}
 .wrapperAnimal__food__content{display:-webkit-box;display:-ms-flexbox;display:flex;height:564px;width:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
 .wrapperAnimal__food__content__img{height:564px !important;width:695px;position:absolute;left:0;z-index:-1;display:-webkit-box;display:-ms-flexbox;display:flex}
-.wrapperAnimal__food__content__img .rightSidedHeader{font-size:80px;font-weight:bold;margin-left:80px}
+.wrapperAnimal__food__content__img .rightSidedHeader{font-size:80px;font-weight:bold;margin-left:60px}
 .wrapperAnimal__food__content__img img{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
 .wrapperAnimal__food__content__text{-ms-flex-item-align:center;align-self:center;font-size:18px;font-family:"Raleway";width:800px;background-color:#e67e37;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:justify;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:40px;margin-right:80px}
 .wrapperAnimal__disappearance{margin-top:90px}
@@ -92,7 +92,7 @@
 .wrapperAnimal__donations__content__image img{width:100%;height:720px;-o-object-fit:cover;object-fit:cover}
 .wrapperAnimal__donations__content__textBloc{width:515px;height:300px;position:absolute;bottom:0;right:100px;background-color:white;color:black;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;padding:50px}
 .wrapperAnimal__donations__content__textBloc__header{font-size:30px;font-weight:bold;margin-bottom:30px;font-family:"Raleway"}
-.wrapperAnimal__donations__content__textBloc__firstParagraph{font-size:12px;font-weight:medium;font-family:"Raleway";margin-bottom:30px}
+.wrapperAnimal__donations__content__textBloc__firstParagraph{font-size:14px;font-weight:medium;font-family:"Raleway";margin-bottom:30px}
 .wrapperAnimal__donations__content__textBloc__btn{margin-bottom:30px;width:200px;background-color:#e67e37;font-size:18px;font-weight:Bold;color:white;padding:15px 20px}
 .wrapperAnimal__donations__content__textBloc__btn:hover{background-color:white;color:black;-webkit-box-shadow:inset 0 0 10px #000;box-shadow:inset 0 0 10px #000}
 .wrapperAnimal__donations__content__textBloc__secondParagraph{font-family:"Raleway";font-size:14px;font-weight:600}
