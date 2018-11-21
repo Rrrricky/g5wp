@@ -185,6 +185,7 @@ $donation_picture = get_field('animal_donation_img');
       <div class="wrapperAnimal__disappearance__content__text">
         <?php the_field('animal_disappear_text', $id); ?>
       </div>
+      <div class="wrapperAnimal__disappearance__content__image">
       <div class="wrapperAnimal__disappearance__content__box">
         <div class="wrapperAnimal__disappearance__content__box__title">
           A savoir
@@ -193,7 +194,7 @@ $donation_picture = get_field('animal_donation_img');
           <?php the_field('animal_disappear_box_text', $id); ?>
         </div>
       </div>
-      <div class="wrapperAnimal__disappearance__content__image">
+
         <img src="<?php echo $disparition_picture?>">
       </div>
     </div>

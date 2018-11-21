@@ -270,14 +270,17 @@ $navbarHeight: 10vh;
 		&__header {
 			font-size: 110px;
 			font-weight: Bold;
-			margin-left: 40px;
+			width: 50%;
+			text-align: center;
+			margin-left: 30px;
 		}
 		&__content {
-			margin-top: 40px;
+			margin: -50px 20px 0px 20px;
 			display: flex;
 			height: 603px;
 			align-content: center;
 			align-items: center;
+			justify-content: space-around;
 			&__text {
 				font-size: 18px;
 				font-family: "Raleway";
@@ -285,18 +288,19 @@ $navbarHeight: 10vh;
 				align-self: center;
 				z-index: 1;
 				text-align: justify;
-				width: 40%;
-				margin-left: 25px;
+				width: 50%;
+				padding: 0 30px;
 				text-shadow: 0 0 2px #000;
 			}
 			&__box {
 				background-color: #e67e37;
 				width: 288px;
 				align-self: flex-start;
-				position: absolute;
-				right: 40px;
-				margin-top: -10px;
+				position: relative;
+				margin-bottom: -70px;
 				z-index: 1;
+				margin-left: auto;
+				margin-right: 0;
 				&__title {
 					font-size: 20px;
 					text-align: center;
@@ -310,9 +314,7 @@ $navbarHeight: 10vh;
 				}
 			}
 			&__image {
-				position: absolute;
-				right: 40px;
-
+				right: 0px;
 				img {
 					width: 612px;
 					height: 460px;
@@ -481,7 +483,9 @@ $navbarHeight: 10vh;
 		&__disappearance {
 			&__header {
 				font-size: 50px;
-				margin-bottom: -30px;
+				margin-bottom: 40px;
+				text-align: left;
+				margin-left: 40px;
 			}
 			&__content {
 				display: block;
