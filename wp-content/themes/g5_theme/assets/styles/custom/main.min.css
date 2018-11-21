@@ -8,6 +8,7 @@
 .nav__links>li{list-style-type:none;padding:0 40px}
 .nav__links>li>a{text-decoration:none;color:white}
 .nav__search{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;text-align:end}
+.nav__search span{position:absolute;margin-right:75px}
 .nav__active{width:50px;height:10px;background-color:#e67e37;margin:-5px 0 0 10px;opacity:.5;position:absolute}
 .custom-home-page{margin:0 40px;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(4,minmax(50px,auto));grid-gap:30px;-ms-flex-line-pack:center;align-content:center;overflow-y:hidden}
 .custom-home-page__title{font-size:55px;line-height:70px;grid-column:1 / 4;grid-row-start:3}

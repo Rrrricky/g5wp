@@ -43,6 +43,11 @@
 	&__search {
 		flex-grow: 2;
 		text-align: end;
+		span {
+			position: absolute;
+			margin-right: 75px;
+			//display: block;
+		}
 	}
 	&__active {
 		width: 50px;
