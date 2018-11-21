@@ -93,7 +93,8 @@ $navbarHeight: 10vh;
 					&__desc {
 						font-weight: regular;
 						font-size: 16px;
-						max-width: 50%;
+						max-width: 80%;
+						text-align: justify;
 					}
 				}
 			}
@@ -102,6 +103,7 @@ $navbarHeight: 10vh;
 					height: 702px;
 					width: 100%;
 					object-fit: cover;
+					object-position: 50% 50%;
 				}
 			}
 			.line {
@@ -172,7 +174,7 @@ $navbarHeight: 10vh;
 		margin-top: 100px;
 		&__header {
 			font-weight: bold;
-			font-size: 190px;
+			font-size: 140px;
 			text-align: center;
 			margin-left: 80px;
 		}
@@ -196,7 +198,7 @@ $navbarHeight: 10vh;
 					font-family: "Raleway";
 					font-size: 18px;
 					align-self: center;
-					text-align: left;
+					text-align: justify;
 				}
 				&__side {
 					align-self: center;
@@ -216,14 +218,15 @@ $navbarHeight: 10vh;
 	}
 	&__food {
 		&__header {
-			font-size: 100px;
+			font-size: 80px;
 			font-weight: bold;
 			text-align: center;
 			z-index: 1;
 			.rightSidedHeader {
-				position: absolute;
+				position: relative;
 				right: 50px;
 				text-shadow: 0 0 2px #000;
+				display: none;
 			}
 		}
 		&__content {
@@ -238,6 +241,12 @@ $navbarHeight: 10vh;
 				position: absolute;
 				left: 0;
 				z-index: -1;
+				display: flex;
+				.rightSidedHeader {
+					font-size: 80px;
+					font-weight: bold;
+					margin-left: 80px;
+				}
 				img {
 					height: 100%;
 					width: 100%;
@@ -248,21 +257,22 @@ $navbarHeight: 10vh;
 				align-self: center;
 				font-size: 18px;
 				font-family: "Raleway";
-				width: 1003px;
+				width: 800px;
 				background-color: #e67e37;
 				z-index: 1;
 				// Center the text in the box
 				display: flex;
-				text-align: left;
+				text-align: justify;
 				align-items: center;
 				padding: 30px;
+				margin-right: 80px;
 			}
 		}
 	}
 	&__disappearance {
 		margin-top: 90px;
 		&__header {
-			font-size: 121px;
+			font-size: 110px;
 			font-weight: Bold;
 			margin-left: 40px;
 		}
@@ -275,10 +285,10 @@ $navbarHeight: 10vh;
 			&__text {
 				font-size: 18px;
 				font-family: "Raleway";
-				color: #888e94;
+				color: white;
 				align-self: center;
 				z-index: 1;
-				text-align: left;
+				text-align: justify;
 				width: 40%;
 				margin-left: 25px;
 				text-shadow: 0 0 2px #000;
@@ -299,7 +309,7 @@ $navbarHeight: 10vh;
 				&__text {
 					font-family: "Raleway";
 					font-size: 12px;
-					text-align: left;
+					text-align: justify;
 					padding: 15px;
 				}
 			}
@@ -432,68 +442,8 @@ $navbarHeight: 10vh;
 		}
 	}
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
 	.wrapperAnimal {
-		&__home {
-			&__header {
-				width: 300px;
-				ul {
-					margin-left: 10px;
-				}
-			}
-
-			&__content {
-				&__text {
-					grid-column: 1/-1;
-					&__title {
-						&__desc {
-							max-width: 90%;
-						}
-					}
-				}
-				&__img {
-					img {
-						position: absolute;
-						z-index: -1;
-						width: 100%;
-					}
-				}
-			}
-		}
-		&__habitat {
-			height: 650px;
-			margin-bottom: 15px;
-			&__header {
-				font-size: 73px;
-				margin-left: 0px;
-			}
-			&__content {
-				align-content: center;
-				justify-content: center;
-				height: auto;
-				display: flex;
-				&__map {
-					margin: auto;
-					width: 100%;
-					img {
-						object-fit: cover;
-						width: 100%;
-						height: auto;
-					}
-				}
-				&__text {
-					max-width: 100%;
-					padding: 5px;
-					position: absolute;
-					margin-top: 230px;
-					position: static;
-					&__side {
-						display: none;
-					}
-				}
-			}
-		}
 		&__food {
 			&__header {
 				font-size: 50px;
@@ -501,6 +451,7 @@ $navbarHeight: 10vh;
 				.rightSidedHeader {
 					text-align: center;
 					position: static;
+					display: block;
 				}
 			}
 			&__content {
@@ -512,6 +463,9 @@ $navbarHeight: 10vh;
 					height: 400px !important;
 					display: block;
 					position: static;
+					.rightSidedHeader {
+						display: none;
+					}
 					img {
 						object-fit: cover;
 						width: 100%;
@@ -520,6 +474,7 @@ $navbarHeight: 10vh;
 				}
 				&__text {
 					margin-top: 0px;
+					margin-right: 0px;
 					padding: 20px;
 					width: auto;
 					display: block;
@@ -527,7 +482,6 @@ $navbarHeight: 10vh;
 				}
 			}
 		}
-
 		&__disappearance {
 			&__header {
 				font-size: 50px;
@@ -549,16 +503,6 @@ $navbarHeight: 10vh;
 					}
 				}
 				&__box {
-					/* width: 45%;
-					margin-top: 0;
-					padding: 15px;
-					border: 2px solid red;
-					right: 0;
-					bottom: 0;
-					display: block;
-					position: absolute;
-					height: auto;
-					font-size: 15px; */
 					display: none;
 					&__title {
 						font-size: 30px;
@@ -578,13 +522,77 @@ $navbarHeight: 10vh;
 				}
 			}
 		}
-		&__donations {
-			&__content {
-				&__textBloc {
-					width: 100%;
-					position: absolute;
-					left: 0;
-					right: 0;
+	}
+	@media screen and (max-width: 900px) {
+		.wrapperAnimal {
+			&__home {
+				&__header {
+					width: 300px;
+					ul {
+						margin-left: 10px;
+					}
+				}
+
+				&__content {
+					&__text {
+						grid-column: 1/-1;
+						&__title {
+							&__desc {
+								max-width: 90%;
+							}
+						}
+					}
+					&__img {
+						img {
+							position: absolute;
+							z-index: -1;
+							width: 100%;
+						}
+					}
+				}
+			}
+			&__habitat {
+				height: 650px;
+				margin-bottom: 15px;
+				&__header {
+					font-size: 73px;
+					margin-left: 0px;
+				}
+				&__content {
+					align-content: center;
+					justify-content: center;
+					height: auto;
+					display: flex;
+					&__map {
+						margin: auto;
+						width: 100%;
+						img {
+							object-fit: cover;
+							width: 100%;
+							height: auto;
+						}
+					}
+					&__text {
+						max-width: 100%;
+						padding: 5px;
+						position: absolute;
+						margin-top: 230px;
+						position: static;
+						&__side {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&__donations {
+				&__content {
+					&__textBloc {
+						width: 100%;
+						position: absolute;
+						left: 0;
+						right: 0;
+					}
 				}
 			}
 		}

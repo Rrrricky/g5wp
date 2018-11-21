@@ -161,13 +161,13 @@ $donation_picture = get_field('animal_donation_img');
   <section class="wrapperAnimal__food">
     <!-- Header interne -->
     <div class="wrapperAnimal__food__header">
-      Habitudes<br>
-      <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
+      Habitudes<br><span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
     </div>
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
         <img src="<?php echo $alimentaire_picture; ?>" alt="">
+        <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
       </div>
       <div class="wrapperAnimal__food__content__text">
         <?php the_field('animal_food_text', $id); ?>
