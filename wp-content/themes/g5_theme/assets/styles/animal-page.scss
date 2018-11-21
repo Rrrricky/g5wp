@@ -67,9 +67,8 @@ $navbarHeight: 10vh;
 		}
 		/* Content */
 		&__content {
-			height: 100%;
+			height: 95%;
 			display: grid;
-			//padding-bottom: 90px;
 			grid-template-columns: 1fr 1.2fr;
 			&__text {
 				padding-left: 20px;
@@ -114,13 +113,10 @@ $navbarHeight: 10vh;
 		}
 		/* Footer */
 		&__footer {
-			//bottom: 0;
-			//position: relative;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			// Margin on the footer childs
 			* {
 				margin: 0 10px;
 			}

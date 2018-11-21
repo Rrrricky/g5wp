@@ -49,7 +49,7 @@
 .wrapperAnimal__home__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
 .wrapperAnimal__home__header ul:nth-child(2){color:white}
 .wrapperAnimal__home__header ul div{width:48px;height:10px;background-color:#e67e37;opacity:.5;position:absolute}
-.wrapperAnimal__home__content{height:100%;display:grid;grid-template-columns:1fr 1.2fr}
+.wrapperAnimal__home__content{height:95%;display:grid;grid-template-columns:1fr 1.2fr}
 .wrapperAnimal__home__content__text{padding-left:20px;-ms-flex-item-align:center;align-self:center;margin-top:-80px}
 .wrapperAnimal__home__content__text__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:30px 0;text-transform:uppercase}
 .wrapperAnimal__home__content__text__title{font-size:65px;text-transform:uppercase}
