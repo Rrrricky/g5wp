@@ -4,6 +4,7 @@
 .nav{margin:0 40px;height:10vh;color:white;font-family:"Raleway",sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .nav__links{display:-webkit-box;display:-ms-flexbox;display:flex}
 .nav__logo{font-weight:700;font-size:18px;-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}
+.nav__logo img{height:44px;width:auto}
 .nav__links,.nav__search{font-weight:400;font-size:14px}
 .nav__links>li{list-style-type:none;padding:0 40px}
 .nav__links>li>a{text-decoration:none;color:white}

@@ -4,7 +4,9 @@
   </span>
 </button>
 <nav class="nav">
-  <p class="nav__logo">WeathAnimal</p>
+  <div class="nav__logo">
+    <p>WealthAnimal</p>
+  </div>
                 <?php // SYNTAXE : wp_nav_menu( array $args = array() )
                     $args=array(
                     'theme_location' => 'header', // nom du slug

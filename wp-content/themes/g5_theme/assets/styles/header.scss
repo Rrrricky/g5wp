@@ -22,6 +22,10 @@
 		font-weight: 700;
 		font-size: 18px;
 		flex-grow: 2;
+		img {
+			height: 44px;
+			width: auto;
+		}
 	}
 	/* Font style for links and search */
 	&__links,
