@@ -301,14 +301,15 @@ $navbarHeight: 10vh;
 				z-index: 1;
 				margin-left: auto;
 				margin-right: 0;
+				font-family: "Raleway";
 				&__title {
 					font-size: 20px;
 					text-align: center;
 					padding: 20px 0 0 0;
+					font-weight: 500;
 				}
 				&__text {
-					font-family: "Raleway";
-					font-size: 12px;
+					font-size: 14px;
 					text-align: justify;
 					padding: 15px;
 				}
@@ -351,19 +352,76 @@ $navbarHeight: 10vh;
 				align-items: center;
 				text-align: center;
 				padding: 50px;
+				font-family: "Raleway";
 				&__header {
 					font-size: 30px;
 					font-weight: bold;
 					margin-bottom: 30px;
-					font-family: "Raleway";
 				}
 				&__firstParagraph {
 					font-size: 14px;
 					font-weight: medium;
-					font-family: "Raleway";
 					margin-bottom: 30px;
 				}
+				/*----------------*/
 				&__btn {
+					margin-bottom: 30px;
+					width: 200px;
+					background-color: rgb(255, 255, 255);
+					font-size: 18px;
+					font-weight: Bold;
+					color: white;
+					line-height: 50px;
+					height: 50px;
+					text-align: center;
+					width: 250px;
+					cursor: pointer;
+					z-index: 0;
+					div {
+						transition: all 0.5s;
+						position: relative;
+						span {
+							z-index: 4;
+						}
+					}
+					div:hover {
+						color: black;
+					}
+					div::before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: -1;
+						background-color: rgba(230, 126, 55, 1);
+						transition: all 0.5s;
+					}
+					div:hover::before {
+						opacity: 0;
+						transform: scale(0.5, 0.5);
+					}
+					div::after {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 1;
+						opacity: 0;
+						transition: all 0.3s;
+						border: 1px solid rgba(0, 0, 0, 1);
+						transform: scale(1.2, 1.2);
+					}
+					div:hover::after {
+						opacity: 1;
+						transform: scale(1, 1);
+					}
+				}
+				/*----------------*/
+				/* &__btn {
 					margin-bottom: 30px;
 					width: 200px;
 					background-color: #e67e37;
@@ -371,22 +429,21 @@ $navbarHeight: 10vh;
 					font-weight: Bold;
 					color: white;
 					padding: 15px 20px;
-					&:hover {
+					cursor: pointer; */
+				/* &:hover {
 						background-color: white;
 						color: black;
 						box-shadow: inset 0 0 10px #000000;
-					}
-				}
-
-				&__secondParagraph {
-					font-family: "Raleway";
-					font-size: 14px;
-					font-weight: 600;
-				}
+					}*/
+			}
+			&__secondParagraph {
+				font-size: 14px;
+				font-weight: 600;
 			}
 		}
 	}
 }
+
 /* MOUSE */
 @-webkit-keyframes wheel-up-down {
 	0% {
