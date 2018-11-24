@@ -25,16 +25,8 @@ let $main = document.querySelector("main");
 $hamburgerIcon.addEventListener(
 	"click",
 	()=> {
-		console.log('ok')
 		$links.classList.toggle("is-active")
 		$hamburgerIcon.classList.toggle("is-active")
-		if($main) {
-			if($links.classList.contains("is-active")) {
-				$main.style.opacity = .2;
-			}else {
-				$main.style.opacity = 1;
-			}
-		}
 	}
 )
 

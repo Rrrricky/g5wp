@@ -403,15 +403,6 @@ var $hamburgerIcon = document.querySelector(".hamburger");
 var $links = document.querySelector(".nav__links");
 var $main = document.querySelector("main");
 $hamburgerIcon.addEventListener("click", function () {
-  console.log('ok');
   $links.classList.toggle("is-active");
   $hamburgerIcon.classList.toggle("is-active");
-
-  if ($main) {
-    if ($links.classList.contains("is-active")) {
-      $main.style.opacity = .2;
-    } else {
-      $main.style.opacity = 1;
-    }
-  }
 });

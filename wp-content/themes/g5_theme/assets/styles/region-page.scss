@@ -9,7 +9,7 @@
 	&__main-picture {
 		grid-column: 1 / 13;
 		width: 100vw;
-		height: 500px;
+		height: 100vh;
 		margin: 0 -40px;
 		object-fit: cover;
 	}
@@ -19,9 +19,10 @@
 		grid-row-start: 2;
 		position: relative;
 		height: 200px;
-		margin-top: 100px;
+		top: -250px;
 		margin-left: -40px;
 		margin-right: -40px;
+		margin-bottom: -250px;
 		opacity: 0.5;
 		> h1 {
 			font-size: 160px;
@@ -195,6 +196,13 @@
 		cursor: pointer;
 	}
 	&__species-picture-1,
+	&__species-picture-2,
+	&__species-picture-3,
+	&__species-picture-4 {
+		width: 200px;
+		height: 200px;
+	}
+	&__species-picture-1,
 	&__species-text-1 {
 		grid-column: 1 / 4;
 	}
@@ -287,6 +295,39 @@
 		&__climate-subtitle-1, &__climate-subtitle-2 {
 			font-size: 40px;
 		}
+		&__location {
+			grid-column: 1 / 13;
+			line-height: 120%;
+			> h4 {
+				font-weight: bold;
+				margin-bottom: 12px;
+				> span {
+					color: $button-color;
+				}
+			}
+		}
+		&__area {
+			grid-column: 1 / 13;
+			line-height: 120%;
+			> h4 {
+				font-weight: bold;
+				margin-bottom: 12px;
+				> span {
+					color: $button-color;
+				}
+			}
+		}
+		&__climate {
+			grid-column: 1 / 13;
+			line-height: 120%;
+			> h4 {
+				font-weight: bold;
+				margin-bottom: 12px;
+				> span {
+					color: $button-color;
+				}
+			}
+		}
 	}
 }
 
@@ -299,44 +340,56 @@
 				left: 0px;
 			}
 		}
+		&__climate-fact-subtitle {
+			grid-row: 11;
+		}
+		&__temperature-text {
+			grid-column: 7 / 12;
+			z-index: 0;
+			grid-row: 12;
+			line-height: 120%;
+		}
+		&__species-title {
+			grid-row: 13;
+		}
 		&__climate-subtitle-1, &__climate-subtitle-2 {
 			font-size: 30px;
 		}
 		&__species-picture-1 {
-			grid-row: 12;
+			grid-row: 14;
 		}
 		&__species-text-1 {
-			grid-row: 13;
+			grid-row: 15;
 		}
 		&__species-picture-1,
 		&__species-text-1 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-2 {
-			grid-row: 14;
+			grid-row: 16;
 		}
 		&__species-text-2 {
-			grid-row: 15;
+			grid-row: 17;
 		}
 		&__species-picture-2,
 		&__species-text-2 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-3 {
-			grid-row: 16;
+			grid-row: 18;
 		}
 		&__species-text-3 {
-			grid-row: 17;
+			grid-row: 19;
 		}
 		&__species-picture-3,
 		&__species-text-3 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-4 {
-			grid-row: 18;
+			grid-row: 20;
 		}
 		&__species-text-4 {
-			grid-row: 19;
+			grid-row: 21;
 		}
 		&__species-picture-4,
 		&__species-text-4 {

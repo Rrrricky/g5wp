@@ -2,17 +2,30 @@
 
 get_header();
 
-	$args_animal = [
-		'post_type' => 'animal',
-		'posts_per_page' => -1,
-		'tax_query' => [
-			[
-				'taxonomy' => 'animal',
-				'field' => "name",
-				'terms' => "Afrique de l'Est",
-			]
-		]
-	];
+
+
+
+//the_terms( $id, $taxonomy, $before, $sep, $after );
+// the_terms( $post->ID, 'animal', 'categories: ', ' / ' );
+
+
+// $name = get_field('name_of_region');
+
+
+
+	// $args_animal = [
+	// 	'post_type' => 'animal',
+	// 	'posts_per_page' => -1,
+	// 	'tax_query' => [
+	// 		[
+	// 			'taxonomy' => 'region',
+	// 			'field' => "name",
+	// 			'terms' => $name,
+	// 		]
+	// 	]
+	// ];
+
+
 
 
 	// Get animal list
@@ -20,11 +33,9 @@ get_header();
 	if($the_region->have_posts()):
 		while($the_region->have_posts()):
 			$the_region->the_post();
-				the_title();
-				$img = the_field('animal_home');
 		endwhile;
 	endif;
-	wp_reset_postdata();
+
 
 
 
@@ -32,6 +43,10 @@ $main_picture = get_field('main_picture');
 $secondary_picture = get_field('region_photo');
 $thumb1 = get_field('thumbnail_1');
 $thumb2 = get_field('thumbnail_2');
+
+// echo '<pre>';
+// var_dump($name);
+// echo '</pre>';
 
 ?>
 
@@ -102,14 +117,18 @@ $thumb2 = get_field('thumbnail_2');
 
 
 
-	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="https://picsum.photos/200/200"/>
+	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="<?php the_field('animal_home'); ?>"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="https://picsum.photos/200/200"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-3" src="https://picsum.photos/200/200"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-4" src="https://picsum.photos/200/200"/>
-	<a href="#" class="RegionPage__species-text RegionPage__species-text-1">Découvrir</a>
+	<a href="<?php the_permalink(); ?>" class="RegionPage__species-text RegionPage__species-text-1">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-2">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-3">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-4">Découvrir</a>
 </div>
 
-<?php get_footer() ?>
+<?php
+get_footer();
+wp_reset_postdata();
+?>
+

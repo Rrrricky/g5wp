@@ -16,12 +16,6 @@ function add_acf_option_page_support(){
     ));
 
     acf_add_options_sub_page(array(
-      'page_title'    => 'Options Générales',
-      'menu_title'    => 'Général',
-      'parent_slug'   => 'options',
-    ));
-
-    acf_add_options_sub_page(array(
       'page_title'    => 'Configuration des réseaux sociaux',
       'menu_title'    => 'Réseaux sociaux',
       'parent_slug'   => 'options',

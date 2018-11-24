@@ -43,10 +43,10 @@ function add_animal_custom_post_it(){
         register_post_type($post_type, $args);
 
 
-        $taxonomy = 'animal'; // Nom
+        $taxonomy = 'region'; // Nom
         $object_type = array('animal'); // Contenus concernés
         $tax_args = array(
-            'label' => 'Region', // Nom affiché
+            'label' => 'Animal category', // Nom affiché
             'rewrite' => array( 'slug' => 'animal' ),
             'hierarchical' => true, // Si hiérarchie possible
         );

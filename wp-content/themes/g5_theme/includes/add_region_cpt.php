@@ -43,16 +43,13 @@ function add_region_cpt(){
         register_post_type($post_type, $args);
 
 
-        $taxonomy = 'region'; // Nom
-        $object_type = array('regions'); // Contenus concernés
+        $taxonomy = 'animal'; // Nom
+        $object_type = array('region'); // Contenus concernés
         $tax_args = array(
-            'label' => 'Subject', // Nom affiché
-            'rewrite' => array( 'slug' => 'region' ),
-            'hierarchical' => false, // Si hiérarchie possible
+            'label' => 'Region category', // Nom affiché
+            'rewrite' => array( 'slug' => 'animal' ),
+            'hierarchical' => true, // Si hiérarchie possible
         );
 
         register_taxonomy($taxonomy, $object_type, $tax_args);
 }
-
-
-
