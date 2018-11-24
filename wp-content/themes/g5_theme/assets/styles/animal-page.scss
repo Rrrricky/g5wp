@@ -17,7 +17,6 @@ $navbarHeight: 10vh;
 			top: 30px;
 			margin: auto;
 			position: absolute;
-			// ...
 			transition: opacity 1s ease-out;
 			opacity: 0;
 			height: 0;
@@ -31,9 +30,9 @@ $navbarHeight: 10vh;
 			width: 60px;
 			height: 60px;
 			position: absolute;
-			font-size: 60px;
-			right: 35px;
-			top: 35px;
+			font-size: 30px;
+			right: 0px;
+			top: 20px;
 			transition: opacity 1s ease-out;
 			opacity: 0;
 			height: 0;
@@ -89,6 +88,7 @@ $navbarHeight: 10vh;
 						font-size: 18px;
 					}
 					&__desc {
+						font-family: "Raleway";
 						font-weight: regular;
 						font-size: 16px;
 						max-width: 80%;
@@ -412,7 +412,7 @@ $navbarHeight: 10vh;
 						z-index: 1;
 						opacity: 0;
 						transition: all 0.3s;
-						border: 1px solid rgba(0, 0, 0, 1);
+						border: 1px solid rgba(230, 126, 55, 1);
 						transform: scale(1.2, 1.2);
 					}
 					div:hover::after {

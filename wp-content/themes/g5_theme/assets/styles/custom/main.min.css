@@ -19,8 +19,9 @@
 .custom-home-page__button:hover{background-color:#e36f20}
 .custom-home-page__button:active{-webkit-transform:translate(0,2px);transform:translate(0,2px)}
 .custom-home-page__button__link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0;bottom:0;right:0}
-.custom-home-page__button__link__line{background:white;width:50px;height:1px;margin-left:15px;-webkit-box-shadow:0 -1px #333;box-shadow:0 -1px #333}
-.custom-home-page__catch{font-size:20px;grid-column:6 / 1;grid-row-start:8;justify-self:end;-ms-flex-item-align:end;align-self:end;margin-bottom:50px}
+.custom-home-page__button__link:hover .custom-home-page__button__link__line{visibility:visible;opacity:1}
+.custom-home-page__button__link__line{-webkit-transition:all .5s ease;transition:all .5s ease;opacity:0;background:white;width:50px;height:1px;margin-left:15px;-webkit-box-shadow:0 -1px #333;box-shadow:0 -1px #333}
+.custom-home-page__catch{font-size:20px;grid-column:6 / 1;grid-row-start:8;justify-self:end;-ms-flex-item-align:end;align-self:end;margin-bottom:50px;font-family:"Raleway"}
 .grid-menu{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:30px;margin:30px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .grid-menu__items>img{height:auto;width:100%;z-index:-2;-o-object-fit:cover;object-fit:cover}
 .grid-menu__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.2s;transition:.2s;-webkit-filter:opacity(60%);filter:opacity(60%)}
@@ -47,7 +48,7 @@
 .wrapperAnimal__home{height:80vh;position:relative}
 .wrapperAnimal__home__displayVideo{left:30px;right:30px;bottom:30px;top:30px;margin:auto;position:absolute;-webkit-transition:opacity 1s ease-out;transition:opacity 1s ease-out;opacity:0;height:0;overflow:hidden}
 .wrapperAnimal__home__displayVideo iframe{width:100%;height:100%}
-.wrapperAnimal__home__close{width:60px;height:60px;position:absolute;font-size:60px;right:35px;top:35px;-webkit-transition:opacity 1s ease-out;transition:opacity 1s ease-out;opacity:0;height:0;overflow:hidden}
+.wrapperAnimal__home__close{width:60px;height:60px;position:absolute;font-size:30px;right:0;top:20px;-webkit-transition:opacity 1s ease-out;transition:opacity 1s ease-out;opacity:0;height:0;overflow:hidden}
 .wrapperAnimal__home__header{height:50px;width:320px;position:absolute}
 .wrapperAnimal__home__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
 .wrapperAnimal__home__header ul:nth-child(2){color:white}
@@ -57,7 +58,7 @@
 .wrapperAnimal__home__content__text__statut{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Raleway",sans-serif;font-size:20px;color:#7f8082;margin:30px 0;text-transform:uppercase}
 .wrapperAnimal__home__content__text__title{font-size:58px;text-transform:uppercase}
 .wrapperAnimal__home__content__text__title__smaller{font-size:18px}
-.wrapperAnimal__home__content__text__title__desc{font-weight:regular;font-size:16px;max-width:80%;text-align:justify}
+.wrapperAnimal__home__content__text__title__desc{font-family:"Raleway";font-weight:regular;font-size:16px;max-width:80%;text-align:justify}
 .wrapperAnimal__home__content__img img{height:80vh;width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:50% 50%;object-position:50% 50%}
 .wrapperAnimal__home__content .line{-ms-flex-preferred-size:86px;flex-basis:86px;border-bottom:2px solid #2a2e32;margin:20px}
 .wrapperAnimal__home__footer{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -102,7 +103,7 @@
 .wrapperAnimal__donations__content__textBloc__btn div:hover{color:black}
 .wrapperAnimal__donations__content__textBloc__btn div::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;background-color:#e67e37;-webkit-transition:all .5s;transition:all .5s}
 .wrapperAnimal__donations__content__textBloc__btn div:hover::before{opacity:0;-webkit-transform:scale(0.5,0.5);transform:scale(0.5,0.5)}
-.wrapperAnimal__donations__content__textBloc__btn div::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;opacity:0;-webkit-transition:all .3s;transition:all .3s;border:1px solid black;-webkit-transform:scale(1.2,1.2);transform:scale(1.2,1.2)}
+.wrapperAnimal__donations__content__textBloc__btn div::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;opacity:0;-webkit-transition:all .3s;transition:all .3s;border:1px solid #e67e37;-webkit-transform:scale(1.2,1.2);transform:scale(1.2,1.2)}
 .wrapperAnimal__donations__content__textBloc__btn div:hover::after{opacity:1;-webkit-transform:scale(1,1);transform:scale(1,1)}
 .wrapperAnimal__donations__content__secondParagraph{font-size:14px;font-weight:600}
 .RegionPage{display:grid;font-family:"Raleway";margin:50px 40px;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(4,minmax(50px,auto));grid-gap:30px;-ms-flex-line-pack:center;align-content:center}
@@ -293,7 +294,7 @@
 .donation__sideImg img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 .donation__sideWrap{width:100%;height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
 .donation__sideWrap__internWrap{height:100%;width:100%;-ms-flex-item-align:center;align-self:center}
-.donation__sideWrap__internWrap__header{width:100%;font-weight:bold;font-size:30px}
+.donation__sideWrap__internWrap__header{width:100%;font-weight:500;font-size:30px;font-family:"Raleway"}
 .donation__sideWrap__internWrap__header strong{color:#e67e37}
 .donation__sideWrap__internWrap__form{margin-top:50px}
 body{background:#000;color:white;font-family:"Didot"}
