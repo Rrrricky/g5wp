@@ -1,0 +1,22 @@
+#dashboard_right_now,
+#dashboard_recent_comments,
+#dashboard_quick_press,
+#dashboard_primary,
+#dashboard_secondary,
+#menu-pages,
+#menu-links,
+#menu-tools,
+#wp-admin-bar-new-content,
+#wp-admin-bar-comments,
+#menu-appearance,
+#menu-plugins,
+#menu-settings,
+#menu-comments,
+#menu-media,
+#dashboard_plugins,
+#categorydiv,
+#tagsdiv-post_tag,
+#dashboard_activity,
+#postimagediv {
+	display: none;
+}

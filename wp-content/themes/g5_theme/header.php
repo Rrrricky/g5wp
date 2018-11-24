@@ -9,21 +9,23 @@
 	if($the_query->have_posts()):
 		while($the_query->have_posts()):
 			$the_query->the_post();
-			$animals[] = ["name" => get_the_title()];
+			$animals[] = get_the_title();
 		endwhile;
 	endif;
 	wp_reset_postdata();
 
 	// If the search corresponds to an animal
-	$result = $_GET;
-	$home = get_home_url();
-	if(!empty($result)):
-		if(in_array($result['name'], $animals)):
-			//Go to the page
-			wp_redirect($home.'/animaux/'.$result['name']);
-			exit;
-		endif;
-	endif;
+	// $result = $_GET;
+	// $home = get_home_url();
+	// if(!empty($result)):
+	// 	for($i; $i<7;$i++):
+	// 	if(in_array($result['name'], $animals[$i])):
+	// 		//Go to the page
+	// 		wp_redirect($home.'/animal/'.$result['name']);
+	// 		exit;
+	// 	endif;
+	// endfor;
+	// endif;
 
 
 
@@ -46,7 +48,7 @@
 
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 

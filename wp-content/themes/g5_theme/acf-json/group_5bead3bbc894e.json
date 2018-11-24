@@ -71,6 +71,22 @@
             "placeholder": ""
         },
         {
+            "key": "field_5bed610f8e4bc",
+            "label": "Youtube link",
+            "name": "youtubeLink",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_5bead5f81bcf9",
             "label": "Habitat IMG",
             "name": "animal_habitat_img",
@@ -119,7 +135,7 @@
             "name": "animal_habitat_text",
             "type": "textarea",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -129,7 +145,7 @@
             "default_value": "",
             "placeholder": "",
             "maxlength": "",
-            "rows": "",
+            "rows": 0,
             "new_lines": ""
         },
         {
@@ -260,22 +276,6 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_5bebc626d5d3f",
-            "label": "Donation Link",
-            "name": "animal_donation_link",
-            "type": "url",
-            "instructions": "La page de don",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "https:\/\/faireundon.wwf.fr\/b\/mon-don?_ga=2.91583261.687939141.1541865032-204707638.1541865032",
-            "placeholder": ""
         }
     ],
     "location": [
@@ -295,5 +295,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1542376986
+    "modified": 1542709905
 }

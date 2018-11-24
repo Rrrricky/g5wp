@@ -9,6 +9,7 @@
 
 	$args = [
 		'post_type' => 'animal',
+		'posts_per_page' => 1,
 		'paged' => $pagination,
 	];
 

@@ -15,7 +15,7 @@ var ajaxRequest = function ajaxRequest() {
         $ajax_section.insertAdjacentHTML('beforeend', this.response);
         $pagination++;
 
-        if (max_paged < $pagination - 1) {
+        if (max_paged < $pagination) {
           document.querySelector(".readMore").style.display = "none";
         }
       } else {
@@ -36,7 +36,6 @@ var templateUrl = object_name.templateUrl; //Auto-complete library
 var loadJSON = function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("animals/json");
-  console.log(templateUrl);
   xobj.open('GET', templateUrl + '/assets/scripts/animals.json', true); // Replace 'my_data' with the path to your file
 
   xobj.onreadystatechange = function () {

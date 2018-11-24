@@ -34,4 +34,11 @@ function add_acf_option_page_support(){
 			'parent_slug'   => 'options',
 			'menu_slug' => 'mouse-parameter'
     ));
+
+    acf_add_options_sub_page(array(
+      'page_title'    => 'Options du logo',
+      'menu_title'    => 'Logo',
+			'parent_slug'   => 'options',
+			'menu_slug' => 'logo-parameter'
+    ));
 }}

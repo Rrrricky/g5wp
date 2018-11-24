@@ -1,13 +1,39 @@
 <?php
-$homePic = get_field('animal_home');
-$habitatPic = get_field('animal_habitat_img');
-$foodPic = get_field('animal_food_img');
-$disappearPic = get_field('animal_disappear_img');
-$donationPic = get_field('animal_donation_img');
+get_header();
+
+/*
+$args_animal = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+		'tax_query' => [
+			[
+				'taxonomy' => 'animal',
+				'field' => "name",
+				'terms' => "Afrique de l'Est",
+			]
+		]
+	];
+
+	// Get animal list
+	$the_animals = new WP_Query($args_animal);
+	if($the_animals->have_posts()):
+		while($the_animals->have_posts()):
+			$the_animals->the_post();
+				the_title();
+				$img = the_field('animal_home');
+		endwhile;
+	endif;
+	wp_reset_postdata();
+*/
+$id = get_the_ID();
+
+$home_picture = get_field('animal_home');
+$habitat_picture = get_field('animal_habitat_img');
+$alimentaire_picture = get_field('animal_food_img');
+$disparition_picture = get_field('animal_disappear_img');
+$donation_picture = get_field('animal_donation_img');
+
 ?>
-<!-- ------------------------ -->
-<!-- Main Header -->
-<?php get_header() ?>
 
 <!-- Wrapper -->
 <div class="wrapperAnimal">
@@ -41,7 +67,7 @@ $donationPic = get_field('animal_donation_img');
     <div class="wrapperAnimal__home__content">
       <!-- Background Img -->
       <div class="wrapperAnimal__home__content__img">
-        <img src="<?php echo $homePic; ?>" alt="">
+        <img src="<?php echo $home_picture ?>" alt="">
       </div>
       <!-- Texte -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -84,6 +110,7 @@ $donationPic = get_field('animal_donation_img');
       </div>
       <!-- List number -->
       <?php
+      /*
         $current_post_id = get_the_ID();
         $count_posts = wp_count_posts('animal')->publish;
         $wp_query = new WP_Query(array('post_type' => 'animal', 'posts_per_page' => -1)); ?>
@@ -100,6 +127,7 @@ $donationPic = get_field('animal_donation_img');
           wp_reset_postdata();
         endif;
         $published_posts = $count_posts->publish;
+        */
       ?>
       <div class="wrapperAnimal__home__footer__list">
         <div class="wrapperAnimal__home__footer__list__current-number"><?= $index; ?> / <?php echo $count_posts ?></div>
@@ -119,11 +147,13 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="<?php echo $habitatPic; ?>" alt="">
+        <img src="<?php echo $habitat_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
-        <div class="wrapperAnimal__habitat__content__text__side"><?php the_field('animal_habitat_location'); ?></div>
-        <div class="wrapperAnimal__habitat__content__text__main">        <?php the_field('animal_habitat_text'); ?></div>
+        <div class="wrapperAnimal__habitat__content__text__side">
+        <p><?php the_field('animal_habitat_location'); ?></p></div>
+        <div class="wrapperAnimal__habitat__content__text__main">
+        <?php the_field('animal_habitat_text', $id); ?></div>
       </div>
     </div>
   </section>
@@ -131,16 +161,16 @@ $donationPic = get_field('animal_donation_img');
   <section class="wrapperAnimal__food">
     <!-- Header interne -->
     <div class="wrapperAnimal__food__header">
-      Habitudes<br>
-      <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
+      Habitudes<br><span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
     </div>
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <img src="<?php echo $foodPic; ?>" alt="">
+        <img src="<?php echo $alimentaire_picture; ?>" alt="">
+        <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
       </div>
       <div class="wrapperAnimal__food__content__text">
-        <?php the_field('animal_food_text'); ?>
+        <?php the_field('animal_food_text', $id); ?>
       </div>
     </div>
   </section>
@@ -153,18 +183,19 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
       <div class="wrapperAnimal__disappearance__content__text">
-        <?php the_field('animal_disappear_text'); ?>
+        <?php the_field('animal_disappear_text', $id); ?>
       </div>
+      <div class="wrapperAnimal__disappearance__content__image">
       <div class="wrapperAnimal__disappearance__content__box">
         <div class="wrapperAnimal__disappearance__content__box__title">
           A savoir
         </div>
         <div class="wrapperAnimal__disappearance__content__box__text">
-          <?php the_field('animal_disappear_box_text'); ?>
+          <?php the_field('animal_disappear_box_text', $id); ?>
         </div>
       </div>
-      <div class="wrapperAnimal__disappearance__content__image">
-        <img src="<?php echo $disappearPic; ?>" alt="">
+
+        <img src="<?php echo $disparition_picture?>">
       </div>
     </div>
   </section>
@@ -173,7 +204,7 @@ $donationPic = get_field('animal_donation_img');
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <img src="<?php echo $donationPic; ?>" alt="">
+        <img src="<?php echo $donation_picture; ?>" alt="">
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
         <div class="wrapperAnimal__donations__content__textBloc__header">
@@ -182,17 +213,17 @@ $donationPic = get_field('animal_donation_img');
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
+
         <a href="../../donation" class="wrapperAnimal__donations__content__textBloc__btn">
-          Faire un don
+          <div class="content">
+            <span>Faire un don</span>
+          </div>
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
           Ce n’est qu’avec votre aide que nous arriverons à les sauver.
 </div>
       </div>
     </div>
-  </section>
-  <!-- Section Footer -->
-  <section class="wrapperAnimal__footer">
   </section>
 </div>
 <!-- Main Footer -->

@@ -11,12 +11,12 @@ const ajaxRequest =()=> {
 			let request = new XMLHttpRequest()
 
 			request.open('POST', ajaxurl, true)
-			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+			request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;')
 			request.onload = function() {
 				if(this.status >= 200 && this.status < 400) {
 					$ajax_section.insertAdjacentHTML('beforeend', this.response)
 					$pagination++
-					if(max_paged < $pagination-1) {
+					if(max_paged < $pagination) {
 						document.querySelector(".readMore").style.display = "none"
 					}
 				}else {
@@ -40,15 +40,14 @@ let templateUrl = object_name.templateUrl
 const loadJSON=(callback)=>{
 	let xobj = new XMLHttpRequest()
 			xobj.overrideMimeType("animals/json")
-			console.log(templateUrl)
 	xobj.open('GET', templateUrl+'/assets/scripts/animals.json', true) // Replace 'my_data' with the path to your file
 	xobj.onreadystatechange = function () {
 				if (xobj.readyState == 4 && xobj.status == "200") {
 					// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
 					callback(xobj.responseText)
 				}
-	};
-	xobj.send(null);
+	}
+	xobj.send(null)
 }
 
 
@@ -75,7 +74,7 @@ source: function(term, suggest){
 		for (i=0; i<choices.length; i++)
 				if (~choices[i].name.toLowerCase().indexOf(term)) matches.push(choices[i].name)
 		suggest(matches)
-}
-})
+		}
+	})
 }
 
