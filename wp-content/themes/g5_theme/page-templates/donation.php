@@ -18,6 +18,9 @@ $donationSideImage = get_field('donation_leftImage');
       <div class="donation__sideWrap__internWrap__header">
         <?php the_field('donation_header'); ?> <strong><?php the_field('donation_header_colored'); ?></strong>
       </div>
+      <div class="donation__sideWrap__internWrap__desc">
+        <?php the_field('donation_desc'); ?>
+      </div>
       <div class="donation__sideWrap__internWrap__form">
         <!-- <div class="donation__sideWrap__internWrap__form__title">
         <span class="dot"></span>

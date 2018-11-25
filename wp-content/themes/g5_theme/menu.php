@@ -1,3 +1,8 @@
+<?php
+$logo = get_field('logo_header');
+$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/XtbJGnr/logo-Weath-Animal.png';
+?>
+
 <button class="hamburger hamburger--collapse" type="button">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
@@ -5,7 +10,8 @@
 </button>
 <nav class="nav">
   <div class="nav__logo">
-    <p>WealthAnimal</p>
+    <!-- <p>WealthAnimal</p> -->
+    <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>"></a>
   </div>
                 <?php // SYNTAXE : wp_nav_menu( array $args = array() )
                     $args=array(
