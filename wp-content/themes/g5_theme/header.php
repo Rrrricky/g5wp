@@ -45,7 +45,16 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
+				<!-- favicons -->
+				<link rel="apple-touch-icon" sizes="180x180" href="<?= FAVICONS_URL ?>/apple-touch-icon.png">
+				<link rel="icon" type="image/png" sizes="32x32" href="<?= FAVICONS_URL ?>/favicon-32x32.png">
+				<link rel="icon" type="image/png" sizes="16x16" href="<?= FAVICONS_URL ?>/favicon-16x16.png">
+				<link rel="manifest" href="<?= FAVICONS_URL ?>/site.webmanifest">
+				<link rel="mask-icon" href="<?= FAVICONS_URL ?>safari-pinned-tab.svg" color="#5bbad5">
+				<link rel="shortcut icon" href="<?= FAVICONS_URL ?>/favicon.ico">
+				<meta name="msapplication-TileColor" content="#2b5797">
+				<meta name="msapplication-config" content="/browserconfig.xml">
+				<meta name="theme-color" content="#ffffff">
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
