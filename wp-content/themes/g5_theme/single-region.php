@@ -52,6 +52,23 @@ $thumb2 = get_field('thumbnail_2');
 
 
 <div class="RegionPage">
+ <!-- Header interne -->
+ <div class="wrapperRegion__home__header">
+      <ul>
+        <li>
+          <a href="../..">Accueil</a>
+        </li>
+        <i class="fas fa-arrow-right"></i>
+        <li>
+          <a href="../../regions">Regions</a>
+        </li>
+        <i class="fas fa-arrow-right"></i>
+        <li>
+          <span style="color:white;"><?php the_title(); ?></span>
+          <div class="nav__active"></div>
+        </li>
+      </ul>
+    </div>
 	<?php if(!empty($main_picture)): ?>
 		<img class="RegionPage__main-picture" src="<?php echo $main_picture; ?>" />
 	<?php endif; ?>

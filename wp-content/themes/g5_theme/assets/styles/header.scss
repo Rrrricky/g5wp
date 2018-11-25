@@ -1,6 +1,6 @@
 .hamburger {
 	display: none !important;
-	background-color: white !important;
+	background-color: #111 !important;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -89,7 +89,7 @@
 		}
 		&__links {
 			height: 100vh;
-			background: white;
+			background: #111;
 			position: fixed;
 			top: 60px;
 			transform: translateX(-100vw);
@@ -103,7 +103,7 @@
 		&__links > li {
 			height: 60px;
 			list-style-type: none;
-			background: white;
+			background: #111;
 			margin: 0;
 			padding: 0;
 			opacity: 1 !important;
@@ -113,7 +113,7 @@
 			width: 100vw;
 			z-index: 100;
 			padding: 20px;
-			color: #333;
+			color: white;
 		}
 		&__active {
 			margin: -25px 0 0 10px;

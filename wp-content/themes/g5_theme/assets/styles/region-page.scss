@@ -13,6 +13,65 @@
 		margin: 0 -40px;
 		object-fit: cover;
 	}
+	.wrapperRegion {
+		&__home {
+			height: 80vh;
+			position: relative;
+			&__displayVideo {
+				left: 30px;
+				right: 30px;
+				bottom: 30px;
+				top: 30px;
+				margin: auto;
+				position: absolute;
+				transition: opacity 1s ease-out;
+				opacity: 0;
+				height: 0;
+				overflow: hidden;
+				iframe {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&__close {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				font-size: 30px;
+				right: 0px;
+				top: 20px;
+				transition: opacity 1s ease-out;
+				opacity: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			/* Header */
+			&__header {
+				height: 50px;
+				width: 320px;
+				position: absolute;
+				ul {
+					display: flex;
+					justify-content: space-between;
+					font-family: "Raleway", sans-serif;
+					font-size: 12px;
+					margin-left: 40px;
+					color: #777777;
+					&:nth-child(2) {
+						color: white;
+					}
+					// The orange box
+					div {
+						width: 48px;
+						height: 10px;
+						background-color: #e67e37;
+						opacity: 0.5;
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
 	&__title {
 		font-family: $primary-font;
 		grid-column: 1 / 12;
@@ -44,7 +103,7 @@
 		grid-column: 3 / 12;
 		display: flex;
 		align-items: center;
-		margin: 140px 0;
+		margin: 60px 0;
 		font-size: 25px;
 		line-height: 120%;
 	}
@@ -178,7 +237,7 @@
 		grid-column: 4 / 10;
 		display: flex;
 		justify-content: center;
-		margin-top: 200px;
+		margin-top: 120px;
 		margin-bottom: 50px;
 		font-weight: bold;
 		> span:nth-child(1) {
@@ -328,16 +387,34 @@
 				}
 			}
 		}
+		&__region-text {
+			grid-column: 2 / 13;
+			display: none;
+		}
+		&__region-picture {
+			display: none;
+		}
 	}
 }
 
 @media (max-width: 500px) {
 	.RegionPage {
+		font-size: 18px;
 		&__title {
 			h1:nth-child(1) {
 				font-size: 50px;
 				margin-left: 20px;
 				left: 0px;
+			}
+		}
+		&__region-text {
+			grid-column: 1 / 13;
+			padding-left: 0;
+			> span {
+				display: none;
+			}
+			> p:nth-child(1) {
+				border-left: none;
 			}
 		}
 		&__climate-fact-subtitle {
@@ -349,68 +426,69 @@
 			grid-row: 12;
 			line-height: 120%;
 		}
-		&__species-title {
+		&__temperature-text {
+			grid-column: 1 / 13;
 			grid-row: 13;
+		}
+		&__species-title {
+			grid-row: 14;
 		}
 		&__climate-subtitle-1, &__climate-subtitle-2 {
 			font-size: 30px;
 		}
 		&__species-picture-1 {
-			grid-row: 14;
+			grid-row: 15;
 		}
 		&__species-text-1 {
-			grid-row: 15;
+			grid-row: 16;
 		}
 		&__species-picture-1,
 		&__species-text-1 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-2 {
-			grid-row: 16;
+			grid-row: 17;
 		}
 		&__species-text-2 {
-			grid-row: 17;
+			grid-row: 18;
 		}
 		&__species-picture-2,
 		&__species-text-2 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-3 {
-			grid-row: 18;
+			grid-row: 19;
 		}
 		&__species-text-3 {
-			grid-row: 19;
+			grid-row: 20;
 		}
 		&__species-picture-3,
 		&__species-text-3 {
 			grid-column: 1 / 13;
 		}
 		&__species-picture-4 {
-			grid-row: 20;
+			grid-row: 21;
 		}
 		&__species-text-4 {
-			grid-row: 21;
+			grid-row: 22;
 		}
 		&__species-picture-4,
 		&__species-text-4 {
 			grid-column: 1 / 13;
 		}
 		&__temperature-images {
-			&__badfact {
-				display: none;
-			}
+			display: none;
 		}
 	}
 }
 
 @media (max-width: 430px) {
 	.RegionPage {
-		font-size: 10px;
 		grid-column-gap: 0px;
 		grid-row-gap: 30px;
 		&__title {
 			h1:nth-child(1) {
-				font-size: 70px;
+				font-size: 50px;
 				line-height: 80px;
 			}
 		}
