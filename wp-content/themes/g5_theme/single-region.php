@@ -64,7 +64,7 @@ $thumb2 = get_field('thumbnail_2');
         </li>
         <i class="fas fa-arrow-right"></i>
         <li>
-          <span style="color:white;"><?php the_title(); ?></span>
+          <span><?php the_title(); ?></span>
           <div class="nav__active"></div>
         </li>
       </ul>

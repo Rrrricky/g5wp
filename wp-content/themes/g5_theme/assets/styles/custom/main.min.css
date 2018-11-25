@@ -370,6 +370,7 @@ body{background:#000;color:white;font-family:"Didot"}
 .custom-home-page__button{grid-column:1 / 4}
 .custom-home-page__catch{font-size:16px;grid-column:6 / 3}
 .RegionPage__title h1:nth-child(1){font-size:70px}
+.RegionPage .wrapperRegion{display:none}
 .RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:40px}
 .RegionPage__location{grid-column:1 / 13;line-height:120%}
 .RegionPage__location>h4{font-weight:bold;margin-bottom:12px}
