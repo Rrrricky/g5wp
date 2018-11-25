@@ -38,7 +38,7 @@ SASS:
 
 .nav__logo { font-weight: 700; font-size: 18px; -webkit-box-flex: 2; -ms-flex-positive: 2; flex-grow: 2; }
 
-.nav__logo img { height: 43px; width: auto; }
+.nav__logo img { height: 37px; width: auto; }
 
 .nav__links, .nav__search { font-weight: 400; font-size: 14px; }
 

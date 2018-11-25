@@ -1,6 +1,6 @@
 <?php
 $logo = get_field('logo_header');
-$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/XtbJGnr/logo-Weath-Animal.png';
+$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
 ?>
 
 <button class="hamburger hamburger--collapse" type="button">
