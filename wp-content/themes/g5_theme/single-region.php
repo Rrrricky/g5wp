@@ -78,17 +78,17 @@ $thumb2 = get_field('thumbnail_2');
 	<div class="RegionPage__data-line"></div>
 	<span class="RegionPage__data-subtitle">Quelques données</span>
 	<div class="RegionPage__location">
-		<i></i>
+		<i class="fas fa-map-marker-alt"></i>
 		<h4><span>L</span>ocalisation</h4>
 		<p><?php the_field("location_text") ?></p>
 	</div>
 	<div class="RegionPage__area">
-		<i></i>
+		<i class="fas fa-arrows-alt"></i>
 		<h4><span>S</span>uperficie</h4>
 		<p><?php the_field("area_text"); ?></p>
 	</div>
 	<div class="RegionPage__climate">
-		<i></i>
+		<i class="fas fa-thermometer-three-quarters"></i>
 		<h4><span>C</span>limat</h4>
 		<p><?php the_field("climate_text"); ?></p>
 	</div>
