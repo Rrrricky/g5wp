@@ -17,9 +17,9 @@ Template Name: Region template
 	while ( $loop->have_posts() ) : $loop->the_post();
 	?>
 			<a class="grid-menu__items" href="<?php the_permalink() ?>">
-				<div class="grid-menu__number"></div>
-				<div class="grid-menu__name"><?php the_title(); ?></div>
-				<div class="js-lazyload"><?php the_post_thumbnail( 'menu-thumb' ); ?></div>
+				<div class="grid-menu__items__number"></div>
+				<div class="grid-menu__items__name"><?php the_title(); ?></div>
+				<div class="grid-menu__items__item js-lazyload"><?php the_post_thumbnail( 'menu-thumb' ); ?></div>
 			</a>
 	<?php
 	endwhile;
