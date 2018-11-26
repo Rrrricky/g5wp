@@ -50,7 +50,7 @@ $thumb2 = get_field('thumbnail_2');
 ?>
 
 
-<div class="RegionPage">
+<div class="RegionPage js-lazyload">
  <!-- Intern header -->
  <div class="wrapperRegion__home__header">
       <ul>
@@ -67,9 +67,9 @@ $thumb2 = get_field('thumbnail_2');
           <div class="nav__active"></div>
         </li>
       </ul>
-    </div>
+  </div>
 	<?php if(!empty($main_picture)): ?>
-		<img class="RegionPage__main-picture" src="<?php echo $main_picture; ?>" />
+	<img class="RegionPage__main-picture" src="<?php echo $main_picture; ?>" />
 	<?php endif; ?>
 	<div class="RegionPage__title">
 		<h1><?php the_field("name_of_region"); ?><span>.</span></h1>

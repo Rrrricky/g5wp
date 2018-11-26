@@ -155,6 +155,8 @@
 .RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:4 / 7}
 .RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:7 / 10}
 .RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:10 / 13}
+.js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
+.js-lazyload.loaded img{opacity:1}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:1}
 .hamburger.is-active:hover{opacity:1}

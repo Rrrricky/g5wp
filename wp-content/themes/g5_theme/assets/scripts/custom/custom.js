@@ -425,14 +425,11 @@ function () {
     value: function parse() {
       var $lazyLoads = Array.from(document.querySelectorAll(".js-lazyload")); // Get it in an array
 
-      var timer = 200;
-
       var _loop = function _loop() {
         var $lazyLoad = $lazyLoads[_i];
         var $img = $lazyLoad.querySelector('img');
         var $newImg = document.createElement('img'); // Useful if the picture is loaded from the cache
 
-        timer += 1000;
         $newImg.addEventListener('load', function () {
           $lazyLoad.classList.add('loaded'); // When loaded
         });
