@@ -36,8 +36,7 @@ $donation_picture = get_field('animal_donation_img');
 ?>
 
 <!-- Wrapper -->
-<div class="wrapperAnimal">
-
+<div class="wrapperAnimal js-lazyload">
   <!-- Home section -->
   <section class="wrapperAnimal__home">
     <div class="wrapperAnimal__home__displayVideo" >
