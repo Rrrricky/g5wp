@@ -38,7 +38,7 @@ $donation_picture = get_field('animal_donation_img');
 <!-- Wrapper -->
 <div class="wrapperAnimal">
 
-  <!-- Section Home -->
+  <!-- Home section -->
   <section class="wrapperAnimal__home">
     <div class="wrapperAnimal__home__displayVideo" >
       <iframe id="video" width="1045" height="880" src="<?php the_field('youtubeLink'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
@@ -65,11 +65,11 @@ $donation_picture = get_field('animal_donation_img');
     </div>
     <!-- Main content -->
     <div class="wrapperAnimal__home__content">
-      <!-- Background Img -->
+      <!-- Image background -->
       <div class="wrapperAnimal__home__content__img">
         <img src="<?php echo $home_picture ?>" alt="">
       </div>
-      <!-- Texte -->
+      <!-- Text -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
         <p class="wrapperAnimal__home__content__text__statut">
           Espèce
@@ -96,7 +96,7 @@ $donation_picture = get_field('animal_donation_img');
     </div>
     <!-- Footer -->
     <div class="wrapperAnimal__home__footer">
-      <!-- Vidéo -->
+      <!-- Video -->
       <div class="wrapperAnimal__home__footer__video">
         <a href="#">Voir la vidéo<br>
           <i class="far fa-play-circle"></i>
@@ -138,9 +138,9 @@ $donation_picture = get_field('animal_donation_img');
       </div>
     </div>
   </section>
-  <!-- Section Habitat -->
+  <!-- Habitat section -->
   <section class="wrapperAnimal__habitat">
-    <!-- Header interne -->
+    <!-- Intern header -->
     <div class="wrapperAnimal__habitat__header">
       L'habitat<span class="dotColored">.</span>
     </div>
@@ -157,9 +157,9 @@ $donation_picture = get_field('animal_donation_img');
       </div>
     </div>
   </section>
-  <!-- Section Habitudes alimentaires -->
+  <!-- Consuption habits section -->
   <section class="wrapperAnimal__food">
-    <!-- Header interne -->
+    <!-- Intern header -->
     <div class="wrapperAnimal__food__header">
       Habitudes<br><span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
     </div>
@@ -174,9 +174,9 @@ $donation_picture = get_field('animal_donation_img');
       </div>
     </div>
   </section>
-  <!-- Section Disparition -->
+  <!-- vanishing section -->
   <section class="wrapperAnimal__disappearance">
-    <!-- Header interne -->
+    <!-- Intern header -->
     <div class="wrapperAnimal__disappearance__header">
       Disparition<span class="dotColored">.</span>
     </div>
@@ -194,12 +194,11 @@ $donation_picture = get_field('animal_donation_img');
           <?php the_field('animal_disappear_box_text', $id); ?>
         </div>
       </div>
-
         <img src="<?php echo $disparition_picture?>">
       </div>
     </div>
   </section>
-  <!-- Section Donation -->
+  <!-- Donation section -->
   <section class="wrapperAnimal__donations">
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
@@ -213,7 +212,6 @@ $donation_picture = get_field('animal_donation_img');
         <div class="wrapperAnimal__donations__content__textBloc__firstParagraph">
           WeathAnimal œuvre à la conservation des espèces menacées sur tous les continents. Aidez-nous à leurs rendrent leur vie et leur territoire.
         </div>
-
         <a href="../../donation" class="wrapperAnimal__donations__content__textBloc__btn">
           <div class="content">
             <span>Faire un don</span>

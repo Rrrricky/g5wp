@@ -47,12 +47,11 @@ $thumb2 = get_field('thumbnail_2');
 // echo '<pre>';
 // var_dump($name);
 // echo '</pre>';
-
 ?>
 
 
 <div class="RegionPage">
- <!-- Header interne -->
+ <!-- Intern header -->
  <div class="wrapperRegion__home__header">
       <ul>
         <li>
@@ -75,6 +74,7 @@ $thumb2 = get_field('thumbnail_2');
 	<div class="RegionPage__title">
 		<h1><?php the_field("name_of_region"); ?><span>.</span></h1>
 	</div>
+	<!-- Main data -->
 	<div class="RegionPage__data-line"></div>
 	<span class="RegionPage__data-subtitle">Quelques données</span>
 	<div class="RegionPage__location">
@@ -106,6 +106,7 @@ $thumb2 = get_field('thumbnail_2');
 		<img src="<?php echo $secondary_picture; ?>" />
 	<?php endif; ?>
 	</div>
+	<!-- New information -->
 	<h2 class="RegionPage__climate-subtitle-1">Changement</h2>
 	<h2 class="RegionPage__climate-subtitle-2">Climatique<span>.</span></h2>
 	<div class="RegionPage__climate-fact-line"></div>
@@ -131,9 +132,6 @@ $thumb2 = get_field('thumbnail_2');
 	</p>
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
 	<!-- Wanna display every animal with the category  -->
-
-
-
 	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="<?php the_field('animal_home'); ?>"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="https://picsum.photos/200/200"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-3" src="https://picsum.photos/200/200"/>

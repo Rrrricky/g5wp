@@ -1,4 +1,5 @@
 <?php
+
 	$args = [
 		'post_type' => 'animal',
 		'posts_per_page' => -1,
@@ -36,7 +37,6 @@
 	// echo '</pre>';
 	// $json_data = json_encode($animals);
 	// file_put_contents('animals.json', $json_data);
-
 ?>
 
 
