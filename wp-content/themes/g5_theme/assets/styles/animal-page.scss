@@ -444,6 +444,16 @@ $navbarHeight: 10vh;
 	}
 }
 
+// Lazyloading
+.js-lazyload img {
+	opacity: 0;
+	transition: opacity 1s;
+	will-change: opacity;
+}
+.js-lazyload.loaded img {
+	opacity: 1;
+}
+
 /* MOUSE */
 @-webkit-keyframes wheel-up-down {
 	0% {
