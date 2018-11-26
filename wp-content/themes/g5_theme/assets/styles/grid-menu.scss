@@ -7,6 +7,16 @@
 	margin: 30px;
 	user-select: none;
 
+	.js-lazyload img {
+		opacity: 0;
+		transition: opacity .5s;
+		will-change: opacity;
+	}
+
+	.js-lazyload.loaded img {
+		opacity: 1;
+	}
+
 	/* Each IMG's size */
 	&__items > img {
 		height: auto;

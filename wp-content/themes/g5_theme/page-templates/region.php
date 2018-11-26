@@ -19,7 +19,7 @@ Template Name: Region template
 			<a class="grid-menu__items" href="<?php the_permalink() ?>">
 				<div class="grid-menu__number"></div>
 				<div class="grid-menu__name"><?php the_title(); ?></div>
-				<?php the_post_thumbnail( 'menu-thumb' ); ?>
+				<div class="js-lazyload"><?php the_post_thumbnail( 'menu-thumb' ); ?></div>
 			</a>
 	<?php
 	endwhile;
