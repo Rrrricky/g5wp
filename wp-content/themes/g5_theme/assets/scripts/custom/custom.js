@@ -253,6 +253,48 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+var LazyLoading =
+/*#__PURE__*/
+function () {
+  function LazyLoading() {
+    _classCallCheck(this, LazyLoading);
+  }
+
+  _createClass(LazyLoading, [{
+    key: "parse",
+    value: function parse() {
+      var $lazyLoads = Array.from(document.querySelectorAll(".js-lazyload")); // Get it in an array
+
+      var _loop = function _loop() {
+        var $lazyLoad = $lazyLoads[_i];
+        var $img = $lazyLoad.querySelector('img');
+        var $newImg = document.createElement('img'); // Useful if the picture is loaded from the cache
+
+        $newImg.addEventListener('load', function () {
+          $lazyLoad.classList.add('loaded'); // When loaded
+        });
+        $newImg.src = $img.src; // Add src
+      };
+
+      for (var _i = 0; _i < $lazyLoads.length; _i++) {
+        _loop();
+      }
+    }
+  }]);
+
+  return LazyLoading;
+}();
+
+var lazyLoading = new LazyLoading();
+lazyLoading.parse();
+"use strict";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 var NewMouse =
 /*#__PURE__*/
 function () {
@@ -405,45 +447,3 @@ $hamburgerIcon.addEventListener("click", function () {
   $links.classList.toggle("is-active");
   $hamburgerIcon.classList.toggle("is-active");
 });
-"use strict";
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var LazyLoading =
-/*#__PURE__*/
-function () {
-  function LazyLoading() {
-    _classCallCheck(this, LazyLoading);
-  }
-
-  _createClass(LazyLoading, [{
-    key: "parse",
-    value: function parse() {
-      var $lazyLoads = Array.from(document.querySelectorAll(".js-lazyload")); // Get it in an array
-
-      var _loop = function _loop() {
-        var $lazyLoad = $lazyLoads[_i];
-        var $img = $lazyLoad.querySelector('img');
-        var $newImg = document.createElement('img'); // Useful if the picture is loaded from the cache
-
-        $newImg.addEventListener('load', function () {
-          $lazyLoad.classList.add('loaded'); // When loaded
-        });
-        $newImg.src = $img.src; // Add src
-      };
-
-      for (var _i = 0; _i < $lazyLoads.length; _i++) {
-        _loop();
-      }
-    }
-  }]);
-
-  return LazyLoading;
-}();
-
-var lazyLoading = new LazyLoading();
-lazyLoading.parse();
