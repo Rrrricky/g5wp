@@ -14,29 +14,6 @@
 		endwhile;
 	endif;
 	wp_reset_postdata();
-
-	// If the search corresponds to an animal
-	// $result = $_GET;
-	// $home = get_home_url();
-	// if(!empty($result)):
-	// 	for($i; $i<7;$i++):
-	// 	if(in_array($result['name'], $animals[$i])):
-	// 		//Go to the page
-	// 		wp_redirect($home.'/animal/'.$result['name']);
-	// 		exit;
-	// 	endif;
-	// endfor;
-	// endif;
-
-
-
-	$result = file_get_contents('animals.json');
-	$result = json_decode($result);
-	// echo '<pre>';
-	// print_r($result);
-	// echo '</pre>';
-	// $json_data = json_encode($animals);
-	// file_put_contents('animals.json', $json_data);
 ?>
 
 
