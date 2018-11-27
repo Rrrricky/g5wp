@@ -9,21 +9,21 @@ get_header();
 // the_terms( $post->ID, 'animal', 'categories: ', ' / ' );
 
 
-// $name = get_field('name_of_region');
+$name = get_field('name_of_region');
 
 
 
-	// $args_animal = [
-	// 	'post_type' => 'animal',
-	// 	'posts_per_page' => -1,
-	// 	'tax_query' => [
-	// 		[
-	// 			'taxonomy' => 'region',
-	// 			'field' => "name",
-	// 			'terms' => $name,
-	// 		]
-	// 	]
-	// ];
+	$args_animal = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+		'tax_query' => [
+			[
+				'taxonomy' => 'region',
+				'field' => "slug",
+				'terms' => $name,
+			]
+		]
+	];
 
 
 
@@ -133,9 +133,7 @@ $thumb2 = get_field('thumbnail_2');
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
 	<!-- Wanna display every animal with the category  -->
 	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="<?php the_field('animal_home'); ?>"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="https://picsum.photos/200/200"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-3" src="https://picsum.photos/200/200"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-4" src="https://picsum.photos/200/200"/>
+	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="<?php the_field('animal_home'); ?>"/>
 	<a href="<?php the_permalink(); ?>" class="RegionPage__species-text RegionPage__species-text-1">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-2">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-3">Découvrir</a>

@@ -4,17 +4,14 @@
 	grid-gap: 30px;
 	margin: 30px;
 	user-select: none;
-
 	.js-lazyload img {
 		opacity: 0;
 		transition: opacity .8s;
 		will-change: opacity;
 	}
-
 	.js-lazyload.loaded img {
 		opacity: 1;
 	}
-
 	/* Each IMG's size */
 	&__items {
 		display: flex;

@@ -54,12 +54,12 @@
 		margin-left: -40px;
 		margin-right: -40px;
 		margin-bottom: -250px;
-		opacity: 0.5;
+		opacity: .5;
 		> h1 {
 			font-size: 160px;
 			position: absolute;
 			top: 0;
-			left: -30px;
+			left: 40px;
 			> span {
 				color: $button-color;
 			}
@@ -75,9 +75,18 @@
 		grid-column: 3 / 12;
 		display: flex;
 		align-items: center;
-		margin: 60px 0;
 		font-size: 25px;
 		line-height: 120%;
+	}
+	&__data-line {
+		grid-row: 2;
+	}
+	&__data-subtitle {
+		margin-top: 0;
+		grid-row: 2;
+	}
+	&__climate-fact-subtitle {
+		margin-top: 40px;
 	}
 	&__location {
 		> i {
