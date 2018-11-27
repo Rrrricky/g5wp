@@ -139,8 +139,8 @@
 .RegionPage__climate>h4>span{color:#e67e37}
 .RegionPage__region-subtitle{grid-column:1 / 13;font-size:55px;margin:100px 0}
 .RegionPage__region-text{grid-column:2 / 9;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;line-height:120%}
-.RegionPage__region-text>p:nth-child(1){border-left:1px solid white;padding-left:20px}
-.RegionPage__region-text>span:nth-child(2){-webkit-transform-origin:50% 50%;transform-origin:50% 50%;position:absolute;top:50%;left:-80px;-webkit-transform:translateY(-50%) rotate(-90deg);transform:translateY(-50%) rotate(-90deg)}
+.RegionPage__region-text>p:nth-child(1){border-left:4px solid #888e94;padding-left:20px;max-width:130px}
+.RegionPage__region-text>span:nth-child(2){-webkit-transform-origin:50% 50%;transform-origin:50% 50%;position:absolute;top:50%;left:-80px;-webkit-transform:translateY(-50%) rotate(-90deg);transform:translateY(-50%) rotate(-90deg);font-family:'Didot';color:#888e94;font-weight:bold}
 .RegionPage__region-picture{grid-column:9 / 13;width:100%;height:300px;position:relative}
 .RegionPage__region-picture>img:nth-child(1){width:100%;height:100%;-o-object-fit:cover;object-fit:cover;position:absolute;top:0;right:-40px}
 .RegionPage__climate-subtitle-1{grid-column:1 / 13;margin-top:140px;font-size:120px;font-family:"Didot";opacity:.5}
@@ -157,6 +157,7 @@
 .RegionPage__related{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;grid-row:11;grid-column:1 / 13}
 .RegionPage__related__bloc{width:200px}
 .RegionPage__related__bloc__species-picture,.RegionPage__related__bloc__species-text{width:200px;height:200px;margin:0 auto;text-align:center}
+.RegionPage__related__bloc__species-picture{-o-object-fit:cover;object-fit:cover}
 .RegionPage__related__bloc__species-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
 .js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
 .js-lazyload.loaded img{opacity:1}

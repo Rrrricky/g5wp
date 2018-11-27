@@ -143,8 +143,9 @@
 		align-items: center;
 		line-height: 120%;
 		> p:nth-child(1) {
-			border-left: 1px solid white;
+			border-left: 4px solid #888e94;
 			padding-left: 20px;
+			max-width: 130px;
 		}
 		> span:nth-child(2) {
 			transform-origin: 50% 50%;
@@ -152,6 +153,9 @@
 			top: 50%;
 			left: -80px;
 			transform: translateY(-50%) rotate(-90deg);
+			font-family: 'Didot';
+			color: #888e94;
+			font-weight: bold;
 		}
 	}
 	&__region-picture {
@@ -247,6 +251,9 @@
 				height: 200px;
 				margin: 0 auto;
 				text-align: center;
+			}
+			&__species-picture {
+				object-fit: cover;
 			}
 			&__species-text {
 				display: flex;
