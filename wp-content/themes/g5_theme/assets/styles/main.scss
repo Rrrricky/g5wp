@@ -39,17 +39,17 @@ $button-color: #e67e37;
 
 @import "ball-mouse";
 @import "header";
-@import "page-template";
-@import "grid-menu";
-@import "home-slider";
-@import "404";
+@import "home-page";
+@import "menu-page";
+@import "home-page-slider";
+@import "404-page";
 @import "animal-page";
 @import "region-page";
 @import "hamburgers/hamburgers.scss";
 @import "hamburgers/_base.scss";
 @import "hamburgers/types/_slider.scss";
 @import "hamburgers/types/_slider-r.scss";
-@import "donation.scss";
+@import "donation-page.scss";
 
 body {
 	background: $primary-back-color;
