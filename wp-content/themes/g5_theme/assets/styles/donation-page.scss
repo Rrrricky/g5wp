@@ -49,7 +49,7 @@
 		&__sideWrap {
 			width: 100%;
 			//height: 100vh;
-			//position: absolute;
+			position: relative;
 		}
 		#give-donation-level-button-wrap {
 			grid-template-columns: repeat(2, 1fr);
