@@ -52,11 +52,11 @@ const loadJSON=(callback)=>{
 
 
 const init=()=> {
-loadJSON(function(response) {
- // Parse JSON string into object
-	 const actual_JSON = JSON.parse(response)
-	 complete(actual_JSON)
-});
+	loadJSON(function(response) {
+	// Parse JSON string into object
+		const actual_JSON = JSON.parse(response)
+		complete(actual_JSON)
+	});
 }
 
 init()

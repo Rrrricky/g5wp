@@ -21,7 +21,7 @@ $id = get_the_ID();
     <div class="wrapperAnimal__home__close">
       <i class="fas fa-window-close"></i>
     </div>
-    <!-- Header intern -->
+    <!-- Intern Header -->
     <div class="wrapperAnimal__home__header">
       <ul>
         <li>
@@ -41,8 +41,8 @@ $id = get_the_ID();
     <!-- Main content -->
     <div class="wrapperAnimal__home__content">
       <!-- Image background -->
-      <div class="wrapperAnimal__home__content__img">
-        <img src="<?php echo $home_picture ?>" alt="Beautiful landscape with sun">
+      <div class="wrapperAnimal__home__content__img js-parallax" data-amplitude="0.5">
+				<img src="<?php echo $home_picture ?>" alt="Main picture of the animal">
       </div>
       <!-- Text -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">

@@ -55,7 +55,7 @@ $navbarHeight: 10vh;
 				}
 				// The orange box
 				div {
-					width: 68px;
+					width: 48px;
 					height: 10px;
 					background-color: #e67e37;
 					opacity: 0.5;
@@ -93,6 +93,7 @@ $navbarHeight: 10vh;
 						font-family: "Raleway";
 						font-weight: regular;
 						font-size: 16px;
+						line-height: 19px;
 						max-width: 80%;
 						text-align: left;
 					}
@@ -145,6 +146,7 @@ $navbarHeight: 10vh;
 				opacity: 1;
 				&__mouse-icon {
 					width: 16px;
+					line-height: 19px;
 					height: 30px;
 					border: 2px solid white;
 					border-radius: 15px;
@@ -196,6 +198,7 @@ $navbarHeight: 10vh;
 					width: 466px;
 					font-family: "Raleway";
 					font-size: 16px;
+					line-height: 19px;
 					align-self: center;
 					text-align: left;
 				}
@@ -258,6 +261,7 @@ $navbarHeight: 10vh;
 			&__text {
 				align-self: center;
 				font-size: 16px;
+				line-height: 19px;
 				font-family: "Raleway";
 				width: 800px;
 				background-color: #e67e37;
@@ -289,6 +293,7 @@ $navbarHeight: 10vh;
 			justify-content: space-around;
 			&__text {
 				font-size: 16px;
+				line-height: 19px;
 				font-family: "Raleway";
 				color: white;
 				align-self: center;
