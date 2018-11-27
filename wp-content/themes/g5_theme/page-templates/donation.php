@@ -51,32 +51,3 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
 $fb = get_field( "facebook_link" );
 $insta = get_field( "instagram_link" );
 ?>
-
-<footer class="footer">
-  <div class="footer__top">
-    <a href="<?php echo site_url(); ?>">
-      <img src="<?php echo $logo_src; ?>">
-    </a>
-  </div>
-  <div class="footer__bottom">
-    <div class="footer__bottom__title">
-      Copyright © 2018 WeathAnimal
-    </div>
-    <div class="footer__bottom__text">
-      WeathAnimal est un site à but  non lucratif créé pour sensibiliser les personnes au réchauffement climatique. Montrer que  même s’ils ne peuvent pas parler, les animaux souffrent des dégâts causés par l’homme. S’il vous plaît protéger leur territoire et leur vie.
-    </div>
-    <div class="footer__bottom__socials">
-      <div class="footer__bottom__socials__text">
-        Restez connecté
-      </div>
-      <div class="footer__bottom__socials__logo">
-        <a href="https://www.facebook.com/WeathAnimalOfficiel">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/weathanimal/">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
