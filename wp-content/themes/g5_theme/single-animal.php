@@ -1,30 +1,6 @@
 <?php
 get_header();
 
-/*
-$args_animal = [
-		'post_type' => 'animal',
-		'posts_per_page' => -1,
-		'tax_query' => [
-			[
-				'taxonomy' => 'animal',
-				'field' => "name",
-				'terms' => "Afrique de l'Est",
-			]
-		]
-	];
-
-	// Get animal list
-	$the_animals = new WP_Query($args_animal);
-	if($the_animals->have_posts()):
-		while($the_animals->have_posts()):
-			$the_animals->the_post();
-				the_title();
-				$img = the_field('animal_home');
-		endwhile;
-	endif;
-	wp_reset_postdata();
-*/
 $id = get_the_ID();
 
 $home_picture = get_field('animal_home');

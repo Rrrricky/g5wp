@@ -2,16 +2,7 @@
 
 get_header();
 
-
-
-
-//the_terms( $id, $taxonomy, $before, $sep, $after );
-// the_terms( $post->ID, 'animal', 'categories: ', ' / ' );
-
-
 $name = get_field('name_of_region');
-
-
 
 	$args_animal = [
 		'post_type' => 'animal',
@@ -25,17 +16,9 @@ $name = get_field('name_of_region');
 		]
 	];
 
-
-
-
-	// Get animal list
-	$the_region = new WP_Query($args_animal);
-	if($the_region->have_posts()):
-		while($the_region->have_posts()):
-			$the_region->the_post();
-		endwhile;
-	endif;
-
+	echo '<pre>';
+	var_dump($name);
+	echo '</pre>';
 
 
 
@@ -43,12 +26,7 @@ $main_picture = get_field('main_picture');
 $secondary_picture = get_field('region_photo');
 $thumb1 = get_field('thumbnail_1');
 $thumb2 = get_field('thumbnail_2');
-
-// echo '<pre>';
-// var_dump($name);
-// echo '</pre>';
 ?>
-
 
 <div class="RegionPage js-lazyload">
  <!-- Intern header -->
@@ -132,6 +110,15 @@ $thumb2 = get_field('thumbnail_2');
 	</p>
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
 	<!-- Wanna display every animal with the category  -->
+	<?php
+	// Get animal list
+	$the_region = new WP_Query($args_animal);
+	if($the_region->have_posts()):
+		while($the_region->have_posts()):
+			$the_region->the_post();
+		endwhile;
+	endif;
+	?>
 	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="<?php the_field('animal_home'); ?>"/>
 	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="<?php the_field('animal_home'); ?>"/>
 	<a href="<?php the_permalink(); ?>" class="RegionPage__species-text RegionPage__species-text-1">Découvrir</a>
@@ -139,7 +126,6 @@ $thumb2 = get_field('thumbnail_2');
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-3">Découvrir</a>
 	<a href="#" class="RegionPage__species-text RegionPage__species-text-4">Découvrir</a>
 </div>
-
 <?php
 get_footer();
 wp_reset_postdata();
