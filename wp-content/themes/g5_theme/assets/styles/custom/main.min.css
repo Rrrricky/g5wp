@@ -305,10 +305,10 @@
 .hamburger--slider-r.is-active .hamburger-inner{-webkit-transform:translate3d(0,10px,0) rotate(-45deg);transform:translate3d(0,10px,0) rotate(-45deg)}
 .hamburger--slider-r.is-active .hamburger-inner::before{-webkit-transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);transform:rotate(45deg) translate3d(5.7142857143px,-6px,0);opacity:0}
 .hamburger--slider-r.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-20px,0) rotate(90deg);transform:translate3d(0,-20px,0) rotate(90deg)}
-.donation{display:grid;grid-template-columns:.6fr 1fr;color:black;height:100vh}
+.donation{display:grid;grid-template-columns:.6fr 1fr;color:black;height:120vh}
 .donation__sideImg img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
-.donation__sideWrap{width:100%;height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
-.donation__sideWrap__internWrap{height:100%;width:100%;-ms-flex-item-align:center;align-self:center}
+.donation__sideWrap{width:100%;max-height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
+.donation__sideWrap__internWrap{height:auto;width:100%;-ms-flex-item-align:center;align-self:center}
 .donation__sideWrap__internWrap__header{width:100%;font-weight:500;font-size:30px;font-family:"Raleway"}
 .donation__sideWrap__internWrap__header strong{color:#e67e37}
 .donation__sideWrap__internWrap__desc{margin-bottom:-10px;margin-top:15px;color:#a4a4a4;font-family:"Raleway";font-size:18px;width:100%}
