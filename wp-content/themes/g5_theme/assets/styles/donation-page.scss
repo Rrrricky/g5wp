@@ -17,8 +17,8 @@
 		display: flex;
 		padding: 50px 90px;
 		&__internWrap {
-			height: auto;
-			width: 100%;
+			height: 100%;
+			width: auto;
 			align-self: center;
 			&__header {
 				width: 100%;
@@ -46,10 +46,15 @@
 
 @media screen and (max-width: 920px) {
 	.donation {
+		&__sideImg {
+			img {
+				height: 0%;
+			}
+		}
 		&__sideWrap {
 			width: 100%;
-			//height: 100vh;
-			position: relative;
+			height: auto;
+			position: absolute;
 		}
 		#give-donation-level-button-wrap {
 			grid-template-columns: repeat(2, 1fr);
@@ -59,7 +64,7 @@
 @media screen and (max-width: 500px) {
 	.donation {
 		&__sideWrap {
-			padding: 50px 30px;
+			padding: 50px 0px !important;
 		}
 	}
 }
