@@ -16,9 +16,10 @@
 		height: 100%;
 		background-color: white;
 		display: flex;
-		padding: 50px 90px;
+		padding: 30px 90px 0px 90px;
 		&__internWrap {
-			overflow: hidden;
+			height: 100%;
+			border: 2px solid red;
 			width: 100%;
 			//align-self: center;
 			&__header {
