@@ -398,7 +398,6 @@ if (document.querySelector('.wrap')) {
 
 if (document.querySelector('.wrapperAnimal__home__footer__video')) {
   var videoBtn = document.querySelector('.wrapperAnimal__home__footer__video');
-  console.log(videoBtn);
   var videoDisplay = document.querySelector('.wrapperAnimal__home__displayVideo');
   var videoClose = document.querySelector('.wrapperAnimal__home__close');
   var videoFrame = document.querySelector('#video');

@@ -26,4 +26,5 @@ Template Name: Animal template
 	?>
 
 	</main>
+<!-- Main Footer -->
 <?php get_footer() ?>

@@ -95,7 +95,6 @@ if ( document.querySelector( '.wrapperAnimal__home__footer__video' ) ) {
 	const videoBtn = document.querySelector(
 		'.wrapperAnimal__home__footer__video'
 	);
-	console.log( videoBtn );
 	const videoDisplay = document.querySelector(
 		'.wrapperAnimal__home__displayVideo'
 	);
