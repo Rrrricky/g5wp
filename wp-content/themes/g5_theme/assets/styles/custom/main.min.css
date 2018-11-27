@@ -307,7 +307,7 @@
 .hamburger--slider-r.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-20px,0) rotate(90deg);transform:translate3d(0,-20px,0) rotate(90deg)}
 .donation{display:grid;grid-template-columns:.6fr 1fr;color:black;height:800px}
 .donation__sideImg img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
-.donation__sideWrap{width:100%;max-height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
+.donation__sideWrap{width:100%;height:100%;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 90px}
 .donation__sideWrap__internWrap{height:auto;width:100%;-ms-flex-item-align:center;align-self:center}
 .donation__sideWrap__internWrap__header{width:100%;font-weight:500;font-size:30px;font-family:"Raleway"}
 .donation__sideWrap__internWrap__header strong{color:#e67e37}
@@ -367,7 +367,7 @@ body{background:#000;color:white;font-family:"Didot"}
 .RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:7 / 13}
 .RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:1 / 7}
 .RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:7 / 13}
-}@media screen and (max-width:920px){.donation__sideWrap{border:2px solid blue;width:100%;height:90vh;position:absolute}
+}@media screen and (max-width:920px){.donation__sideWrap{width:100%}
 .donation #give-donation-level-button-wrap{grid-template-columns:repeat(2,1fr)}
 }@media(max-width:850px){.RegionPage__title h1:nth-child(1){font-size:90px;left:-10px}
 .RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:60px}
@@ -431,7 +431,7 @@ body{background:#000;color:white;font-family:"Didot"}
 .RegionPage__species-text-4{grid-row:22}
 .RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:1 / 13}
 .RegionPage__temperature-images{display:none}
-}@media screen and (max-width:500px){.donation__sideWrap{padding:50px 30px;padding-top:150px}
+}@media screen and (max-width:500px){.donation__sideWrap{padding:50px 30px}
 }@media(max-width:430px){.RegionPage{grid-column-gap:0;grid-row-gap:30px}
 .RegionPage__title h1:nth-child(1){font-size:50px;line-height:80px}
 .RegionPage__climate-subtitle-1{margin-top:20px}
