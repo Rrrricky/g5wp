@@ -1,17 +1,20 @@
 <?php
+
 /*
 
 Template Name: Donation template
 
 */
+
 $donationSideImage = get_field('donation_leftImage');
+
 ?>
 
 <?php get_header() ?>
 
 <section class="donation">
   <div class="donation__sideImg">
-    <img src="<?php echo $donationSideImage; ?>">
+    <img src="<?php echo $donationSideImage; ?>" alt="picture for the donation page">
   </div>
   <div class="donation__sideWrap">
     <div class="donation__sideWrap__internWrap">
@@ -24,14 +27,14 @@ $donationSideImage = get_field('donation_leftImage');
       <div class="donation__sideWrap__internWrap__form">
         <!-- <div class="donation__sideWrap__internWrap__form__title">
         <span class="dot"></span>
-          <strong>ETAPE - 1</strong>  CHOISISSEZ LA FRÉQUENCE
+          <strong>ETAPE - 1</strong>  Choose frequence
         </div> -->
         <div class="donation__sideWrap__internWrap__form__content">
           <?php echo do_shortcode('[donate]'); ?>
         </div>
         <!-- <div class="donation__sideWrap__internWrap__form__title" id="second">
         <span class="dot"></span>
-        <strong>ETAPE - 2</strong>  ENTREZ VOS COORDONNÉES ET CONFIRMEZ LE DON
+        <strong>ETAPE - 2</strong>  Information and confirm
         </div> -->
         <div class="donation__sideWrap__internWrap__form__content">
 

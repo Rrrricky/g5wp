@@ -41,7 +41,7 @@ $thumb2 = get_field('thumbnail_2');
       </ul>
   </div>
 	<?php if(!empty($main_picture)): ?>
-	<img class="RegionPage__main-picture" src="<?php echo $main_picture; ?>" />
+	<img class="RegionPage__main-picture" src="<?php echo $main_picture; ?>" alt="Some help for animal in danger" />
 	<?php endif; ?>
 	<div class="RegionPage__title">
 		<h1><?php the_field("name_of_region"); ?><span>.</span></h1>
@@ -75,7 +75,7 @@ $thumb2 = get_field('thumbnail_2');
 	</div>
 	<div class="RegionPage__region-picture">
 	<?php if(!empty($secondary_picture)): ?>
-		<img src="<?php echo $secondary_picture; ?>" />
+		<img src="<?php echo $secondary_picture; ?>" alt="Some food for animals" />
 	<?php endif; ?>
 	</div>
 	<!-- New information -->
@@ -87,10 +87,10 @@ $thumb2 = get_field('thumbnail_2');
 	</span>
 	<div class="RegionPage__temperature-images">
 	<?php if(!empty($thumb1)): ?>
-		<img src="<?php echo $thumb1; ?>" />
+		<img src="<?php echo $thumb1; ?>" alt="Some help for animals in danger" />
 	<?php endif; ?>
 	<?php if(!empty($thumb2)): ?>
-		<img src="<?php echo $thumb2; ?>" />
+		<img src="<?php echo $thumb2; ?>" alt="Some help for animals in danger" />
 	<?php endif; ?>
 	<div class="RegionPage__temperature-images__badfact">
 		<?php if(!empty($thumb1) && !empty($thumb2)): ?>
@@ -113,7 +113,7 @@ $thumb2 = get_field('thumbnail_2');
 				$the_region->the_post();
 				?>
 				<div class="RegionPage__related__bloc">
-					<img class="RegionPage__related__bloc__species-picture" src="<?php the_field('animal_home'); ?>"/>
+					<img class="RegionPage__related__bloc__species-picture" src="<?php the_field('animal_home'); ?>" alt="Some help for animals in danger"/>
 					<a class="RegionPage__related__bloc__species-text" href="<?php the_permalink(); ?>">Découvrir</a>
 				</div>
 				<?php

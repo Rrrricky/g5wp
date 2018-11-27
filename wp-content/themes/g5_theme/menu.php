@@ -11,13 +11,13 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
 <nav class="nav">
   <div class="nav__logo">
     <!-- <p>WealthAnimal</p> -->
-    <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>"></a>
+    <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>" alt="logo"></a>
   </div>
                 <?php // SYNTAXE : wp_nav_menu( array $args = array() )
                     $args=array(
-                    'theme_location' => 'header', // nom du slug
-                    'menu' => 'header_fr', // nom à donner cette occurence du menu
-                    'menu_class' => 'nav__links', // classe pour la div crée
+                    'theme_location' => 'header', // name of the slug
+                    'menu' => 'header_fr', // name to give to this occurence
+                    'menu_class' => 'nav__links', // class for the created div
                 );
                 wp_nav_menu($args);
                 ?>

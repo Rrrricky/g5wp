@@ -21,7 +21,7 @@ $id = get_the_ID();
     <div class="wrapperAnimal__home__close">
       <i class="fas fa-window-close"></i>
     </div>
-    <!-- Header interne -->
+    <!-- Header intern -->
     <div class="wrapperAnimal__home__header">
       <ul>
         <li>
@@ -42,7 +42,7 @@ $id = get_the_ID();
     <div class="wrapperAnimal__home__content">
       <!-- Image background -->
       <div class="wrapperAnimal__home__content__img">
-        <img src="<?php echo $home_picture ?>" alt="">
+        <img src="<?php echo $home_picture ?>" alt="Beautiful landscape with sun">
       </div>
       <!-- Text -->
       <div class="wrapperAnimal__home__content__text" style="font-size:40px">
@@ -102,7 +102,7 @@ $id = get_the_ID();
     <!-- Content -->
     <div class="wrapperAnimal__habitat__content">
       <div class="wrapperAnimal__habitat__content__map">
-        <img src="<?php echo $habitat_picture; ?>" alt="">
+        <img src="<?php echo $habitat_picture; ?>" alt="habitation picture for animals">
       </div>
       <div class="wrapperAnimal__habitat__content__text">
         <div class="wrapperAnimal__habitat__content__text__side">
@@ -123,7 +123,7 @@ $id = get_the_ID();
     <!-- Content -->
     <div class="wrapperAnimal__food__content">
       <div class="wrapperAnimal__food__content__img">
-        <img src="<?php echo $alimentaire_picture; ?>" alt="">
+        <img src="<?php echo $alimentaire_picture; ?>" alt="some food for animals">
         <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
       </div>
       <div class="wrapperAnimal__food__content__text">
@@ -151,7 +151,7 @@ $id = get_the_ID();
           <?php the_field('animal_disappear_box_text', $id); ?>
         </div>
       </div>
-        <img src="<?php echo $disparition_picture?>">
+        <img src="<?php echo $disparition_picture?>" alt="Some food for animals in danger">
       </div>
     </div>
   </section>
@@ -160,7 +160,7 @@ $id = get_the_ID();
     <!-- Content -->
     <div class="wrapperAnimal__donations__content">
       <div class="wrapperAnimal__donations__content__image">
-        <img src="<?php echo $donation_picture; ?>" alt="">
+        <img src="<?php echo $donation_picture; ?>" alt="landscape with the sun in background">
       </div>
       <div class="wrapperAnimal__donations__content__textBloc">
         <div class="wrapperAnimal__donations__content__textBloc__header">
@@ -194,7 +194,7 @@ $insta = get_field( "instagram_link" );
 <footer class="footer">
   <div class="footer__top">
     <a href="<?php echo site_url(); ?>">
-      <img src="<?php echo $logo_src; ?>" alt="WeathAnimal Logo">
+      <img src="<?php echo $logo_src; ?>" alt="Weath Animal Logo">
     </a>
   </div>
   <div class="footer__bottom">
