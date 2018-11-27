@@ -431,7 +431,7 @@ body{background:#000;color:white;font-family:"Didot"}
 .RegionPage__species-text-4{grid-row:22}
 .RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:1 / 13}
 .RegionPage__temperature-images{display:none}
-}@media screen and (max-width:500px){.donation__sideWrap{padding:50px 30px}
+}@media screen and (max-width:500px){.donation__sideWrap{padding:50px 30px;padding-top:150px}
 }@media(max-width:430px){.RegionPage{grid-column-gap:0;grid-row-gap:30px}
 .RegionPage__title h1:nth-child(1){font-size:50px;line-height:80px}
 .RegionPage__climate-subtitle-1{margin-top:20px}
