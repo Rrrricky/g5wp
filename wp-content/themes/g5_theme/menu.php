@@ -23,7 +23,7 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
                 ?>
 	<!-- <p class="nav__search"><i class="fas fa-search"></i></p> -->
 
-	<form action="http://localhost:8888/g5_wordpress/" method="get" class="search-bar nav__search">
+	<form action="<?php site_url(); ?>" method="get" class="search-bar nav__search">
           <div class="search-bloc">
             <input class="search-input autocomplete" type="text" value="<?= $_GET['name'] ?>" name="name" placeholder="Rechercher">
             <span style="fill: #fff;" class="magnifying-icon-js" id="loupe">
