@@ -11,7 +11,7 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
 <nav class="nav">
   <div class="nav__logo">
     <!-- <p>WealthAnimal</p> -->
-    <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>"></a>
+    <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>" alt="logo"></a>
   </div>
                 <?php // SYNTAXE : wp_nav_menu( array $args = array() )
                     $args=array(

@@ -11,7 +11,7 @@ $donationSideImage = get_field('donation_leftImage');
 
 <section class="donation">
   <div class="donation__sideImg">
-    <img src="<?php echo $donationSideImage; ?>">
+    <img src="<?php echo $donationSideImage; ?>" alt="picture for the donation page">
   </div>
   <div class="donation__sideWrap">
     <div class="donation__sideWrap__internWrap">
