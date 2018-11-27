@@ -79,14 +79,15 @@
 		line-height: 120%;
 	}
 	&__data-line {
+		margin: 40px 0;
 		grid-row: 2;
 	}
 	&__data-subtitle {
-		margin-top: 0;
+		margin: 40px 0;
 		grid-row: 2;
 	}
 	&__climate-fact-subtitle {
-		margin-top: 40px;
+		margin: 60px 0;
 	}
 	&__location {
 		> i {
@@ -234,38 +235,29 @@
 			color: $button-color;
 		}
 	}
-	&__species-picture, &__species-text {
-		margin: 0 auto;
-		text-align: center;
-	}
-	&__species-text {
-		width: 200px;
-		padding: 10px 20px;
-		background-color: $button-color;
-		cursor: pointer;
-	}
-	&__species-picture-1,
-	&__species-picture-2,
-	&__species-picture-3,
-	&__species-picture-4 {
-		width: 200px;
-		height: 200px;
-	}
-	&__species-picture-1,
-	&__species-text-1 {
-		grid-column: 1 / 4;
-	}
-	&__species-picture-2,
-	&__species-text-2 {
-		grid-column: 4 / 7;
-	}
-	&__species-picture-3,
-	&__species-text-3 {
-		grid-column: 7 / 10;
-	}
-	&__species-picture-4,
-	&__species-text-4 {
-		grid-column: 10 / 13;
+	&__related {
+		display: flex;
+		justify-content: space-around;
+		grid-row: 11;
+		grid-column: 1 / 13;
+		&__bloc {
+			width: 200px;
+			&__species-picture, &__species-text {
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			&__species-text {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 40px;
+				padding: 10px 20px;
+				background-color: $button-color;
+				cursor: pointer;
+			}
+		}
 	}
 }
 

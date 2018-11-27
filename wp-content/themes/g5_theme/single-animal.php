@@ -1,13 +1,14 @@
 <?php
-get_header();
 
-$id = get_the_ID();
+	get_header();
 
-$home_picture = get_field('animal_home');
-$habitat_picture = get_field('animal_habitat_img');
-$alimentaire_picture = get_field('animal_food_img');
-$disparition_picture = get_field('animal_disappear_img');
-$donation_picture = get_field('animal_donation_img');
+	$id = get_the_ID();
+
+	$home_picture = get_field('animal_home');
+	$habitat_picture = get_field('animal_habitat_img');
+	$alimentaire_picture = get_field('animal_food_img');
+	$disparition_picture = get_field('animal_disappear_img');
+	$donation_picture = get_field('animal_donation_img');
 
 ?>
 
@@ -84,26 +85,6 @@ $donation_picture = get_field('animal_donation_img');
         </div>
       </div>
       <!-- List number -->
-      <?php
-      /*
-        $current_post_id = get_the_ID();
-        $count_posts = wp_count_posts('animal')->publish;
-        $wp_query = new WP_Query(array('post_type' => 'animal', 'posts_per_page' => -1)); ?>
-        <?php
-        $i=1;
-        if($wp_query->have_posts()):
-          while($wp_query->have_posts()):
-            $wp_query->the_post();
-            if(get_the_ID()==$current_post_id) {
-              $index = $i;
-            }
-            $i++;
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        $published_posts = $count_posts->publish;
-        */
-      ?>
       <div class="wrapperAnimal__home__footer__list">
         <div class="wrapperAnimal__home__footer__list__current-number"><?= $index; ?> / <?php echo $count_posts ?></div>
         <div class="wrapperAnimal__home__footer__list__navigation-arrows">
@@ -194,7 +175,7 @@ $donation_picture = get_field('animal_donation_img');
         </a>
         <div class="wrapperAnimal__donations__content__textBloc__secondParagraph">
           Ce n’est qu’avec votre aide que nous arriverons à les sauver.
-</div>
+				</div>
       </div>
     </div>
   </section>

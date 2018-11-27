@@ -61,7 +61,7 @@ init();
 var complete = function complete(json) {
   new autoComplete({
     selector: 'input[name="name"]',
-    minChars: 2,
+    minChars: 0,
     offsetTop: 5,
     source: function source(term, suggest) {
       term = term.toLowerCase();

@@ -122,9 +122,9 @@
 .RegionPage__title>h1>span{color:#e67e37}
 .RegionPage__data-line,.RegionPage__climate-fact-line{grid-column:1 / 3;height:1px;-ms-flex-item-align:center;align-self:center;background-color:white}
 .RegionPage__data-subtitle,.RegionPage__climate-fact-subtitle{grid-column:3 / 12;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:25px;line-height:120%}
-.RegionPage__data-line{grid-row:2}
-.RegionPage__data-subtitle{margin-top:0;grid-row:2}
-.RegionPage__climate-fact-subtitle{margin-top:40px}
+.RegionPage__data-line{margin:40px 0;grid-row:2}
+.RegionPage__data-subtitle{margin:40px 0;grid-row:2}
+.RegionPage__climate-fact-subtitle{margin:60px 0}
 .RegionPage__location{grid-column:2 / 5;line-height:120%}
 .RegionPage__location>i{margin-bottom:20px}
 .RegionPage__location>h4{font-weight:bold;margin-bottom:12px}
@@ -154,13 +154,10 @@
 .RegionPage__temperature-text{grid-column:7 / 12;z-index:0;line-height:120%}
 .RegionPage__species-title{grid-column:4 / 10;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:120px;margin-bottom:50px;font-weight:bold}
 .RegionPage__species-title>span:nth-child(1){color:#e67e37}
-.RegionPage__species-picture,.RegionPage__species-text{margin:0 auto;text-align:center}
-.RegionPage__species-text{width:200px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
-.RegionPage__species-picture-1,.RegionPage__species-picture-2,.RegionPage__species-picture-3,.RegionPage__species-picture-4{width:200px;height:200px}
-.RegionPage__species-picture-1,.RegionPage__species-text-1{grid-column:1 / 4}
-.RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:4 / 7}
-.RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:7 / 10}
-.RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:10 / 13}
+.RegionPage__related{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;grid-row:11;grid-column:1 / 13}
+.RegionPage__related__bloc{width:200px}
+.RegionPage__related__bloc__species-picture,.RegionPage__related__bloc__species-text{width:200px;height:200px;margin:0 auto;text-align:center}
+.RegionPage__related__bloc__species-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
 .js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
 .js-lazyload.loaded img{opacity:1}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
