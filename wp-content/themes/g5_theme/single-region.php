@@ -143,7 +143,7 @@ $insta = get_field( "instagram_link" );
 <footer class="footer">
   <div class="footer__top">
     <a href="<?php echo site_url(); ?>">
-      <img src="<?php echo $logo_src; ?>">
+      <img src="<?php echo $logo_src; ?>" alt="WeathAnimal Logo">
     </a>
   </div>
   <div class="footer__bottom">
