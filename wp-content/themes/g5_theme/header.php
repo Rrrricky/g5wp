@@ -55,7 +55,7 @@
 				<meta name="msapplication-TileColor" content="#2b5797">
 				<meta name="msapplication-config" content="/browserconfig.xml">
 				<meta name="theme-color" content="#ffffff">
-        <!-- Appel du fichier style.css de notre thème -->
+        <!-- Call style.css of the theme -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -76,7 +76,7 @@
 
 
 
-        <!-- Execution de la fonction wp_head() obligatoire ! -->
+        <!-- wp_head() necessary -->
         <?php wp_head(); ?>
     </head>
 	<body <?php body_class(); ?>>

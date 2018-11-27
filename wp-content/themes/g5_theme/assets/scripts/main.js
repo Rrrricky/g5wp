@@ -65,8 +65,8 @@ class NewMouse {
 				let movementY = Math.abs( currentEvent.screenY - prevEvent.screenY );
 				let movement = Math.sqrt( movementX * movementX + movementY * movementY );
 
-				//speed=movement/100ms= movement/0.1s= 10*movement/s
-				let speed = 10 * movement; //current speed
+				// Speed=movement/100ms= movement/0.1s= 10*movement/s
+				let speed = 10 * movement; // current speed
 				let acceleration = 10 * ( speed - prevSpeed );
 
 				let ball = document.querySelector( '.wrap__ball-js' );
@@ -89,7 +89,7 @@ if ( document.querySelector( '.wrap' ) ) {
 	const newMouse = new NewMouse();
 }
 
-// display video
+// Display video
 
 if ( document.querySelector( '.wrapperAnimal__home__footer__video' ) ) {
 	const videoBtn = document.querySelector(

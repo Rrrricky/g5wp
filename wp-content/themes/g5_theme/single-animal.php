@@ -21,7 +21,7 @@ $id = get_the_ID();
     <div class="wrapperAnimal__home__close">
       <i class="fas fa-window-close"></i>
     </div>
-    <!-- Header interne -->
+    <!-- Header intern -->
     <div class="wrapperAnimal__home__header">
       <ul>
         <li>

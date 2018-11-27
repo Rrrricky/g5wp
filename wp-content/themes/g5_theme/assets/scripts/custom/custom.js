@@ -365,9 +365,9 @@ function () {
         if (prevEvent && currentEvent) {
           var movementX = Math.abs(currentEvent.screenX - prevEvent.screenX);
           var movementY = Math.abs(currentEvent.screenY - prevEvent.screenY);
-          var movement = Math.sqrt(movementX * movementX + movementY * movementY); //speed=movement/100ms= movement/0.1s= 10*movement/s
+          var movement = Math.sqrt(movementX * movementX + movementY * movementY); // Speed=movement/100ms= movement/0.1s= 10*movement/s
 
-          var _speed = 10 * movement; //current speed
+          var _speed = 10 * movement; // current speed
 
 
           var acceleration = 10 * (_speed - prevSpeed);
@@ -393,7 +393,7 @@ function () {
 
 if (document.querySelector('.wrap')) {
   var newMouse = new NewMouse();
-} // display video
+} // Display video
 
 
 if (document.querySelector('.wrapperAnimal__home__footer__video')) {
