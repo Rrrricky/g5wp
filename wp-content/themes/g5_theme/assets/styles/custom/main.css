@@ -342,7 +342,7 @@ RESPONSIVE
 
 .RegionPage__title { font-family: "Didot"; grid-column: 1 / 12; grid-row-start: 2; position: relative; height: 200px; top: -250px; margin-left: -40px; margin-right: -40px; margin-bottom: -250px; opacity: .5; }
 
-.RegionPage__title > h1 { font-size: 160px; position: absolute; top: 0; left: 40px; }
+.RegionPage__title > h1 { font-size: 140px; position: absolute; top: 0; left: 40px; }
 
 .RegionPage__title > h1 > span { color: #e67e37; }
 

@@ -118,7 +118,7 @@
 .RegionPage .wrapperRegion__home__header ul:nth-child(2){color:white}
 .RegionPage .wrapperRegion__home__header ul div{width:48px;height:10px;background-color:#e67e37;opacity:.5;position:absolute}
 .RegionPage__title{font-family:"Didot";grid-column:1 / 12;grid-row-start:2;position:relative;height:200px;top:-250px;margin-left:-40px;margin-right:-40px;margin-bottom:-250px;opacity:.5}
-.RegionPage__title>h1{font-size:160px;position:absolute;top:0;left:40px}
+.RegionPage__title>h1{font-size:140px;position:absolute;top:0;left:40px}
 .RegionPage__title>h1>span{color:#e67e37}
 .RegionPage__data-line,.RegionPage__climate-fact-line{grid-column:1 / 3;height:1px;-ms-flex-item-align:center;align-self:center;background-color:white}
 .RegionPage__data-subtitle,.RegionPage__climate-fact-subtitle{grid-column:3 / 12;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:25px;line-height:120%}
