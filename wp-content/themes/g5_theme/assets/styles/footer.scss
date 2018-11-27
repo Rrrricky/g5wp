@@ -54,4 +54,11 @@
 	}
 }
 @media screen and (max-width: 750px) {
+	.footer {
+		&__bottom {
+			&__text {
+				width: 300px;
+			}
+		}
+	}
 }

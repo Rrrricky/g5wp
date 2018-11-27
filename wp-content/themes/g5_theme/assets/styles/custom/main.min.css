@@ -368,11 +368,12 @@ body{background:#000;color:white;font-family:"Didot"}
 .RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:7 / 13}
 .RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:1 / 7}
 .RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:7 / 13}
-}@media screen and (max-width:920px){.donation__sideWrap{width:100%;position:relative}
+}@media screen and (max-width:920px){.donation__sideWrap{position:relative}
 .donation #give-donation-level-button-wrap{grid-template-columns:repeat(2,1fr)}
 }@media(max-width:850px){.RegionPage__title h1:nth-child(1){font-size:90px;left:-10px}
 .RegionPage__climate-subtitle-1,.RegionPage__climate-subtitle-2{font-size:60px}
 }@media screen and (max-width:750px){.wrapperAnimal__home__header div{margin-top:-5px}
+.footer__bottom__text{width:300px}
 }@media(max-width:750px){.wrap__ball{display:none}
 .hamburger{display:block !important;z-index:4}
 .nav{margin:0;display:block}
