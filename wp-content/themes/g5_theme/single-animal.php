@@ -85,7 +85,7 @@ $id = get_the_ID();
       </div>
       <!-- List number -->
       <div class="wrapperAnimal__home__footer__list">
-        <div class="wrapperAnimal__home__footer__list__current-number"><?= $index; ?> / <?php echo $count_posts ?></div>
+        <div class="wrapperAnimal__home__footer__list__current-number"><?= $index; ?>  <?php echo $count_posts ?></div>
         <div class="wrapperAnimal__home__footer__list__navigation-arrows">
           <i class="far fa-long-arrow-left wrapperAnimal__home__footer__list__navigation-arrows-left"></i>
           <i class="far fa-long-arrow-right wrapperAnimal__home__footer__list__navigation-arrows-right"></i>
@@ -106,9 +106,11 @@ $id = get_the_ID();
       </div>
       <div class="wrapperAnimal__habitat__content__text">
         <div class="wrapperAnimal__habitat__content__text__side">
-        <p><?php the_field('animal_habitat_location'); ?></p></div>
+          <?php the_field('animal_habitat_location'); ?>
+        </div>
         <div class="wrapperAnimal__habitat__content__text__main">
-        <?php the_field('animal_habitat_text', $id); ?></div>
+          <?php the_field('animal_habitat_text', $id); ?>
+        </div>
       </div>
     </div>
   </section>
@@ -200,7 +202,7 @@ $insta = get_field( "instagram_link" );
       Copyright © 2018 WeathAnimal
     </div>
     <div class="footer__bottom__text">
-      WeathAnimal est un site à but  non lucratif créé pour sensibiliser les personnes au réchauffement climatique. Montrer que  même s’ils ne peuvent pas parler, les animaux souffrent des dégâts causés par l’homme. S’il vous plaît protéger leur territoire et leur vie.
+      WeathAnimal est un site à but lucratif qui veut éveiller et sensibiliser les personnes au réchauffement climatique et à ses conséquences. Nous voulions montrer que les régions aussi bien que les animaux sont gravement affectés par les dégâts causés par l’homme ; ils nous revient de les protéger et de les préserver. Protégez leurs territoires et leurs vies.
     </div>
     <div class="footer__bottom__socials">
       <div class="footer__bottom__socials__text">
