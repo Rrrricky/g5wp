@@ -301,33 +301,18 @@
 
 @media (max-width: 950px) {
 	.RegionPage {
-		&__species-picture-1 {
+		&__species-picture {
 			grid-row: 12;
 		}
-		&__species-text-1 {
+		&__species-text {
 			grid-row: 13;
 		}
-		&__species-picture-1,
-		&__species-text-1 {
-			grid-column: 1 / 7;
-		}
-		&__species-picture-2 {
-			grid-row: 12;
-		}
-		&__species-text-2 {
-			grid-row: 13;
-		}
-		&__species-picture-2,
-		&__species-text-2 {
-			grid-column: 7 / 13;
-		}
-		&__species-picture-3,
-		&__species-text-3 {
-			grid-column: 1 / 7;
-		}
-		&__species-picture-4,
-		&__species-text-4 {
-			grid-column: 7 / 13;
+		&__related {
+			grid-row: 11;
+			display: inline-block;
+			&__bloc {
+				margin: 0 auto;
+			}
 		}
 	}
 }
@@ -403,6 +388,17 @@
 		&__region-picture {
 			display: none;
 		}
+		&__related {
+			grid-row: 12;
+			&__bloc {
+				&__species-picture {
+
+				}
+				&__species-text {
+
+				}
+			}
+		}
 	}
 }
 
@@ -445,45 +441,12 @@
 		&__climate-subtitle-1, &__climate-subtitle-2 {
 			font-size: 30px;
 		}
-		&__species-picture-1 {
+		&__related {
 			grid-row: 15;
-		}
-		&__species-text-1 {
-			grid-row: 16;
-		}
-		&__species-picture-1,
-		&__species-text-1 {
-			grid-column: 1 / 13;
-		}
-		&__species-picture-2 {
-			grid-row: 17;
-		}
-		&__species-text-2 {
-			grid-row: 18;
-		}
-		&__species-picture-2,
-		&__species-text-2 {
-			grid-column: 1 / 13;
-		}
-		&__species-picture-3 {
-			grid-row: 19;
-		}
-		&__species-text-3 {
-			grid-row: 20;
-		}
-		&__species-picture-3,
-		&__species-text-3 {
-			grid-column: 1 / 13;
-		}
-		&__species-picture-4 {
-			grid-row: 21;
-		}
-		&__species-text-4 {
-			grid-row: 22;
-		}
-		&__species-picture-4,
-		&__species-text-4 {
-			grid-column: 1 / 13;
+			display: inline-block;
+			&__bloc {
+				margin: 0 auto;
+			}
 		}
 		&__temperature-images {
 			display: none;
@@ -524,9 +487,6 @@
 			> span:nth-child(2) {
 				left: -60px;
 			}
-		}
-		&__species-title {
-			margin: 50px 0 20px 0;
 		}
 	}
 }
