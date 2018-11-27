@@ -1,27 +1,3 @@
-/** Syntaxe BEM
-
-HTML:
-
-<div class="parent">
-  <p class="parent__child-element">Je suis un élément enfant</p>
-  <p class="parent__child-element-2">Moi aussi</p>
-</div>
-
-
-SASS:
-
-.parent {
-  &__child-element {
-    color: red;
-  }
-  &__child-element-2 {
-    color: blue
-  }
-}
-
-
-*/
-
 $h1: 55px;
 $h2: 45px;
 $h3: 35px;

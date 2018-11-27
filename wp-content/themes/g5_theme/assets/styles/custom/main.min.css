@@ -111,17 +111,20 @@
 .js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
 .js-lazyload.loaded img{opacity:1}
 .RegionPage{display:grid;font-family:"Raleway";margin:0 40px 50px 40px;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(4,minmax(50px,auto));grid-gap:30px;-ms-flex-line-pack:center;align-content:center}
-.RegionPage__main-picture{grid-column:1 / 13;width:100vw;height:100vh;margin:0 -40px;-o-object-fit:cover;object-fit:cover}
+.RegionPage__main-picture{grid-column:1 / 13;width:100vw;height:100vh;margin:0 -40px;-o-object-fit:cover;object-fit:cover;z-index:-1}
 .RegionPage .wrapperRegion__home{height:80vh;position:relative}
 .RegionPage .wrapperRegion__home__header{height:50px;width:320px;position:absolute}
 .RegionPage .wrapperRegion__home__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#777}
 .RegionPage .wrapperRegion__home__header ul:nth-child(2){color:white}
 .RegionPage .wrapperRegion__home__header ul div{width:48px;height:10px;background-color:#e67e37;opacity:.5;position:absolute}
 .RegionPage__title{font-family:"Didot";grid-column:1 / 12;grid-row-start:2;position:relative;height:200px;top:-250px;margin-left:-40px;margin-right:-40px;margin-bottom:-250px;opacity:.5}
-.RegionPage__title>h1{font-size:160px;position:absolute;top:0;left:-30px}
+.RegionPage__title>h1{font-size:140px;position:absolute;top:0;left:40px}
 .RegionPage__title>h1>span{color:#e67e37}
 .RegionPage__data-line,.RegionPage__climate-fact-line{grid-column:1 / 3;height:1px;-ms-flex-item-align:center;align-self:center;background-color:white}
-.RegionPage__data-subtitle,.RegionPage__climate-fact-subtitle{grid-column:3 / 12;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:60px 0;font-size:25px;line-height:120%}
+.RegionPage__data-subtitle,.RegionPage__climate-fact-subtitle{grid-column:3 / 12;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:25px;line-height:120%}
+.RegionPage__data-line{margin:40px 0;grid-row:2}
+.RegionPage__data-subtitle{margin:40px 0;grid-row:2}
+.RegionPage__climate-fact-subtitle{margin:60px 0}
 .RegionPage__location{grid-column:2 / 5;line-height:120%}
 .RegionPage__location>i{margin-bottom:20px}
 .RegionPage__location>h4{font-weight:bold;margin-bottom:12px}
@@ -136,8 +139,8 @@
 .RegionPage__climate>h4>span{color:#e67e37}
 .RegionPage__region-subtitle{grid-column:1 / 13;font-size:55px;margin:100px 0}
 .RegionPage__region-text{grid-column:2 / 9;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;line-height:120%}
-.RegionPage__region-text>p:nth-child(1){border-left:1px solid white;padding-left:20px}
-.RegionPage__region-text>span:nth-child(2){-webkit-transform-origin:50% 50%;transform-origin:50% 50%;position:absolute;top:50%;left:-80px;-webkit-transform:translateY(-50%) rotate(-90deg);transform:translateY(-50%) rotate(-90deg)}
+.RegionPage__region-text>p:nth-child(1){border-left:4px solid #888e94;padding-left:20px}
+.RegionPage__region-text>span:nth-child(2){font-size:25px;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;position:absolute;top:50%;left:-80px;-webkit-transform:translateY(-50%) rotate(-90deg);transform:translateY(-50%) rotate(-90deg);font-family:'Didot';color:#888e94;font-weight:bold}
 .RegionPage__region-picture{grid-column:9 / 13;width:100%;height:300px;position:relative}
 .RegionPage__region-picture>img:nth-child(1){width:100%;height:100%;-o-object-fit:cover;object-fit:cover;position:absolute;top:0;right:-40px}
 .RegionPage__climate-subtitle-1{grid-column:1 / 13;margin-top:140px;font-size:120px;font-family:"Didot";opacity:.5}
@@ -148,16 +151,14 @@
 .RegionPage__temperature-images>img:nth-child(2){position:absolute;top:200px;left:400px;width:200px;height:120px;opacity:.5}
 .RegionPage__temperature-images__badfact{width:400px;padding:20px;text-align:center;position:absolute;top:260px;line-height:120%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .RegionPage__temperature-images__badfact>p:nth-child(1){font-weight:bold;color:#e67e37;margin-bottom:10px}
-.RegionPage__temperature-text{grid-column:7 / 12;z-index:0;line-height:120%}
+.RegionPage__temperature-text{grid-column:7 / 13;z-index:0;line-height:120%}
 .RegionPage__species-title{grid-column:4 / 10;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:120px;margin-bottom:50px;font-weight:bold}
 .RegionPage__species-title>span:nth-child(1){color:#e67e37}
-.RegionPage__species-picture,.RegionPage__species-text{margin:0 auto;text-align:center}
-.RegionPage__species-text{width:200px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
-.RegionPage__species-picture-1,.RegionPage__species-picture-2,.RegionPage__species-picture-3,.RegionPage__species-picture-4{width:200px;height:200px}
-.RegionPage__species-picture-1,.RegionPage__species-text-1{grid-column:1 / 4}
-.RegionPage__species-picture-2,.RegionPage__species-text-2{grid-column:4 / 7}
-.RegionPage__species-picture-3,.RegionPage__species-text-3{grid-column:7 / 10}
-.RegionPage__species-picture-4,.RegionPage__species-text-4{grid-column:10 / 13}
+.RegionPage__related{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;grid-row:11;grid-column:1 / 13}
+.RegionPage__related__bloc{width:200px}
+.RegionPage__related__bloc__species-picture,.RegionPage__related__bloc__species-text{width:200px;height:200px;margin:0 auto;text-align:center}
+.RegionPage__related__bloc__species-picture{-o-object-fit:cover;object-fit:cover}
+.RegionPage__related__bloc__species-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
 .js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
 .js-lazyload.loaded img{opacity:1}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}

@@ -2,53 +2,25 @@
 
 get_header();
 
+$name = get_field('name_of_region');
 
-
-
-//the_terms( $id, $taxonomy, $before, $sep, $after );
-// the_terms( $post->ID, 'animal', 'categories: ', ' / ' );
-
-
-// $name = get_field('name_of_region');
-
-
-
-	// $args_animal = [
-	// 	'post_type' => 'animal',
-	// 	'posts_per_page' => -1,
-	// 	'tax_query' => [
-	// 		[
-	// 			'taxonomy' => 'region',
-	// 			'field' => "name",
-	// 			'terms' => $name,
-	// 		]
-	// 	]
-	// ];
-
-
-
-
-	// Get animal list
-	$the_region = new WP_Query($args_animal);
-	if($the_region->have_posts()):
-		while($the_region->have_posts()):
-			$the_region->the_post();
-		endwhile;
-	endif;
-
-
-
+	$args_animal = [
+		'post_type' => 'animal',
+		'posts_per_page' => -1,
+		'tax_query' => [
+			[
+				'taxonomy' => 'region',
+				'field' => 'slug',
+				'terms' => $name,
+			]
+		]
+	];
 
 $main_picture = get_field('main_picture');
 $secondary_picture = get_field('region_photo');
 $thumb1 = get_field('thumbnail_1');
 $thumb2 = get_field('thumbnail_2');
-
-// echo '<pre>';
-// var_dump($name);
-// echo '</pre>';
 ?>
-
 
 <div class="RegionPage js-lazyload">
  <!-- Intern header -->
@@ -132,14 +104,27 @@ $thumb2 = get_field('thumbnail_2');
 	</p>
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
 	<!-- Wanna display every animal with the category  -->
-	<img class="RegionPage__species-picture RegionPage__species-picture-1" src="<?php the_field('animal_home'); ?>"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-2" src="https://picsum.photos/200/200"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-3" src="https://picsum.photos/200/200"/>
-	<img class="RegionPage__species-picture RegionPage__species-picture-4" src="https://picsum.photos/200/200"/>
-	<a href="<?php the_permalink(); ?>" class="RegionPage__species-text RegionPage__species-text-1">Découvrir</a>
-	<a href="#" class="RegionPage__species-text RegionPage__species-text-2">Découvrir</a>
-	<a href="#" class="RegionPage__species-text RegionPage__species-text-3">Découvrir</a>
-	<a href="#" class="RegionPage__species-text RegionPage__species-text-4">Découvrir</a>
+	<div class="RegionPage__related">
+		<?php
+		// Get animal list
+		$the_region = new WP_Query($args_animal);
+		if($the_region->have_posts()):
+			while($the_region->have_posts()):
+				$the_region->the_post();
+				?>
+				<div class="RegionPage__related__bloc">
+					<img class="RegionPage__related__bloc__species-picture" src="<?php the_field('animal_home'); ?>"/>
+					<a class="RegionPage__related__bloc__species-text" href="<?php the_permalink(); ?>">Découvrir</a>
+				</div>
+				<?php
+			endwhile;
+		endif;
+		?>
+	</div>
+	<?php
+	get_footer();
+	wp_reset_postdata();
+	?>
 </div>
 
 <!-- Footer -->
