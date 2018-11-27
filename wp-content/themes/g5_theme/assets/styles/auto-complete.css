@@ -15,8 +15,8 @@
   }
   .search-bar .search-input {
 	padding: 20px 5px;
-	font-family: Helvetica;
-	width: 80px;
+	font-family: "Raleway";
+	width: 120px;
 	overflow: hidden;
 	font-size: 12px;
 	height: 35px;
@@ -27,7 +27,7 @@
   }
   .search-bar span {
 	position: absolute;
-	right: 15px;
+	right: 50px;
 	bottom: 6px;
   }
   .search-bar span:hover {
