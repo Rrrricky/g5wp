@@ -12,6 +12,7 @@
 		height: 100vh;
 		margin: 0 -40px;
 		object-fit: cover;
+		z-index: -1;
 	}
 	.wrapperRegion {
 		&__home {
@@ -147,6 +148,7 @@
 			padding-left: 20px;
 		}
 		> span:nth-child(2) {
+			font-size: 25px;
 			transform-origin: 50% 50%;
 			position: absolute;
 			top: 50%;
@@ -223,7 +225,7 @@
 		}
 	}
 	&__temperature-text {
-		grid-column: 7 / 12;
+		grid-column: 7 / 13;
 		z-index: 0;
 		line-height: 120%;
 	}
