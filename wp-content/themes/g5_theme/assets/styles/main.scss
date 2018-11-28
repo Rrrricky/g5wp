@@ -1,31 +1,35 @@
-/** Syntaxe BEM
+$h1: 55px;
+$h2: 45px;
+$h3: 35px;
+$h4: 30px;
+$h5: 25px;
 
-HTML:
+$h1-lh: 70px;
+$current-fz: 20px;
+$current-lh: 32px;
+$primary-font: "Didot";
+$secondary-font: "Raleway";
+$primary-color: white;
+$primary-back-color: #040404;
+$button-color: #e67e37;
 
-<div class="parent">
-  <p class="parent__child-element">Je suis un élément enfant</p>
-  <p class="parent__child-element-2">Moi aussi</p>
-</div>
+@import "ball-mouse";
+@import "header";
+@import "home-page";
+@import "menu-page";
+@import "home-page-slider";
+@import "404-page";
+@import "animal-page";
+@import "region-page";
+@import "hamburgers/hamburgers.scss";
+@import "hamburgers/_base.scss";
+@import "hamburgers/types/_slider.scss";
+@import "hamburgers/types/_slider-r.scss";
+@import "donation-page.scss";
+@import "footer.scss";
 
-
-
-SASS:
-
-.parent {
-  &__child-element {
-    color: red;
-  }
-  &__child-element-2 {
-    color: blue
-  }
+body {
+	background: $primary-back-color;
+	color: $primary-color;
+	font-family: $primary-font;
 }
-
-
-*/
-
-
-* {
-  color: blue;
-  background-color:#ffc600;
-}
-

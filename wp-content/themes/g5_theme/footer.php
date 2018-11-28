@@ -1,6 +1,4 @@
-<footer id="footer">
-</footer>
-<!-- Execution de la fonction wp_footer() obligatoire ! -->
-  <?php wp_footer();  ?> <!-- cherche toutes les fonctionnalités nécessaires -->
+<!-- wp_footer() necessary ! -->
+  <?php wp_footer();  ?> <!-- looks for all foncitonnality necessary -->
 </body>
 </html>
