@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('init', 'add_acf_option_page_support');
 
 function add_acf_option_page_support(){

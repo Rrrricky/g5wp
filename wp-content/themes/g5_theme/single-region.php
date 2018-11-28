@@ -4,17 +4,17 @@ get_header();
 
 $name = get_field('name_of_region');
 
-	$args_animal = [
-		'post_type' => 'animal',
-		'posts_per_page' => -1,
-		'tax_query' => [
-			[
-				'taxonomy' => 'region',
-				'field' => 'slug',
-				'terms' => $name,
-			]
+$args_animal = [
+	'post_type' => 'animal',
+	'posts_per_page' => -1,
+	'tax_query' => [
+		[
+			'taxonomy' => 'region',
+			'field' => 'slug', // Slug works, not the name
+			'terms' => $name,
 		]
-	];
+	]
+];
 
 $main_picture = get_field('main_picture');
 $secondary_picture = get_field('region_photo');
@@ -134,10 +134,10 @@ wp_reset_postdata();
 ?>
 
 <?php
-$logo = get_field('logo_header');
-$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
-$fb = get_field( "facebook_link" );
-$insta = get_field( "instagram_link" );
+	$logo = get_field('logo_header');
+	$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
+	$fb = get_field( "facebook_link" );
+	$insta = get_field( "instagram_link" );
 ?>
 
 <footer class="footer">

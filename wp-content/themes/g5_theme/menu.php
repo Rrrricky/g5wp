@@ -1,6 +1,7 @@
 <?php
-$logo = get_field('logo_header');
-$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
+
+	$logo = get_field('logo_header');
+	$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
 ?>
 
 <button class="hamburger hamburger--collapse" type="button">
@@ -10,18 +11,17 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
 </button>
 <nav class="nav">
   <div class="nav__logo">
-    <!-- <p>WealthAnimal</p> -->
     <a href="<?php echo site_url(); ?>"><img src="<?php echo $logo_src; ?>" alt="logo"></a>
-  </div>
-                <?php // SYNTAXE : wp_nav_menu( array $args = array() )
-                    $args=array(
-                    'theme_location' => 'header', // name of the slug
-                    'menu' => 'header_fr', // name to give to this occurence
-                    'menu_class' => 'nav__links', // class for the created div
-                );
-                wp_nav_menu($args);
-                ?>
-	<!-- <p class="nav__search"><i class="fas fa-search"></i></p> -->
+	</div>
+
+  <?php // SYNTAXE : wp_nav_menu( array $args = array() )
+    $args=array(
+      'theme_location' => 'header', // name of the slug
+      'menu' => 'header_fr', // name to give to this occurence
+      'menu_class' => 'nav__links', // class for the created div
+  	);
+  	wp_nav_menu($args);
+  ?>
 
 	<form action="<?php echo site_url(); ?>" method="get" class="search-bar nav__search">
           <div class="search-bloc">
@@ -38,10 +38,10 @@ $logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Anima
 $form = document.querySelector(".search-bar")
 $searchIcon = $form.querySelector(".magnifying-icon-js")
 $searchIcon.addEventListener( //A click on the icon will submit the form
- "click",
- (e)=>{
-	 $form.submit()
-	 e.preventDefault()
- }
+	"click",
+ 	(e)=>{
+	$form.submit()
+	e.preventDefault()
+ 	}
 )
 </script>

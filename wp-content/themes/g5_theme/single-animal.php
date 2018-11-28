@@ -185,10 +185,10 @@ $id = get_the_ID();
 <?php get_footer() ?>
 
 <?php
-$logo = get_field('logo_header');
-$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
-$fb = get_field( "facebook_link" );
-$insta = get_field( "instagram_link" );
+	$logo = get_field('logo_header');
+	$logo_src = $logo ? $logo['url'] : 'https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png';
+	$fb = get_field( "facebook_link" );
+	$insta = get_field( "instagram_link" );
 ?>
 
 <footer class="footer">

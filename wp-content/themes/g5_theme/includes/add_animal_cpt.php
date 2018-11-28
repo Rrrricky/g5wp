@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('init', 'add_animal_custom_post_it'); // Dès le chargement du site (Rq. 'init' obligatoire)
 function add_animal_custom_post_it(){
 

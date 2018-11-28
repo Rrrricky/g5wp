@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('init', 'add_region_cpt'); // As soon as the site loads (Rq. 'init' necessary)
 function add_region_cpt(){
 
