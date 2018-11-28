@@ -1,7 +1,6 @@
 // Display video
 
 class VideoDisplayer {
-
 	display() {
 		if ( document.querySelector( '.wrapperAnimal__home__footer__video' ) ) {
 			const videoBtn = document.querySelector(
@@ -35,5 +34,5 @@ class VideoDisplayer {
 	}
 }
 
-const displayer = new VideoDisplayer
-displayer.display()
+const displayer = new VideoDisplayer();
+displayer.display();

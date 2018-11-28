@@ -16,7 +16,7 @@ $id = get_the_ID();
   <!-- Home section -->
   <section class="wrapperAnimal__home">
     <div class="wrapperAnimal__home__displayVideo" >
-      <iframe id="video" width="1045" height="880" src="<?php the_field('youtubeLink'); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <iframe id="video" width="1045" height="880" src="<?php the_field('youtubeLink'); ?>?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
     </div>
     <div class="wrapperAnimal__home__close">
       <i class="fas fa-window-close"></i>

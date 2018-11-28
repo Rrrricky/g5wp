@@ -1,0 +1,17 @@
+body.login {
+	background-color: #040404;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+	background-color: rgba(230, 126, 55, 1);
+}
+.message {
+	border-left: 4px solid #e67e37 !important;
+}
+#wp-submit {
+	text-decoration: none;
+	box-shadow: 0 1px 0 #000;
+	border-color: #000 #000 #000;
+	text-shadow: none;
+	font-weight: bold;
+}

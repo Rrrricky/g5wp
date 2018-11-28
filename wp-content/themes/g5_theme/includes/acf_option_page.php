@@ -15,12 +15,6 @@ function add_acf_option_page_support(){
     ));
 
     acf_add_options_sub_page(array(
-      'page_title'    => 'Configuration des réseaux sociaux',
-      'menu_title'    => 'Réseaux sociaux',
-      'parent_slug'   => 'options',
-		));
-
-    acf_add_options_sub_page(array(
       'page_title'    => 'Options de la Page 404',
       'menu_title'    => 'Page 404',
 			'parent_slug'   => 'options',
