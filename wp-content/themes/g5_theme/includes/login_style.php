@@ -6,10 +6,10 @@
         #login h1 a, .login h1 a {
             background-image: url(https://i.ibb.co/C9yCb06/Le-Logo-Weath-Animal.png);
     height:65px;
-    width:320px;
+    width:auto;
     background-size: 320px 65px;
     background-repeat: no-repeat;
-          padding-bottom: 30px;
+          padding-bottom: 20px;
         }
     </style>
   <?php }

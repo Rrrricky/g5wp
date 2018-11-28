@@ -17,6 +17,7 @@
 #tagsdiv-post_tag,
 #dashboard_activity,
 #menu-posts,
-#postimagediv {
+#postimagediv,
+.meta-box-sortables {
 	display: none;
 }
