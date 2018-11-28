@@ -1,5 +1,7 @@
 # Wordpress Project - Team 5 (H3)
 
+![alt text](wp-content/themes/g5_theme/assets/images/preview.png)
+
 ## Instructions
 
 1. Git clone the repository
@@ -17,13 +19,13 @@ ___
 
 ## Features
 - Custom back-office (pictures, menu, texts, mouse)
-- Transitions and parallax
-- Ajax 
+- Transitions & parallax
+- Ajax
+- Responsive
 
 ## Future features
 - Better SEO
 - More modifications available from the back-office
-
 
 ## Thanks
 - Grégoire Puget
