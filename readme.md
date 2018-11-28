@@ -1,5 +1,7 @@
 # Wordpress Project - Team 5 (H3)
 
+![alt text](wp-content/themes/g5_theme/assets/images/preview.png)
+
 ## Instructions
 
 1. Git clone the repository
