@@ -19,6 +19,7 @@ ___
 - Custom back-office (pictures, menu, texts, mouse)
 - Transitions & parallax
 - Ajax
+- Responsive
 
 ## Future features
 - Better SEO
