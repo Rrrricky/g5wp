@@ -1,5 +1,6 @@
 <?php
 // custom admin style sheet
+
 function my_admin_head() {
 	$whodat = get_current_user_id();
 	if ($whodat != 1) {
