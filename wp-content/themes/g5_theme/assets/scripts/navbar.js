@@ -1,32 +1,44 @@
-/* Get navbar's items */
-const navItems = document.querySelectorAll( '.menu-item' );
+class NavBar {
 
-/* Get Current page link */
-const currentPage = window.location.href;
+	constructor() {
+		this.navItems()
+		this.hamburgerMenu()
+	}
 
-/* Loop inside the navbar's items */
-for ( let i = 0 ; i < navItems.length ; i++ ) {
+	navItems() {
+		/* Get navbar's items */
+		const navItems = document.querySelectorAll( '.menu-item' );
 
-	/* Define the current item stringified */
-	const currentItem = navItems[i].firstChild.toString();
+		/* Get Current page link */
+		const currentPage = window.location.href;
 
-	/* If the current item's link is the same as the current page's link, than add class active */
-	if ( currentItem == currentPage ) {
-		navItems[i].appendChild( document.createElement( 'div' ) ).classList.add( 'nav__active' );
+		/* Loop inside the navbar's items */
+		for ( let i = 0 ; i < navItems.length ; i++ ) {
+
+			/* Define the current item stringified */
+			const currentItem = navItems[i].firstChild.toString();
+
+			/* If the current item's link is the same as the current page's link, than add class active */
+			if ( currentItem == currentPage ) {
+				navItems[i].appendChild( document.createElement( 'div' ) ).classList.add( 'nav__active' );
+			}
+		}
+	}
+
+	hamburgerMenu() {
+
+		let $hamburgerIcon = document.querySelector(".hamburger")
+		let $links = document.querySelector(".nav__links")
+		let $main = document.querySelector("main");
+
+		$hamburgerIcon.addEventListener(
+			"click",
+			()=> {
+				$links.classList.toggle("is-active")
+				$hamburgerIcon.classList.toggle("is-active")
+			}
+		)
 	}
 }
 
-
-
-let $hamburgerIcon = document.querySelector(".hamburger")
-let $links = document.querySelector(".nav__links")
-let $main = document.querySelector("main");
-
-$hamburgerIcon.addEventListener(
-	"click",
-	()=> {
-		$links.classList.toggle("is-active")
-		$hamburgerIcon.classList.toggle("is-active")
-	}
-)
-
+const navigation = new NavBar

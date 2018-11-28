@@ -113,10 +113,6 @@
 .js-lazyload.loaded img{opacity:1}
 .RegionPage{display:grid;font-family:"Raleway";margin:0 40px 50px 40px;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(4,minmax(50px,auto));grid-gap:30px;-ms-flex-line-pack:center;align-content:center}
 .RegionPage__main-picture{grid-column:1 / 13;width:100vw;height:100vh;margin:0 -40px;-o-object-fit:cover;object-fit:cover;z-index:-1}
-.RegionPage .js-RegionPage__mainData,.RegionPage .js-RegionPage__transitions{opacity:0;-webkit-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;will-change:opacity}
-.RegionPage .js-RegionPage__mainData-location{-webkit-transition-delay:0s;transition-delay:0s}
-.RegionPage .js-RegionPage__mainData-area{-webkit-transition-delay:.1s;transition-delay:.1s}
-.RegionPage .js-RegionPage__mainData-climate{-webkit-transition-delay:.2s;transition-delay:.2s}
 .RegionPage .wrapperRegion__home{height:80vh;position:relative}
 .RegionPage .wrapperRegion__home__header{width:320px;height:50px;margin-top:20px;position:absolute}
 .RegionPage .wrapperRegion__home__header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-family:"Raleway",sans-serif;font-size:12px;margin-left:40px;color:#111}
@@ -166,6 +162,10 @@
 .RegionPage__related__bloc__species-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:40px;padding:10px 20px;background-color:#e67e37;cursor:pointer}
 .js-lazyload img{opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s;will-change:opacity}
 .js-lazyload.loaded img{opacity:1}
+.js-RegionPage__mainData,.js-transitions{opacity:0;-webkit-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;will-change:opacity}
+.js-RegionPage__mainData-location{-webkit-transition-delay:0s;transition-delay:0s}
+.js-RegionPage__mainData-area{-webkit-transition-delay:.1s;transition-delay:.1s}
+.js-RegionPage__mainData-climate{-webkit-transition-delay:.2s;transition-delay:.2s}
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:1}
 .hamburger.is-active:hover{opacity:1}
@@ -316,7 +316,7 @@
 .donation__sideWrap__internWrap{height:100%;width:auto;-ms-flex-item-align:center;align-self:center}
 .donation__sideWrap__internWrap__header{width:100%;font-weight:500;font-size:30px;font-family:"Raleway"}
 .donation__sideWrap__internWrap__header strong{color:#e67e37}
-.donation__sideWrap__internWrap__desc{margin-bottom:-10px;margin-top:15px;color:#a4a4a4;font-family:"Raleway";font-size:18px;width:100%}
+.donation__sideWrap__internWrap__desc{margin-bottom:-10px;margin-top:15px;color:#a4a4a4;font-family:"Raleway";font-size:18px;line-height:22px;width:100%}
 .donation__sideWrap__internWrap__form{margin-top:50px}
 .footer{margin-top:40px;width:auto;height:200px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer__top{padding-bottom:30px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:auto;display:-webkit-box;display:-ms-flexbox;display:flex;height:50%;width:70%;border-bottom:1px solid #7a7a7a}

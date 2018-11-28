@@ -1,4 +1,5 @@
 class LazyLoading {
+
 	parse() {
 		const $lazyLoads = Array.from(document.querySelectorAll(".js-lazyload")) // Get it in an array
 

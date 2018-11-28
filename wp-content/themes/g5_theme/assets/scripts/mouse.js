@@ -1,4 +1,5 @@
 class NewMouse {
+
 	constructor() {
 		this.setMouse();
 		this.setEffect();
@@ -85,41 +86,6 @@ class NewMouse {
 	}
 }
 
-if ( document.querySelector( '.wrap' ) ) {
-	const newMouse = new NewMouse();
+if(document.querySelector(".wrap")) {
+	const $newMouse = new NewMouse();
 }
-
-// Display video
-
-if ( document.querySelector( '.wrapperAnimal__home__footer__video' ) ) {
-	const videoBtn = document.querySelector(
-		'.wrapperAnimal__home__footer__video'
-	);
-	const videoDisplay = document.querySelector(
-		'.wrapperAnimal__home__displayVideo'
-	);
-	const videoClose = document.querySelector( '.wrapperAnimal__home__close' );
-	const videoFrame = document.querySelector( '#video' );
-
-	let isVideoDisplayed = false;
-	videoBtn.addEventListener( 'click', function() {
-		if ( true == isVideoDisplayed ) {
-			isVideoDisplayed = false;
-			videoDisplay.classList.remove( 'active' );
-			videoClose.classList.remove( 'active' );
-		} else if ( false == isVideoDisplayed ) {
-			isVideoDisplayed = true;
-			videoDisplay.classList.add( 'active' );
-			videoClose.classList.add( 'active' );
-		}
-	});
-
-	videoClose.addEventListener( 'click', function() {
-		console.log( 'cose' );
-		isVideoDisplayed = false;
-		videoDisplay.classList.remove( 'active' );
-		videoClose.classList.remove( 'active' );
-	});
-}
-
-

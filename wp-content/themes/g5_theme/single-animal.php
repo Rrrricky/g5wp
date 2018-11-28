@@ -108,7 +108,7 @@ $id = get_the_ID();
         <div class="wrapperAnimal__habitat__content__text__side">
           <?php the_field('animal_habitat_location'); ?>
         </div>
-        <div class="wrapperAnimal__habitat__content__text__main">
+        <div class="wrapperAnimal__habitat__content__text__main js-transitions">
           <?php the_field('animal_habitat_text', $id); ?>
         </div>
       </div>
@@ -126,7 +126,7 @@ $id = get_the_ID();
         <img src="<?php echo $alimentaire_picture; ?>" alt="some food for animals">
         <span class="rightSidedHeader">alimentaires<span class="dotColored">.</span></span>
       </div>
-      <div class="wrapperAnimal__food__content__text">
+      <div class="wrapperAnimal__food__content__text js-transitions">
         <?php the_field('animal_food_text', $id); ?>
       </div>
     </div>
@@ -139,7 +139,7 @@ $id = get_the_ID();
     </div>
     <!-- Content -->
     <div class="wrapperAnimal__disappearance__content">
-      <div class="wrapperAnimal__disappearance__content__text">
+      <div class="wrapperAnimal__disappearance__content__text js-transitions">
         <?php the_field('animal_disappear_text', $id); ?>
       </div>
       <div class="wrapperAnimal__disappearance__content__image">
@@ -162,7 +162,7 @@ $id = get_the_ID();
       <div class="wrapperAnimal__donations__content__image">
         <img src="<?php echo $donation_picture; ?>" alt="landscape with the sun in background">
       </div>
-      <div class="wrapperAnimal__donations__content__textBloc">
+      <div class="wrapperAnimal__donations__content__textBloc js-transitions">
         <div class="wrapperAnimal__donations__content__textBloc__header">
           Agissons
         </div>

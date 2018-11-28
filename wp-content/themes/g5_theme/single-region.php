@@ -67,7 +67,7 @@ $thumb2 = get_field('thumbnail_2');
 	<span class="RegionPage__region-subtitle">
 		<?php the_field("title_of_region"); ?><span>.</span>
 	</span>
-	<div class="RegionPage__region-text js-RegionPage__transitions">
+	<div class="RegionPage__region-text js-transitions">
 		<p>
 			<?php the_field("main_text"); ?>
 		</p>
@@ -99,12 +99,12 @@ $thumb2 = get_field('thumbnail_2');
 		<?php endif; ?>
 	</div>
 	</div>
-	<p class="RegionPage__temperature-text js-RegionPage__transitions">
+	<p class="RegionPage__temperature-text js-transitions">
 		<?php the_field("secondary_text"); ?>
 	</p>
 	<h5 class="RegionPage__species-title">Espèces en disparition<span>...</span></h5>
 	<!-- Wanna display every animal with the category  -->
-	<div class="RegionPage__related js-RegionPage__transitions">
+	<div class="RegionPage__related js-transitions">
 		<?php
 		// Get animal list
 		$the_region = new WP_Query($args_animal);

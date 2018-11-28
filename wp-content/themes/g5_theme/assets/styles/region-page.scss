@@ -14,23 +14,6 @@
 		object-fit: cover;
 		z-index: -1;
 	}
-	.js-RegionPage__mainData, .js-RegionPage__transitions {
-		opacity: 0;
-		transition-property: opacity;
-		transition-duration: .5s;
-		transition-timing-function: ease-in;
-		will-change: opacity;
-	}
-	.js-RegionPage__mainData-location, {
-		transition-delay: 0s;
-	}
-	.js-RegionPage__mainData-area, {
-		transition-delay: .1s;
-	}
-	.js-RegionPage__mainData-climate, {
-		transition-delay: .2s;
-	}
-
 	.wrapperRegion {
 		&__home {
 			height: 80vh;
@@ -301,6 +284,23 @@
 	opacity: 1;
 }
 
+
+.js-RegionPage__mainData, .js-transitions {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .5s;
+	transition-timing-function: ease-in;
+	will-change: opacity;
+}
+.js-RegionPage__mainData-location, {
+	transition-delay: 0s;
+}
+.js-RegionPage__mainData-area, {
+	transition-delay: .1s;
+}
+.js-RegionPage__mainData-climate, {
+	transition-delay: .2s;
+}
 
 
 /**

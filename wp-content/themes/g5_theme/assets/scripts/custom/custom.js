@@ -1,81 +1,117 @@
 "use strict";
 
-var ajaxRequest = function ajaxRequest() {
-  var $pagination = document.querySelector(".readMore").dataset.pagination;
-  var $readMore = document.querySelector(".readMore");
-  $readMore.addEventListener("click", function (e) {
-    e.preventDefault();
-    var $ajax_section = document.querySelector(".ajax-section");
-    var request = new XMLHttpRequest();
-    request.open('POST', ajaxurl, true);
-    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-    request.onload = function () {
-      if (this.status >= 200 && this.status < 400) {
-        $ajax_section.insertAdjacentHTML('beforeend', this.response);
-        $pagination++;
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-        if (max_paged < $pagination) {
-          document.querySelector(".readMore").style.display = "none";
-        }
-      } else {
-        console.log(this.response);
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Ajax =
+/*#__PURE__*/
+function () {
+  function Ajax() {
+    _classCallCheck(this, Ajax);
+  }
+
+  _createClass(Ajax, [{
+    key: "ajaxRequest",
+    value: function ajaxRequest() {
+      var $pagination = document.querySelector(".readMore").dataset.pagination;
+      var $readMore = document.querySelector(".readMore");
+      $readMore.addEventListener("click", function (e) {
+        e.preventDefault();
+        var $ajax_section = document.querySelector(".ajax-section");
+        var request = new XMLHttpRequest();
+        request.open('POST', ajaxurl, true);
+        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+
+        request.onload = function () {
+          if (this.status >= 200 && this.status < 400) {
+            $ajax_section.insertAdjacentHTML('beforeend', this.response);
+            $pagination++;
+
+            if (max_paged < $pagination) {
+              document.querySelector(".readMore").style.display = "none";
+            }
+          } else {
+            console.log(this.response);
+          }
+        };
+
+        request.send('action=ajax-morePhotos&pagination=' + $pagination);
+      });
+    }
+  }, {
+    key: "autoComplete",
+    value: function (_autoComplete) {
+      function autoComplete() {
+        return _autoComplete.apply(this, arguments);
       }
-    };
 
-    request.send('action=ajax-morePhotos&pagination=' + $pagination);
-  });
-};
+      autoComplete.toString = function () {
+        return _autoComplete.toString();
+      };
+
+      return autoComplete;
+    }(function () {
+      var templateUrl = object_name.templateUrl; //Auto-complete library
+
+      var loadJSON = function loadJSON(callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("animals/json");
+        xobj.open('GET', templateUrl + '/assets/scripts/animals.json', true); // Replace 'my_data' with the path to your file
+
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+        };
+
+        xobj.send(null);
+      };
+
+      var init = function init() {
+        loadJSON(function (response) {
+          // Parse JSON string into object
+          var actual_JSON = JSON.parse(response);
+          complete(actual_JSON);
+        });
+      };
+
+      init();
+
+      var complete = function complete(json) {
+        new autoComplete({
+          selector: 'input[name="name"]',
+          minChars: 0,
+          offsetTop: 5,
+          source: function source(term, suggest) {
+            term = term.toLowerCase();
+            var choices = json;
+            var matches = [];
+
+            for (var i = 0; i < choices.length; i++) {
+              if (~choices[i].name.toLowerCase().indexOf(term)) matches.push(choices[i].name);
+            }
+
+            suggest(matches);
+          }
+        });
+      };
+    })
+  }]);
+
+  return Ajax;
+}();
+
+var $ajax = new Ajax();
 
 if (document.querySelector(".readMore")) {
-  ajaxRequest();
+  $ajax.ajaxRequest();
 }
 
-var templateUrl = object_name.templateUrl; //Auto-complete library
-
-var loadJSON = function loadJSON(callback) {
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("animals/json");
-  xobj.open('GET', templateUrl + '/assets/scripts/animals.json', true); // Replace 'my_data' with the path to your file
-
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-      callback(xobj.responseText);
-    }
-  };
-
-  xobj.send(null);
-};
-
-var init = function init() {
-  loadJSON(function (response) {
-    // Parse JSON string into object
-    var actual_JSON = JSON.parse(response);
-    complete(actual_JSON);
-  });
-};
-
-init();
-
-var complete = function complete(json) {
-  new autoComplete({
-    selector: 'input[name="name"]',
-    minChars: 0,
-    offsetTop: 5,
-    source: function source(term, suggest) {
-      term = term.toLowerCase();
-      var choices = json;
-      var matches = [];
-
-      for (i = 0; i < choices.length; i++) {
-        if (~choices[i].name.toLowerCase().indexOf(term)) matches.push(choices[i].name);
-      }
-
-      suggest(matches);
-    }
-  });
-};
+$ajax.autoComplete();
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -89,75 +125,82 @@ var Animations =
 function () {
   function Animations() {
     _classCallCheck(this, Animations);
-
-    this.detect();
   }
 
   _createClass(Animations, [{
-    key: "detect",
-    value: function detect() {
+    key: "mainDataTransition",
+    value: function mainDataTransition() {
       var $threeMainData = document.querySelectorAll(".js-RegionPage__mainData");
-      var $transitions = document.querySelectorAll(".js-RegionPage__transitions");
+      var threeDataPosition = $threeMainData[0].offsetTop;
       window.addEventListener("scroll", function () {
-        // Variables
         var scrollPosition = pageYOffset;
-        var threeDataPosition = $threeMainData[0].offsetTop;
-        var transitionPositions = [];
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-          for (var _iterator = $transitions[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var transition = _step.value;
-            transitionPositions.push(transition.offsetTop);
-          } // Condition 1
-
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return != null) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
-          }
-        }
 
         if (scrollPosition >= threeDataPosition - 3 / 4 * window.innerHeight) {
-          var _iteratorNormalCompletion2 = true;
-          var _didIteratorError2 = false;
-          var _iteratorError2 = undefined;
+          var _iteratorNormalCompletion = true;
+          var _didIteratorError = false;
+          var _iteratorError = undefined;
 
           try {
-            for (var _iterator2 = $threeMainData[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-              var $MainData = _step2.value;
+            for (var _iterator = $threeMainData[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+              var $MainData = _step.value;
               $MainData.style.opacity = "1";
             }
           } catch (err) {
-            _didIteratorError2 = true;
-            _iteratorError2 = err;
+            _didIteratorError = true;
+            _iteratorError = err;
           } finally {
             try {
-              if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-                _iterator2.return();
+              if (!_iteratorNormalCompletion && _iterator.return != null) {
+                _iterator.return();
               }
             } finally {
-              if (_didIteratorError2) {
-                throw _iteratorError2;
+              if (_didIteratorError) {
+                throw _iteratorError;
               }
             }
           }
-        } // Condition 2
+        }
+      });
+    }
+  }, {
+    key: "basicTransition",
+    value: function basicTransition() {
+      var $transitions = document.querySelectorAll(".js-transitions");
+      var transitionPositions = [];
+      var _iteratorNormalCompletion2 = true;
+      var _didIteratorError2 = false;
+      var _iteratorError2 = undefined;
 
+      try {
+        for (var _iterator2 = $transitions[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+          var transition = _step2.value;
+          transitionPositions.push(transition.offsetTop);
+        }
+      } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+            _iterator2.return();
+          }
+        } finally {
+          if (_didIteratorError2) {
+            throw _iteratorError2;
+          }
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var scrollPosition = pageYOffset;
+        console.log("scroll : " + scrollPosition);
 
         for (var i = 0; i < transitionPositions.length; i++) {
+          console.log("element : " + transitionPositions[i]);
+
           if (scrollPosition >= transitionPositions[i] - 3 / 4 * window.innerHeight) {
             $transitions[i].style.opacity = "1";
+            console.log("ouch");
           }
         }
       });
@@ -168,6 +211,14 @@ function () {
 }();
 
 var animations = new Animations();
+
+if (document.querySelector(".js-RegionPage__mainData")) {
+  animations.mainDataTransition();
+}
+
+if (document.querySelector(".js-transitions")) {
+  animations.basicTransition();
+}
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -330,13 +381,38 @@ var autoComplete = function () {
 }();
 "use strict";
 
-/* Display the current animal's number on the grid-based menu (regions and animals) */
-var gridNumbers = document.querySelectorAll('.grid-menu__number');
-var $animalWrapper = document.querySelector('.animal-wrapper');
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-for (var i = 0; i < gridNumbers.length; i++) {
-  gridNumbers[i].innerHTML = i + 1;
-}
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/* Display the current animal's number on the grid-based menu (regions and animals) */
+var GridNumber =
+/*#__PURE__*/
+function () {
+  function GridNumber() {
+    _classCallCheck(this, GridNumber);
+
+    this.count();
+  }
+
+  _createClass(GridNumber, [{
+    key: "count",
+    value: function count() {
+      var gridNumbers = document.querySelectorAll('.grid-menu__number');
+      var $animalWrapper = document.querySelector('.animal-wrapper');
+
+      for (var i = 0; i < gridNumbers.length; i++) {
+        gridNumbers[i].innerHTML = i + 1;
+      }
+    }
+  }]);
+
+  return GridNumber;
+}();
+
+var gridNumb = new GridNumber();
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -379,6 +455,191 @@ function () {
 
 var lazyLoading = new LazyLoading();
 lazyLoading.parse();
+"use strict";
+"use strict";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var NavBar =
+/*#__PURE__*/
+function () {
+  function NavBar() {
+    _classCallCheck(this, NavBar);
+
+    this.navItems();
+    this.hamburgerMenu();
+  }
+
+  _createClass(NavBar, [{
+    key: "navItems",
+    value: function navItems() {
+      /* Get navbar's items */
+      var navItems = document.querySelectorAll('.menu-item');
+      /* Get Current page link */
+
+      var currentPage = window.location.href;
+      /* Loop inside the navbar's items */
+
+      for (var i = 0; i < navItems.length; i++) {
+        /* Define the current item stringified */
+        var currentItem = navItems[i].firstChild.toString();
+        /* If the current item's link is the same as the current page's link, than add class active */
+
+        if (currentItem == currentPage) {
+          navItems[i].appendChild(document.createElement('div')).classList.add('nav__active');
+        }
+      }
+    }
+  }, {
+    key: "hamburgerMenu",
+    value: function hamburgerMenu() {
+      var $hamburgerIcon = document.querySelector(".hamburger");
+      var $links = document.querySelector(".nav__links");
+      var $main = document.querySelector("main");
+      $hamburgerIcon.addEventListener("click", function () {
+        $links.classList.toggle("is-active");
+        $hamburgerIcon.classList.toggle("is-active");
+      });
+    }
+  }]);
+
+  return NavBar;
+}();
+
+var navigation = new NavBar();
+"use strict";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Parallax =
+/*#__PURE__*/
+function () {
+  function Parallax() {
+    _classCallCheck(this, Parallax);
+
+    this.setItems();
+  }
+
+  _createClass(Parallax, [{
+    key: "setItems",
+    value: function setItems() {
+      // Get elements
+      var $elements = document.querySelectorAll('.js-parallax');
+
+      if ($elements.length != 0) {
+        this.items = new Array(); // Set parameters
+
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+          for (var _iterator = $elements[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            var $element = _step.value;
+            var item = {};
+            item.$element = $element;
+            item.amplitude = parseFloat($element.dataset.amplitude);
+            item.offsetX = 0;
+            item.offsetY = 0;
+            this.items.push(item);
+          }
+        } catch (err) {
+          _didIteratorError = true;
+          _iteratorError = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+              _iterator.return();
+            }
+          } finally {
+            if (_didIteratorError) {
+              throw _iteratorError;
+            }
+          }
+        }
+
+        this.setMouse();
+        this.setAnimation();
+      }
+    }
+  }, {
+    key: "setMouse",
+    value: function setMouse() {
+      var _this = this;
+
+      // Get mouse data
+      this.mouse = {};
+      this.mouse.x = 0;
+      this.mouse.y = 0; // Get window sizes
+
+      var windowWidth = window.innerWidth;
+      var windowHeight = window.innerHeight; // Listen to resize
+
+      window.addEventListener('resize', function () {
+        windowWidth = window.innerWidth;
+        windowHeight = window.innerHeight;
+      }); // Listen to mousemove
+
+      window.addEventListener('mousemove', function (event) {
+        _this.mouse.x = event.clientX / windowWidth - 0.5;
+        _this.mouse.y = event.clientY / windowHeight - 0.5;
+      });
+    }
+  }, {
+    key: "setAnimation",
+    value: function setAnimation() {
+      var _this2 = this;
+
+      var loop = function loop() {
+        window.requestAnimationFrame(loop); // Set parallax effect
+
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+          for (var _iterator2 = _this2.items[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var item = _step2.value;
+            var targetOffetX = -_this2.mouse.x * 100 * item.amplitude;
+            var targetOffetY = -_this2.mouse.y * 100 * item.amplitude;
+            item.offsetX += (targetOffetX - item.offsetX) * 0.05;
+            item.offsetY += (targetOffetY - item.offsetY) * 0.05;
+            var roundedOffsetX = Math.round(item.offsetX * 100) / 100;
+            var roundedOffsetY = Math.round(item.offsetY * 100) / 100;
+            item.$element.style.transform = "translateX(".concat(roundedOffsetX, "px) translateY(").concat(roundedOffsetY, "px)");
+          }
+        } catch (err) {
+          _didIteratorError2 = true;
+          _iteratorError2 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+              _iterator2.return();
+            }
+          } finally {
+            if (_didIteratorError2) {
+              throw _iteratorError2;
+            }
+          }
+        }
+      };
+
+      loop();
+    }
+  }]);
+
+  return Parallax;
+}();
+
+var parallax = new Parallax();
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -483,61 +744,9 @@ function () {
   return NewMouse;
 }();
 
-if (document.querySelector('.wrap')) {
-  var newMouse = new NewMouse();
-} // Display video
-
-
-if (document.querySelector('.wrapperAnimal__home__footer__video')) {
-  var videoBtn = document.querySelector('.wrapperAnimal__home__footer__video');
-  var videoDisplay = document.querySelector('.wrapperAnimal__home__displayVideo');
-  var videoClose = document.querySelector('.wrapperAnimal__home__close');
-  var videoFrame = document.querySelector('#video');
-  var isVideoDisplayed = false;
-  videoBtn.addEventListener('click', function () {
-    if (true == isVideoDisplayed) {
-      isVideoDisplayed = false;
-      videoDisplay.classList.remove('active');
-      videoClose.classList.remove('active');
-    } else if (false == isVideoDisplayed) {
-      isVideoDisplayed = true;
-      videoDisplay.classList.add('active');
-      videoClose.classList.add('active');
-    }
-  });
-  videoClose.addEventListener('click', function () {
-    console.log('cose');
-    isVideoDisplayed = false;
-    videoDisplay.classList.remove('active');
-    videoClose.classList.remove('active');
-  });
+if (document.querySelector(".wrap")) {
+  var $newMouse = new NewMouse();
 }
-"use strict";
-
-/* Get navbar's items */
-var navItems = document.querySelectorAll('.menu-item');
-/* Get Current page link */
-
-var currentPage = window.location.href;
-/* Loop inside the navbar's items */
-
-for (var i = 0; i < navItems.length; i++) {
-  /* Define the current item stringified */
-  var currentItem = navItems[i].firstChild.toString();
-  /* If the current item's link is the same as the current page's link, than add class active */
-
-  if (currentItem == currentPage) {
-    navItems[i].appendChild(document.createElement('div')).classList.add('nav__active');
-  }
-}
-
-var $hamburgerIcon = document.querySelector(".hamburger");
-var $links = document.querySelector(".nav__links");
-var $main = document.querySelector("main");
-$hamburgerIcon.addEventListener("click", function () {
-  $links.classList.toggle("is-active");
-  $hamburgerIcon.classList.toggle("is-active");
-});
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -546,126 +755,45 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Parallax =
+// Display video
+var VideoDisplayer =
 /*#__PURE__*/
 function () {
-  function Parallax() {
-    _classCallCheck(this, Parallax);
-
-    this.setItems();
+  function VideoDisplayer() {
+    _classCallCheck(this, VideoDisplayer);
   }
 
-  _createClass(Parallax, [{
-    key: "setItems",
-    value: function setItems() {
-      // Get elements
-      var $elements = document.querySelectorAll('.js-parallax');
-
-      if ($elements.length != 0) {
-        this.items = new Array(); // Set parameters
-
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-          for (var _iterator = $elements[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var $element = _step.value;
-            var item = {};
-            item.$element = $element;
-            item.amplitude = parseFloat($element.dataset.amplitude);
-            item.offsetX = 0;
-            item.offsetY = 0;
-            this.items.push(item);
+  _createClass(VideoDisplayer, [{
+    key: "display",
+    value: function display() {
+      if (document.querySelector('.wrapperAnimal__home__footer__video')) {
+        var videoBtn = document.querySelector('.wrapperAnimal__home__footer__video');
+        var videoDisplay = document.querySelector('.wrapperAnimal__home__displayVideo');
+        var videoClose = document.querySelector('.wrapperAnimal__home__close');
+        var videoFrame = document.querySelector('#video');
+        var isVideoDisplayed = false;
+        videoBtn.addEventListener('click', function () {
+          if (true == isVideoDisplayed) {
+            isVideoDisplayed = false;
+            videoDisplay.classList.remove('active');
+            videoClose.classList.remove('active');
+          } else if (false == isVideoDisplayed) {
+            isVideoDisplayed = true;
+            videoDisplay.classList.add('active');
+            videoClose.classList.add('active');
           }
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return != null) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
-          }
-        }
-
-        this.setMouse();
-        this.setAnimation();
+        });
+        videoClose.addEventListener('click', function () {
+          isVideoDisplayed = false;
+          videoDisplay.classList.remove('active');
+          videoClose.classList.remove('active');
+        });
       }
-    }
-  }, {
-    key: "setMouse",
-    value: function setMouse() {
-      var _this = this;
-
-      // Get mouse data
-      this.mouse = {};
-      this.mouse.x = 0;
-      this.mouse.y = 0; // Get window sizes
-
-      var windowWidth = window.innerWidth;
-      var windowHeight = window.innerHeight; // Listen to resize
-
-      window.addEventListener('resize', function () {
-        windowWidth = window.innerWidth;
-        windowHeight = window.innerHeight;
-      }); // Listen to mousemove
-
-      window.addEventListener('mousemove', function (event) {
-        _this.mouse.x = event.clientX / windowWidth - 0.5;
-        _this.mouse.y = event.clientY / windowHeight - 0.5;
-        console.log("x : " + _this.mouse.x);
-        console.log("y : " + _this.mouse.y);
-      });
-    }
-  }, {
-    key: "setAnimation",
-    value: function setAnimation() {
-      var _this2 = this;
-
-      var loop = function loop() {
-        window.requestAnimationFrame(loop); // Set parallax effect
-
-        var _iteratorNormalCompletion2 = true;
-        var _didIteratorError2 = false;
-        var _iteratorError2 = undefined;
-
-        try {
-          for (var _iterator2 = _this2.items[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            var item = _step2.value;
-            var targetOffetX = -_this2.mouse.x * 100 * item.amplitude;
-            var targetOffetY = -_this2.mouse.y * 100 * item.amplitude;
-            item.offsetX += (targetOffetX - item.offsetX) * 0.05;
-            item.offsetY += (targetOffetY - item.offsetY) * 0.05;
-            var roundedOffsetX = Math.round(item.offsetX * 100) / 100;
-            var roundedOffsetY = Math.round(item.offsetY * 100) / 100;
-            item.$element.style.transform = "\n                    translateX(".concat(roundedOffsetX, "px)\n                    translateY(").concat(roundedOffsetY, "px)\n                ");
-          }
-        } catch (err) {
-          _didIteratorError2 = true;
-          _iteratorError2 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-              _iterator2.return();
-            }
-          } finally {
-            if (_didIteratorError2) {
-              throw _iteratorError2;
-            }
-          }
-        }
-      };
-
-      loop();
     }
   }]);
 
-  return Parallax;
+  return VideoDisplayer;
 }();
 
-var parallax = new Parallax();
+var displayer = new VideoDisplayer();
+displayer.display();

@@ -1,35 +1,44 @@
 class Animations {
-	constructor() {
-		this.detect()
-	}
-	detect() {
+
+	mainDataTransition() {
+
 
 		const $threeMainData = document.querySelectorAll(".js-RegionPage__mainData")
-		const $transitions = document.querySelectorAll(".js-RegionPage__transitions")
+		let threeDataPosition = $threeMainData[0].offsetTop
 
 		window.addEventListener(
 			"scroll",
 			()=>{
-
-				// Variables
 				let scrollPosition = pageYOffset
-				let threeDataPosition = $threeMainData[0].offsetTop
-				let transitionPositions = []
-				for(let transition of $transitions) {
-					transitionPositions.push(transition.offsetTop)
-				}
-
-				// Condition 1
 				if(scrollPosition >= threeDataPosition - 3/4 * window.innerHeight) {
 					for(let $MainData of $threeMainData) {
 						$MainData.style.opacity = "1";
 					}
 				}
+			}
+		)
+	}
 
-				// Condition 2
+
+	basicTransition() {
+
+		const $transitions = document.querySelectorAll(".js-transitions")
+
+		let transitionPositions = []
+		for(let transition of $transitions) {
+			transitionPositions.push(transition.offsetTop)
+		}
+
+		window.addEventListener(
+			"scroll",
+			()=>{
+				let scrollPosition = pageYOffset
+				console.log("scroll : "+scrollPosition)
 				for(let i = 0; i < transitionPositions.length; i++) {
+					console.log("element : "+transitionPositions[i])
 					if(scrollPosition >= transitionPositions[i] - 3/4 * window.innerHeight) {
 						$transitions[i].style.opacity = "1";
+						console.log("ouch")
 					}
 				}
 			}
@@ -37,7 +46,16 @@ class Animations {
 	}
 }
 
+
 const animations = new Animations
+
+if(document.querySelector(".js-RegionPage__mainData")) {
+	animations.mainDataTransition()
+}
+
+if(document.querySelector(".js-transitions")) {
+	animations.basicTransition()
+}
 
 
 
