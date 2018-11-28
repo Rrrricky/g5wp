@@ -11,16 +11,19 @@ ___
 ## Technologies and structure
 
 - Wordpress + Gulp + ACF
-- SASS (BEM)
-- ES6
+- SASS (BEM, CSS grid)
+- ES6 POO
 - Co-working structure (dploy + WP_Sync_DB + Git flow)
 
 ## Features
 - Custom back-office (pictures, menu, texts, mouse)
+- Transitions & parallax
+- Ajax
+- Responsive
 
 ## Future features
-- 
-
+- Better SEO
+- More modifications available from the back-office
 
 ## Thanks
 - Grégoire Puget
