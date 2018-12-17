@@ -19,30 +19,13 @@ ___
 
 ## Features
 - Custom back-office (pictures, menu, texts, mouse)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Transitions & parallax
-- Ajax
 - Responsive
-=======
 - Transitions and parallax
 - Ajax 
->>>>>>> develop
-=======
-- Transitions and parallax
-- Ajax 
->>>>>>> develop
 
 ## Future features
 - Better SEO
 - More modifications available from the back-office
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
-
->>>>>>> develop
 
 ## Thanks
 - Grégoire Puget
